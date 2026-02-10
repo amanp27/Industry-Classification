@@ -1,0 +1,1212 @@
+[
+  {
+    "_id": "93649",
+    "orgName": "الفريده للإستيراد",
+    "countryCode": "EG",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Manufacturing",
+          "subCategory": "Printing Inks & Supplies",
+          "percentage": 100,
+          "sampleProducts": ["Supra UV cyan", "Xtrime magenta", "Tir will UV varnish", "Flexo inks"]
+        }
+      ],
+      "primaryIndustry": "Manufacturing",
+      "businessType": "Wholesaler",
+      "confidenceScore": 0.95,
+      "reasoning": "All products are UV/offset/flexographic printing inks, varnishes, and related supplies measured in Kg/L - typical printing industry supplier."
+    }
+  },
+  {
+    "_id": "93627",
+    "orgName": "astanonline",
+    "countryCode": null,
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "General Merchandise",
+          "percentage": 50,
+          "sampleProducts": ["mobile holder", "koob sawir leh (cups)", "burashado (brushes)"]
+        },
+        {
+          "industry": "Personal Care",
+          "subCategory": "Fragrances & Toiletries",
+          "percentage": 30,
+          "sampleProducts": ["nivea men", "cadar perfumes", "body sprays"]
+        },
+        {
+          "industry": "Food & Beverage",
+          "subCategory": "Packaged Foods",
+          "percentage": 20,
+          "sampleProducts": ["sijaayad (mats)", "food items"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Retailer",
+      "confidenceScore": 0.75,
+      "reasoning": "Mixed inventory of general merchandise, perfumes, and household items suggests an online general store. Product names appear to be in Somali language."
+    }
+  },
+  {
+    "_id": "93624",
+    "orgName": "Group Ani Investments",
+    "countryCode": "AO",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Food & Beverage",
+          "subCategory": "Alcoholic Beverages Distribution",
+          "percentage": 100,
+          "sampleProducts": ["Savanna Lata", "Hunters Gold", "Amarula", "Whisky Scottish Leader", "Porta 6 Tinto wine"]
+        }
+      ],
+      "primaryIndustry": "Food & Beverage",
+      "businessType": "Distributor",
+      "confidenceScore": 0.98,
+      "reasoning": "Exclusively deals in alcoholic beverages - beers, wines, spirits (whisky, gin, amarula). Units in 'Cx' (caixas/boxes) indicate wholesale distribution in Angola."
+    }
+  },
+  {
+    "_id": "93621",
+    "orgName": "KBA ELECTRICALS - HOME DEPOT",
+    "countryCode": "GH",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Electrical & Lighting Products",
+          "percentage": 100,
+          "sampleProducts": ["LED spotlights", "chokes", "wall lamps", "COB panels", "electrical fittings"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Wholesaler",
+      "confidenceScore": 0.95,
+      "reasoning": "All products are electrical lighting components - LED spotlights, panels, chokes, wall lamps. Sold by box (Bx) suggesting wholesale operations in Ghana."
+    }
+  },
+  {
+    "_id": "93598",
+    "orgName": "HENSAT TELECOMMUNICATIONS",
+    "countryCode": "NG",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Telecommunications",
+          "subCategory": "Satellite & Broadcasting Equipment",
+          "percentage": 70,
+          "sampleProducts": ["Wire mesh Dish", "LNB", "Co-ax Cable", "DSTV receivers", "modulators"]
+        },
+        {
+          "industry": "Professional Services",
+          "subCategory": "Installation & Subscription Services",
+          "percentage": 30,
+          "sampleProducts": ["DSTV Subscription", "LABOUR", "Installation services"]
+        }
+      ],
+      "primaryIndustry": "Telecommunications",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.92,
+      "reasoning": "Primarily satellite TV equipment supplier (dishes, LNBs, receivers) plus subscription and installation services for DSTV in Nigeria."
+    }
+  },
+  {
+    "_id": "93579",
+    "orgName": "Divine Arizona",
+    "countryCode": "NG",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Healthcare",
+          "subCategory": "Pharmaceutical Distribution",
+          "percentage": 100,
+          "sampleProducts": ["Chloroquine", "Metformin", "Artemether lumefantrine", "Paracetamol", "Amlodipine"]
+        }
+      ],
+      "primaryIndustry": "Healthcare",
+      "businessType": "Distributor",
+      "confidenceScore": 0.98,
+      "reasoning": "Exclusively pharmaceutical products - antimalarials, antibiotics, cardiovascular drugs, pain relievers. Nigerian pharmaceutical wholesaler."
+    }
+  },
+  {
+    "_id": "93574",
+    "orgName": "Easy Mart",
+    "countryCode": "ZW",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Health & Fitness Products",
+          "percentage": 40,
+          "sampleProducts": ["Pushup Stand", "Ab Wheel", "Knee Support", "Hot Shaper"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Home & Electronics",
+          "percentage": 35,
+          "sampleProducts": ["Vacuum Cleaner", "Air Cooler Fan", "Humidifier", "Phone Holder"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "General Merchandise",
+          "percentage": 25,
+          "sampleProducts": ["Hip Flask", "Maths Set", "Air Freshener"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Retailer",
+      "confidenceScore": 0.88,
+      "reasoning": "General merchandise retailer in Zimbabwe with focus on fitness equipment, home appliances, and consumer products - typical e-commerce/mart model."
+    }
+  },
+  {
+    "_id": "93568",
+    "orgName": "Dr Rohan Badgujar",
+    "countryCode": "IN",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Healthcare",
+          "subCategory": "Dental Services",
+          "percentage": 100,
+          "sampleProducts": ["Root Canal treatments", "Dental procedures by tooth number"]
+        }
+      ],
+      "primaryIndustry": "Healthcare",
+      "businessType": "Service Provider",
+      "confidenceScore": 0.99,
+      "reasoning": "Dental clinic in India - all entries are root canal treatments with patient names and tooth numbers. Pure service provider."
+    }
+  },
+  {
+    "_id": "93533",
+    "orgName": "PRINTORIA",
+    "countryCode": null,
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Manufacturing",
+          "subCategory": "Stationery & Office Supplies",
+          "percentage": 100,
+          "sampleProducts": ["Bloc Note (notebooks)", "Agenda", "Trousse (pencil case)", "Classeur"]
+        }
+      ],
+      "primaryIndustry": "Manufacturing",
+      "businessType": "Manufacturer",
+      "confidenceScore": 0.90,
+      "reasoning": "French-language business producing notebooks, agendas, and office supplies. Products suggest stationery manufacturing or wholesale."
+    }
+  },
+  {
+    "_id": "93489",
+    "orgName": "Dapoer Cibeureum",
+    "countryCode": "ID",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Food & Beverage",
+          "subCategory": "Food Service/Catering",
+          "percentage": 80,
+          "sampleProducts": ["Ayam serundeng", "Udang Windu", "Mie ayam", "Singkong keju", "Cilok"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Grocery & Household",
+          "percentage": 20,
+          "sampleProducts": ["Rinso detergent", "Kertas HVS (paper)", "Telor (eggs)"]
+        }
+      ],
+      "primaryIndustry": "Food & Beverage",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.85,
+      "reasoning": "Indonesian food business (Dapoer = Kitchen) selling prepared foods and snacks, with some grocery items. Mix of catering/food service and retail."
+    }
+  },
+  {
+    "_id": "93446",
+    "orgName": "EL-OLIVE GLOBAL TRADING (SUPER MARKET)",
+    "countryCode": "GH",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Beverages",
+          "percentage": 50,
+          "sampleProducts": ["Malta Guinness", "Tampico", "Rush Energy Drink", "Voltic Water"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Baby & Household Products",
+          "percentage": 30,
+          "sampleProducts": ["Baby diapers", "Disposable underpads", "Mosquito coil"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Grocery",
+          "percentage": 20,
+          "sampleProducts": ["BON TEA", "Various food items"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Retailer",
+      "confidenceScore": 0.92,
+      "reasoning": "Supermarket in Ghana with diverse product mix - beverages, baby products, household items, and groceries. Classic supermarket model."
+    }
+  },
+  {
+    "_id": "93412",
+    "orgName": "hassan traders",
+    "countryCode": null,
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Tobacco & Pan Products",
+          "percentage": 40,
+          "sampleProducts": ["Tulsi", "Shahi meewa", "Sultan", "Ratan (pan masala brands)"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "General Merchandise",
+          "percentage": 35,
+          "sampleProducts": ["White tape", "Lighters", "Touch perfumes", "Milano"]
+        },
+        {
+          "industry": "Healthcare",
+          "subCategory": "OTC Products",
+          "percentage": 25,
+          "sampleProducts": ["Sani plast", "Johar joshanda", "Ispaghol"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Wholesaler",
+      "confidenceScore": 0.85,
+      "reasoning": "Pakistani/South Asian trader dealing in pan masala, tobacco products, OTC medicines, and general items. Typical wholesale trader model."
+    }
+  },
+  {
+    "_id": "93400",
+    "orgName": "Quincalleri vente de materiel plomberie sanitair petit mbao Dakar Senegal",
+    "countryCode": "SN",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Construction",
+          "subCategory": "Plumbing Supplies",
+          "percentage": 100,
+          "sampleProducts": ["PVC pipes (Longueur)", "Coude (elbows)", "Tes (tees)", "Culotte (Y-joints)", "Rouleaux"]
+        }
+      ],
+      "primaryIndustry": "Construction",
+      "businessType": "Retailer",
+      "confidenceScore": 0.95,
+      "reasoning": "Plumbing supplies store in Dakar, Senegal. All products are PVC pipes and fittings of various sizes (75mm, 110mm, 125mm, 160mm)."
+    }
+  },
+  {
+    "_id": "93397",
+    "orgName": "ElectriYerry",
+    "countryCode": "CO",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Construction",
+          "subCategory": "Electrical Supplies",
+          "percentage": 100,
+          "sampleProducts": ["Lampara 18w", "Tubo conduit", "Reflector", "Cable", "Interruptor"]
+        }
+      ],
+      "primaryIndustry": "Construction",
+      "businessType": "Retailer",
+      "confidenceScore": 0.95,
+      "reasoning": "Colombian electrical supplies store - lamps, reflectors, cables, switches, conduit pipes, and electrical fittings."
+    }
+  },
+  {
+    "_id": "93396",
+    "orgName": "Eliezer",
+    "countryCode": "CR",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Apparel & Fashion",
+          "percentage": 70,
+          "sampleProducts": ["Boxer", "Jacket", "Camisolas", "Medias", "Gorra (caps)"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Fragrances",
+          "percentage": 30,
+          "sampleProducts": ["Perfume billion", "Perfume sexy", "Perfume blue"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Retailer",
+      "confidenceScore": 0.88,
+      "reasoning": "Costa Rican clothing and accessories retailer - mainly apparel (jackets, caps, underwear) plus some perfumes."
+    }
+  },
+  {
+    "_id": "93377",
+    "orgName": "GameOver",
+    "countryCode": "CO",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Video Game Accessories & Parts",
+          "percentage": 100,
+          "sampleProducts": ["Nintendo Switch parts", "PS2 adapters", "Xbox interfaces", "Memory cards", "HDMI adapters"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Retailer",
+      "confidenceScore": 0.95,
+      "reasoning": "Colombian video game accessories and repair parts store - Nintendo Switch, PlayStation, Xbox parts and adapters."
+    }
+  },
+  {
+    "_id": "93375",
+    "orgName": "Royale Ice And Drinks",
+    "countryCode": "NG",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Food & Beverage",
+          "subCategory": "Fresh Produce & Grocery",
+          "percentage": 60,
+          "sampleProducts": ["Turkey", "Ugwu vegetables", "Plantain", "Apples", "Watermelon"]
+        },
+        {
+          "industry": "Food & Beverage",
+          "subCategory": "Grains & Staples",
+          "percentage": 25,
+          "sampleProducts": ["Oatmeal", "Brown Rice", "Sweet Potatos"]
+        },
+        {
+          "industry": "Food & Beverage",
+          "subCategory": "Beverages & Ice",
+          "percentage": 15,
+          "sampleProducts": ["Ice products", "Drinks"]
+        }
+      ],
+      "primaryIndustry": "Food & Beverage",
+      "businessType": "Retailer",
+      "confidenceScore": 0.90,
+      "reasoning": "Nigerian food retailer with fresh produce, vegetables, fruits, meats, and grains. Name suggests ice/drinks as core but inventory is broader."
+    }
+  },
+  {
+    "_id": "93356",
+    "orgName": "COLLINS LIMITED",
+    "countryCode": null,
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Furniture",
+          "percentage": 45,
+          "sampleProducts": ["Recliner Chair", "Office Chair", "Glass Table", "Glass Cabinet"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Home Appliances",
+          "percentage": 35,
+          "sampleProducts": ["Large Oven", "Fridge", "Electric Blanket", "Electric Bike"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Tools & Equipment",
+          "percentage": 20,
+          "sampleProducts": ["Table Saw", "Folding Ladder", "Pet Clipper"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Retailer",
+      "confidenceScore": 0.85,
+      "reasoning": "Furniture and home goods retailer - mix of furniture, appliances, and tools. Invoices and clearance items suggest retail/liquidation business."
+    }
+  },
+  {
+    "_id": "93347",
+    "orgName": "Fabric sea",
+    "countryCode": "LK",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Textiles",
+          "subCategory": "Fabric Trading",
+          "percentage": 100,
+          "sampleProducts": ["Viscose", "Linen", "Chiffon", "Cotton Stripe", "Crush Linen", "Polo Chiffon"]
+        }
+      ],
+      "primaryIndustry": "Textiles",
+      "businessType": "Wholesaler",
+      "confidenceScore": 0.98,
+      "reasoning": "Sri Lankan fabric trader - all products are textile fabrics (linen, viscose, chiffon, cotton) for garment manufacturing."
+    }
+  },
+  {
+    "_id": "93339",
+    "orgName": "Dragon wholesalers and Retailers",
+    "countryCode": "NA",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Fashion & Apparel",
+          "percentage": 40,
+          "sampleProducts": ["Suit", "Dress", "Lady 2pcs", "Beanies", "Socks"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Home & Household",
+          "percentage": 30,
+          "sampleProducts": ["Pot", "Laundry basket", "Table", "Lunch Box"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Beauty & Hair",
+          "percentage": 30,
+          "sampleProducts": ["Synthetic Hair", "Mannequin Head"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.85,
+      "reasoning": "Namibian general trader - clothing, household items, and beauty products. Name confirms wholesale and retail operations."
+    }
+  },
+  {
+    "_id": "93338",
+    "orgName": "Jt cube Transport & Disposal services Pte.Ltd",
+    "countryCode": "SG",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Professional Services",
+          "subCategory": "E-Waste Disposal & Transport",
+          "percentage": 100,
+          "sampleProducts": ["Disposal Services", "Electronic equipment transport", "Labour for disposal"]
+        }
+      ],
+      "primaryIndustry": "Professional Services",
+      "businessType": "Service Provider",
+      "confidenceScore": 0.95,
+      "reasoning": "Singapore-based e-waste disposal and transport company. Services various commercial locations (hotels, offices, medical centers) for electronic equipment disposal."
+    }
+  },
+  {
+    "_id": "93326",
+    "orgName": "Luis Alvarez",
+    "countryCode": "AR",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Food & Beverage",
+          "subCategory": "Confectionery & Snacks",
+          "percentage": 80,
+          "sampleProducts": ["Gomita frutilla", "Kinderjoy", "Mantecol", "Pushpop", "Pico Dulce"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "General Merchandise",
+          "percentage": 20,
+          "sampleProducts": ["Foco 10w (bulb)", "Candela AA (batteries)", "Minora"]
+        }
+      ],
+      "primaryIndustry": "Food & Beverage",
+      "businessType": "Distributor",
+      "confidenceScore": 0.88,
+      "reasoning": "Argentine confectionery distributor - mostly candies, chocolates, and snacks with some general items. Classic kiosk/convenience store supplier."
+    }
+  },
+  {
+    "_id": "93319",
+    "orgName": "CCTV CAMERAS",
+    "countryCode": "PK",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Technology",
+          "subCategory": "Security & Surveillance Equipment",
+          "percentage": 100,
+          "sampleProducts": ["DVR 8 Channel", "2mp Cameras", "NVR", "HDD", "CCTV Cable", "BNC connectors"]
+        }
+      ],
+      "primaryIndustry": "Technology",
+      "businessType": "Retailer",
+      "confidenceScore": 0.98,
+      "reasoning": "Pakistani CCTV and security equipment supplier - cameras, DVRs, NVRs, cables, and accessories for surveillance systems."
+    }
+  },
+  {
+    "_id": "93304",
+    "orgName": "BECAEL SERVICES",
+    "countryCode": "CM",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Women's Fashion",
+          "percentage": 60,
+          "sampleProducts": ["Pantalon femme", "Chemisier", "Robe de mariage", "Jupe"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Men's Apparel",
+          "percentage": 25,
+          "sampleProducts": ["Pantalon jeans", "Pantalon kaki", "Pull over"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Formal/Religious Wear",
+          "percentage": 15,
+          "sampleProducts": ["Toge", "Soutane (cassock)"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Retailer",
+      "confidenceScore": 0.88,
+      "reasoning": "Cameroonian clothing retailer (French-language) - women's fashion, men's wear, and special occasion/religious garments."
+    }
+  },
+  {
+    "_id": "93289",
+    "orgName": "Myf Design",
+    "countryCode": "BE",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Construction",
+          "subCategory": "Interior Design & Ceiling Solutions",
+          "percentage": 70,
+          "sampleProducts": ["Plafond Tendu (stretch ceiling)", "Ciel Etoilés (star ceiling)", "Profilés"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Lighting Products",
+          "percentage": 30,
+          "sampleProducts": ["Spots Design GX53", "Ampoules LED", "Spots IP65"]
+        }
+      ],
+      "primaryIndustry": "Construction",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.90,
+      "reasoning": "Belgian interior design company specializing in stretch ceilings with integrated lighting. Products + installation services."
+    }
+  },
+  {
+    "_id": "93273",
+    "orgName": "Taller Dogs Killer. SA",
+    "countryCode": "CR",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Automotive",
+          "subCategory": "Motorcycle Parts",
+          "percentage": 60,
+          "sampleProducts": ["Bocina", "Tensoras", "Llanta Kenda", "Kit de Arrastre", "Rayos"]
+        },
+        {
+          "industry": "Professional Services",
+          "subCategory": "Motorcycle Repair",
+          "percentage": 40,
+          "sampleProducts": ["Reparación Choque", "Reparación de Rosca", "Soldadura"]
+        }
+      ],
+      "primaryIndustry": "Automotive",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.92,
+      "reasoning": "Costa Rican motorcycle repair shop - parts (tires, chains, horns) plus repair services (collision repair, welding, painting)."
+    }
+  },
+  {
+    "_id": "93260",
+    "orgName": "Grupo Bolivar",
+    "countryCode": null,
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Furniture & Bedding",
+          "percentage": 50,
+          "sampleProducts": ["Colchon de Resortes", "Somier King size", "tender"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "School Supplies & Bags",
+          "percentage": 35,
+          "sampleProducts": ["Mochila Carrito", "Mochila Escolar", "Mochila 3d", "bolso capibara"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "General Merchandise",
+          "percentage": 15,
+          "sampleProducts": ["Bice F1 bicycle", "caloventor", "sombrillas"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Wholesaler",
+      "confidenceScore": 0.85,
+      "reasoning": "Latin American wholesaler with diverse products - mattresses, school bags, bicycles, and household items."
+    }
+  },
+  {
+    "_id": "93259",
+    "orgName": "Polonia Home Fixer",
+    "countryCode": "DO",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Professional Services",
+          "subCategory": "Plumbing & Home Repair",
+          "percentage": 60,
+          "sampleProducts": ["Instalación Calentador", "Demolicion tuberia", "Correcion Filtración"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Plumbing Supplies",
+          "percentage": 40,
+          "sampleProducts": ["Calentador", "Manguera Flexible", "Llave De Paso", "Breaker"]
+        }
+      ],
+      "primaryIndustry": "Professional Services",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.90,
+      "reasoning": "Dominican home repair service - plumbing installations, repairs, tile work, plus supplies. Typical handyman/plumber business model."
+    }
+  },
+  {
+    "_id": "93246",
+    "orgName": "Prism Engineering Limited",
+    "countryCode": "ZM",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Construction",
+          "subCategory": "Electrical & Plumbing Supplies",
+          "percentage": 50,
+          "sampleProducts": ["Solar Cable", "G.I Pipe", "Conduit Pipe", "Cable Ties"]
+        },
+        {
+          "industry": "Energy",
+          "subCategory": "Solar Equipment",
+          "percentage": 30,
+          "sampleProducts": ["Solar Cable", "Joint Kit"]
+        },
+        {
+          "industry": "Construction",
+          "subCategory": "Hardware",
+          "percentage": 20,
+          "sampleProducts": ["Nylon Rope", "Insulation Tape", "G.I Bends"]
+        }
+      ],
+      "primaryIndustry": "Construction",
+      "businessType": "Distributor",
+      "confidenceScore": 0.85,
+      "reasoning": "Zambian engineering supplies company - electrical cables, plumbing materials, solar installation supplies, and hardware."
+    }
+  },
+  {
+    "_id": "93202",
+    "orgName": "RM CARSEV AUTO REPAIRS",
+    "countryCode": "ZA",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Automotive",
+          "subCategory": "Auto Repair Services",
+          "percentage": 70,
+          "sampleProducts": ["Major service", "Engine Flush", "Strip And Inspect", "Head Pressure Test"]
+        },
+        {
+          "industry": "Automotive",
+          "subCategory": "Auto Parts",
+          "percentage": 30,
+          "sampleProducts": ["Turbo Recon Unit", "EGR Valve", "Glow Plugs", "Map Sensor"]
+        }
+      ],
+      "primaryIndustry": "Automotive",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.95,
+      "reasoning": "South African auto repair shop - services (diagnostics, servicing) plus parts supply. Full-service automotive repair business."
+    }
+  },
+  {
+    "_id": "93185",
+    "orgName": "Innosight Technology Solutions",
+    "countryCode": "KE",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Technology",
+          "subCategory": "Hospitality Software Solutions",
+          "percentage": 50,
+          "sampleProducts": ["Hotelplus Billing", "Hotelplus Frontoffice", "Hotelplus Backoffice"]
+        },
+        {
+          "industry": "Technology",
+          "subCategory": "IT Hardware & Infrastructure",
+          "percentage": 30,
+          "sampleProducts": ["Switch POE", "Desktop Server", "Touch Terminals", "IP Cameras"]
+        },
+        {
+          "industry": "Professional Services",
+          "subCategory": "IT Services",
+          "percentage": 20,
+          "sampleProducts": ["Implementation And Training", "Networking", "Labour"]
+        }
+      ],
+      "primaryIndustry": "Technology",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.95,
+      "reasoning": "Kenyan IT company providing hospitality management software (POS, PMS) plus hardware and implementation services."
+    }
+  },
+  {
+    "_id": "93172",
+    "orgName": "Benjap enterprises",
+    "countryCode": "KE",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Energy",
+          "subCategory": "Solar Equipment",
+          "percentage": 40,
+          "sampleProducts": ["300w Solar Pannels (Jinko)", "Solar installation supplies"]
+        },
+        {
+          "industry": "Construction",
+          "subCategory": "Electrical Supplies",
+          "percentage": 60,
+          "sampleProducts": ["Cables (4mm, 2.5mm, 1.5mm)", "Circuit Breaker", "Consumer Unit", "Sockets"]
+        }
+      ],
+      "primaryIndustry": "Construction",
+      "businessType": "Retailer",
+      "confidenceScore": 0.90,
+      "reasoning": "Kenyan electrical and solar supplies retailer - cables, breakers, sockets, and solar panels for residential/commercial installations."
+    }
+  },
+  {
+    "_id": "93162",
+    "orgName": "ELECTRØN",
+    "countryCode": "NG",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Construction",
+          "subCategory": "Electrical Supplies",
+          "percentage": 100,
+          "sampleProducts": ["Knife Switch", "Cables", "Socket Outlets", "POP Spot Lights", "Trunking"]
+        }
+      ],
+      "primaryIndustry": "Construction",
+      "businessType": "Retailer",
+      "confidenceScore": 0.95,
+      "reasoning": "Nigerian electrical supplies store - switches, cables, outlets, and lighting products for construction and installation."
+    }
+  },
+  {
+    "_id": "93153",
+    "orgName": "ECHO WORLD ENTERPRISE",
+    "countryCode": "MY",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Professional Services",
+          "subCategory": "Building Maintenance & Repair",
+          "percentage": 100,
+          "sampleProducts": ["Water Meter repair", "Kitchen Socket Rewiring", "Cabinet Door Repair", "Toilet repair"]
+        }
+      ],
+      "primaryIndustry": "Professional Services",
+      "businessType": "Service Provider",
+      "confidenceScore": 0.95,
+      "reasoning": "Malaysian building maintenance company - plumbing, electrical, and general repairs for commercial establishments (bars, hotels, restaurants)."
+    }
+  },
+  {
+    "_id": "93150",
+    "orgName": "San",
+    "countryCode": "PK",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Textiles",
+          "subCategory": "Fabric Trading",
+          "percentage": 100,
+          "sampleProducts": ["Gazi fabric", "Boski", "Bin saleem", "Various fabric codes by meters"]
+        }
+      ],
+      "primaryIndustry": "Textiles",
+      "businessType": "Wholesaler",
+      "confidenceScore": 0.85,
+      "reasoning": "Pakistani fabric trader - products listed by fabric codes and sold by meters. Typical textile wholesale business."
+    }
+  },
+  {
+    "_id": "93148",
+    "orgName": "TOKO ALAT JAHIT ISMAEL",
+    "countryCode": "ID",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Textiles",
+          "subCategory": "Tailoring Supplies",
+          "percentage": 100,
+          "sampleProducts": ["Busa Jas (suit padding)", "Tricot", "Pelon (interfacing)", "Kapur (tailor's chalk)", "Ring jas"]
+        }
+      ],
+      "primaryIndustry": "Textiles",
+      "businessType": "Retailer",
+      "confidenceScore": 0.98,
+      "reasoning": "Indonesian tailoring supplies store (Toko Alat Jahit = Sewing Tools Shop) - interfacing, padding, chalk, and notions for garment making."
+    }
+  },
+  {
+    "_id": "93147",
+    "orgName": "HVR ENTERPRISES",
+    "countryCode": "IN",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Plastic & Packaging Products",
+          "percentage": 70,
+          "sampleProducts": ["Rajani", "Nandhini", "7 star (plastic bags by size)", "Color bags", "Brown bags"]
+        },
+        {
+          "industry": "Retail",
+          "subCategory": "Packaging Materials",
+          "percentage": 30,
+          "sampleProducts": ["Thread", "Dakon containers"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Wholesaler",
+      "confidenceScore": 0.80,
+      "reasoning": "Indian plastic bags and packaging wholesaler - products named by brand and size (common plastic bag naming convention in India)."
+    }
+  },
+  {
+    "_id": "93146",
+    "orgName": "Bengkel Supercat.id",
+    "countryCode": "ID",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Automotive",
+          "subCategory": "Auto Repair Services",
+          "percentage": 60,
+          "sampleProducts": ["Tune up", "Jasa pengerjaan", "Scan erase fault", "Engine mounting replacement"]
+        },
+        {
+          "industry": "Automotive",
+          "subCategory": "Auto Parts",
+          "percentage": 40,
+          "sampleProducts": ["Oli mesin Shell", "Filter udara", "Coil Hitachi", "Busi Denso"]
+        }
+      ],
+      "primaryIndustry": "Automotive",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.95,
+      "reasoning": "Indonesian auto repair workshop (Bengkel) - tune-ups, parts replacement, diagnostics. Mix of services and parts supply."
+    }
+  },
+  {
+    "_id": "93139",
+    "orgName": "Variklio Klinika",
+    "countryCode": "LT",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Automotive",
+          "subCategory": "Auto Repair Services",
+          "percentage": 50,
+          "sampleProducts": ["Suspension work", "Engine repairs"]
+        },
+        {
+          "industry": "Automotive",
+          "subCategory": "Auto Parts",
+          "percentage": 50,
+          "sampleProducts": ["ШРУС (CV joint)", "Рычаг (control arm)", "Свеча зажигания (spark plug)", "Глушитель (muffler)"]
+        }
+      ],
+      "primaryIndustry": "Automotive",
+      "businessType": "Hybrid",
+      "confidenceScore": 0.92,
+      "reasoning": "Lithuanian auto repair shop (Variklio Klinika = Engine Clinic) - parts in Russian/Lithuanian suggest Eastern European auto service with parts."
+    }
+  },
+  {
+    "_id": "93138",
+    "orgName": "Depo Aroma",
+    "countryCode": "ID",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Personal Care",
+          "subCategory": "Fragrances & Perfume Oils",
+          "percentage": 100,
+          "sampleProducts": ["VERSACE EROS", "DIOR SOUVAGE", "D&G LIGHT BLUE", "VICTORIA BOMBSHELL"]
+        }
+      ],
+      "primaryIndustry": "Personal Care",
+      "businessType": "Wholesaler",
+      "confidenceScore": 0.98,
+      "reasoning": "Indonesian fragrance depot - selling perfume oils/essences by gram. All products are fragrance names (designer brands)."
+    }
+  },
+  {
+    "_id": "93128",
+    "orgName": "JONATHAN ELECTRIC",
+    "countryCode": "DO",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Construction",
+          "subCategory": "Electrical Supplies",
+          "percentage": 100,
+          "sampleProducts": ["TUBO EMT", "CONECTOR EMT", "CURVA EMT", "Rosetas", "Interruptores"]
+        }
+      ],
+      "primaryIndustry": "Construction",
+      "businessType": "Retailer",
+      "confidenceScore": 0.95,
+      "reasoning": "Dominican electrical supplies store - EMT conduit, connectors, switches, outlets, and wiring accessories."
+    }
+  },
+  {
+    "_id": "93116",
+    "orgName": "Ceylon cabs & rent a car",
+    "countryCode": "LK",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Transportation",
+          "subCategory": "Car Rental & Chauffeur Services",
+          "percentage": 100,
+          "sampleProducts": ["Prado 150 rental", "LC 300 tours", "Rangerover rental", "Airport transfers"]
+        }
+      ],
+      "primaryIndustry": "Transportation",
+      "businessType": "Service Provider",
+      "confidenceScore": 0.98,
+      "reasoning": "Sri Lankan luxury car rental and chauffeur service - airport transfers and tours with premium vehicles (Land Cruiser, Prado, Range Rover)."
+    }
+  },
+  {
+    "_id": "93112",
+    "orgName": "Marasinghe Products",
+    "countryCode": "LK",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Food & Beverage",
+          "subCategory": "Spices & Condiments",
+          "percentage": 100,
+          "sampleProducts": ["Chilly powder", "Turmeric powder", "Pepper powder", "Spices powder", "Curry powder"]
+        }
+      ],
+      "primaryIndustry": "Food & Beverage",
+      "businessType": "Manufacturer",
+      "confidenceScore": 0.98,
+      "reasoning": "Sri Lankan spice manufacturer - chili, turmeric, pepper, curry powders in various sizes. Prices in Sri Lankan Rupees."
+    }
+  },
+  {
+    "_id": "93110",
+    "orgName": "Maranatha Barber and Supply",
+    "countryCode": "DO",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Personal Care",
+          "subCategory": "Barber Supplies",
+          "percentage": 100,
+          "sampleProducts": ["Alcohol", "Cliper WM", "Crema Afeitar", "Cool Care", "Papel Cuello", "Guantes"]
+        }
+      ],
+      "primaryIndustry": "Personal Care",
+      "businessType": "Retailer",
+      "confidenceScore": 0.98,
+      "reasoning": "Dominican barber supplies store - clippers, shaving cream, alcohol, neck strips, capes, and grooming products."
+    }
+  },
+  {
+    "_id": "93108",
+    "orgName": "JS CREATIONS & DESIGNS",
+    "countryCode": "PR",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Professional Services",
+          "subCategory": "Event Decoration & Lighting",
+          "percentage": 100,
+          "sampleProducts": ["Building tree lighting", "LED decorations", "Christmas decorations", "Event lighting"]
+        }
+      ],
+      "primaryIndustry": "Professional Services",
+      "businessType": "Service Provider",
+      "confidenceScore": 0.90,
+      "reasoning": "Puerto Rican event decoration company - specializing in building/tree illumination with LED lights for holidays and events."
+    }
+  },
+  {
+    "_id": "93032",
+    "orgName": "KIMAT LAMASAT FANNY EST",
+    "countryCode": "SA",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Construction",
+          "subCategory": "Drywall & Ceiling Materials",
+          "percentage": 100,
+          "sampleProducts": ["OMAGA (omega profiles)", "BOARD KHYYAT", "Accespanel", "Chanel", "Zaia", "masmar (screws)"]
+        }
+      ],
+      "primaryIndustry": "Construction",
+      "businessType": "Retailer",
+      "confidenceScore": 0.90,
+      "reasoning": "Saudi Arabian drywall/gypsum board supplies - omega profiles, channels, boards, screws, and ceiling materials."
+    }
+  },
+  {
+    "_id": "92988",
+    "orgName": "RaysAuto",
+    "countryCode": "JM",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Automotive",
+          "subCategory": "Auto Repair Services",
+          "percentage": 100,
+          "sampleProducts": ["Disc Pad Replacement", "Fuel Filter Replacement", "Engine Overhaul", "Transmission Service"]
+        }
+      ],
+      "primaryIndustry": "Automotive",
+      "businessType": "Service Provider",
+      "confidenceScore": 0.98,
+      "reasoning": "Jamaican auto repair shop - all entries are repair services (brake work, engine, transmission, suspension). Pure service provider."
+    }
+  },
+  {
+    "_id": "92983",
+    "orgName": "Idebox",
+    "countryCode": "ID",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Manufacturing",
+          "subCategory": "Packaging & Boxes",
+          "percentage": 100,
+          "sampleProducts": ["Kraft boxes (R2-R10K)", "LB boxes", "Box 18/20", "Paper bags", "Hampers boxes"]
+        }
+      ],
+      "primaryIndustry": "Manufacturing",
+      "businessType": "Manufacturer",
+      "confidenceScore": 0.95,
+      "reasoning": "Indonesian packaging company - kraft boxes, paper bags, and gift boxes in various sizes. Name 'Idebox' confirms packaging business."
+    }
+  },
+  {
+    "_id": "92974",
+    "orgName": "Nefertyshop",
+    "countryCode": "DO",
+    "classification": {
+      "isMultiIndustry": true,
+      "industries": [
+        {
+          "industry": "Retail",
+          "subCategory": "Women's Fashion",
+          "percentage": 70,
+          "sampleProducts": ["Jean Colombiano", "Leggins", "Top", "Vestido", "Enterizo"]
+        },
+        {
+          "industry": "Personal Care",
+          "subCategory": "Shapewear",
+          "percentage": 30,
+          "sampleProducts": ["Faja Cinturilla Neopreno", "Nefertyslim shapewear"]
+        }
+      ],
+      "primaryIndustry": "Retail",
+      "businessType": "Retailer",
+      "confidenceScore": 0.92,
+      "reasoning": "Dominican women's fashion boutique - Colombian jeans, tops, dresses, and shapewear. E-commerce fashion retailer."
+    }
+  },
+  {
+    "_id": "92973",
+    "orgName": "PAPC",
+    "countryCode": "PK",
+    "classification": {
+      "isMultiIndustry": false,
+      "industries": [
+        {
+          "industry": "Healthcare",
+          "subCategory": "Aesthetic & Dermatology Supplies",
+          "percentage": 100,
+          "sampleProducts": ["Meso Needles", "Plasma Pen", "MNRF Needles", "Derma Heal serums", "BB Glow", "Hydra facial"]
+        }
+      ],
+      "primaryIndustry": "Healthcare",
+      "businessType": "Distributor",
+      "confidenceScore": 0.95,
+      "reasoning": "Pakistani aesthetic medicine supplies distributor - mesotherapy, dermal products, plasma pen, serums for skin clinics."
+    }
+  }
+]
