@@ -1,0 +1,64 @@
+{
+    "_id": "93621",
+    "orgName": "KBA ELECTRICALS - HOME DEPOT",
+    "businessId": "",
+    "countryCode": "GH",
+    "product_names": [
+        {
+            "productName": "4-PIN-CHOKE",
+            "categoryName": "ELECTRICAL ACCESSORY",
+            "unit": "pcs",
+            "productCode": "CHOKE",
+            "typeOfCommodity": 1,
+            "discription": "pcs"
+        },
+        {
+            "productName": "NEON-CHOKE",
+            "categoryName": "ELECTRICAL ACCESSORY",
+            "unit": "PCS",
+            "productCode": "CHOKE",
+            "typeOfCommodity": 1,
+            "discription": "pcs"
+        },
+        {
+            "productName": "1-COLOR-CHOKE",
+            "categoryName": "ELECTRICAL ACCESSORY",
+            "unit": "pcs",
+            "productCode": "CHOKE",
+            "typeOfCommodity": 1,
+            "discription": "pcs"
+        },
+        {
+            "productName": "H02-SPOTLIGHT-BLK-3W-WHWW/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "H109-SPOTLIGHT-GRN-3W-WHWW/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "H109-SPOTLIGHT-BL-3W-WHWW/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "Shirting Linen",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        }
+    ]
+}

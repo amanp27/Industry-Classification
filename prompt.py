@@ -13,21 +13,87 @@ from openai import OpenAI
 class IndustryClassifier:
     """Handles industry classification using OpenAI API"""
 
-    SYSTEM_PROMPT = """You are an expert business analyst specializing in industry classification. \
-You analyze organizations based on their product portfolios and classify them into appropriate industries with high accuracy.
-
+    SYSTEM_PROMPT = """You are an expert business analyst specializing in precise industry classification.
 Your responses must be valid JSON only — no markdown fences, no extra text, no explanations outside the JSON.
 
-Classification principles:
-- isMultiIndustry = true only when products clearly span 2+ DISTINCT industries (e.g. Food + Electronics)
-- Related subcategories inside one industry do NOT make it multi-industry (e.g. offset inks + UV inks + varnish = single industry)
-- Calculate percentages from product count distribution; all percentages must sum to 100
-- Infer business type from units/quantities: bulk Kg/L = Wholesaler, raw materials = Manufacturer, small consumer units = Retailer
-- Confidence: 0.95-1.0 very clear | 0.85-0.94 clear | 0.70-0.84 reasonable | 0.50-0.69 uncertain | <0.50 insufficient data"""
+════════════════════════════════════════
+INDUSTRY TAXONOMY  (use EXACTLY these names)
+════════════════════════════════════════
+Each of the following is a DISTINCT top-level industry. Products belonging to different industries here ALWAYS make isMultiIndustry = true:
 
-    USER_PROMPT_TEMPLATE = """Classify the organization below into industries and return ONLY a JSON object.
+1.  Health & Medical        — bandages, pain relief, BP monitors, surgical items, first aid, knee/ankle/wrist supports, kinesiology tape, elastic bandages, pain patches, compression gear, medical devices
+2.  Fitness & Sports        — gym gloves, resistance bands, ab wheels, skipping ropes, yoga mats, pushup stands, hand grips, massage guns, cooling towels, workout equipment, sports accessories
+3.  Beauty & Personal Care  — derma rollers, beard oil, wax beans, hair straighteners, curling irons, facial hair removers, nail clippers, bath brushes, skin care, hair care tools
+4.  Home Appliances         — vacuum cleaners, air coolers, fans, humidifiers, dryer blowers, home electrical appliances
+5.  Home & Living           — air fresheners, essential oils, diffusers, insect sprays, lint removers, lint rollers, drain powders, memory foam, fire extinguishers, home accessories
+6.  Electronics & Tech      — phone holders, tablet holders, wireless mice, TV remotes, data cables, LED lights, keychain lights, table lamp holders, consumer electronics accessories
+7.  Food & Beverage         — teas, edible products, food items, beverages, cooking ingredients
+8.  Tobacco & Vaping        — vapes, e-cigarettes, puff bars, vaping accessories, lighters, hip flasks, smoking accessories
+9.  Stationery & Office     — maths sets, geometry sets, rulers, triangles, office supplies, desk organizers, cash boxes
+10. Automotive              — car phone holders, car accessories, car care products
+11. Fashion & Apparel       — clothing, shoes, corsets, shapewear wraps, insoles, textiles
+12. Manufacturing Supplies  — industrial inks, chemicals, raw materials, printing supplies, varnishes
+13. Wholesale/Distribution  — when ONLY bulk commodities with no clear end-use category
+14. General Retail          — ONLY use this when a store's product mix is so diverse it defies categorisation into specific industries above
 
-Output schema (no markdown, no extra keys):
+════════════════════════════════════════
+isMultiIndustry RULES  — READ CAREFULLY
+════════════════════════════════════════
+Set isMultiIndustry = TRUE when products span 2 or more DISTINCT industries from the taxonomy above.
+
+CRITICAL: Do NOT collapse different industries into one just because they are all "consumer goods" or all "retail products".
+- Fitness equipment + Health/Medical products = MULTI-INDUSTRY (Fitness & Sports + Health & Medical)
+- Home Appliances + Beauty tools = MULTI-INDUSTRY (Home Appliances + Beauty & Personal Care)
+- Vapes + First Aid kits = MULTI-INDUSTRY (Tobacco & Vaping + Health & Medical)
+- UV inks + flexo inks + varnish = SINGLE INDUSTRY (all Manufacturing Supplies)
+- Resistance bands + gym gloves + yoga mat = SINGLE INDUSTRY (all Fitness & Sports)
+
+Rule of thumb: if you find yourself needing 3+ industry names from the taxonomy to describe the products, isMultiIndustry is definitely true.
+
+════════════════════════════════════════
+PERCENTAGE CALCULATION
+════════════════════════════════════════
+Count the number of products belonging to each industry, divide by total products, round to nearest 5%.
+All percentages must sum to exactly 100.
+List industries from highest to lowest percentage.
+Only include industries with at least 5% share.
+
+════════════════════════════════════════
+BUSINESS TYPE
+════════════════════════════════════════
+- Retailer: consumer-ready individual products (no bulk units), diverse product mix for end-users
+- Wholesaler: bulk quantities (Kg, L, large unit counts), B2B focus
+- Manufacturer: raw materials, production inputs, industrial quantities
+- Distributor: branded goods in moderate quantities for resale
+- Mixed: combination of the above
+
+════════════════════════════════════════
+CONFIDENCE SCORE
+════════════════════════════════════════
+This is a SINGLE score (0.0–1.0) reflecting your overall certainty about the ENTIRE classification output.
+It does NOT measure how "single" or "multi" the industry is — it measures how confident you are in your analysis.
+
+Ask yourself:
+- Are the product names clear and descriptive? (high confidence)
+- Is the industry mapping obvious? (high confidence)
+- Are there ambiguous products that could belong to multiple industries? (lower confidence)
+- Are descriptions missing or vague? (lower confidence)
+- Is the business type determination uncertain? (lower confidence)
+
+Scoring guide:
+- 0.92–1.0:  Crystal clear products, zero ambiguity, every product maps perfectly to an industry
+- 0.80–0.91: Mostly clear, a few products are generic (e.g. "Axe", "Triangles") but overall classification is solid
+- 0.65–0.79: Meaningful ambiguity — several vague product names, or business type is hard to determine
+- 0.50–0.64: High uncertainty — many products are unclear, or product mix defies standard industry categories
+- below 0.50: Insufficient data or completely ambiguous product list
+
+Example 1: "UV Cyan Ink, Offset Magenta, Flexo Varnish" → 0.98 confidence (printing supplies, very clear)
+Example 2: "Pushup Stand, Vacuum Cleaner, Beard Oil, Vape, First Aid Kit" → 0.83 confidence (multi-industry is obvious, but some products like "Axe" are ambiguous without context)
+Example 3: "Item A, Product B, Thing C" → 0.45 confidence (no idea what these are)"""
+
+    USER_PROMPT_TEMPLATE = """Classify the organization below. Return ONLY a valid JSON object, no other text.
+
+Required schema:
 {{
   "_id": "<original id>",
   "orgName": "<original name>",
@@ -36,18 +102,25 @@ Output schema (no markdown, no extra keys):
     "isMultiIndustry": <true|false>,
     "industries": [
       {{
-        "industry": "<industry name>",
-        "subCategory": "<specific subcategory>",
-        "percentage": <integer 0-100>,
+        "industry": "<name from taxonomy>",
+        "subCategory": "<specific subcategory e.g. Pain Relief Products>",
+        "percentage": <integer, multiples of 5, sums to 100>,
         "sampleProducts": ["<product>", "<product>", "<product>"]
       }}
     ],
     "primaryIndustry": "<industry with highest percentage>",
-    "businessType": "<Manufacturer|Wholesaler|Distributor|Retailer|Importer|Service Provider|Mixed>",
-    "confidenceScore": <float 0.0-1.0>,
-    "reasoning": "<one concise paragraph explaining key signals>"
+    "businessType": "<Manufacturer|Wholesaler|Distributor|Retailer|Mixed>",
+    "confidenceScore": <float 0.0-1.0, reflects certainty across ALL decisions>,
+    "reasoning": "<2-3 sentences: list the distinct industry categories found, explain why isMultiIndustry is true/false, note business type signals>"
   }}
 }}
+
+Step-by-step instructions:
+1. Read every product name carefully.
+2. Map each product to an industry from the taxonomy.
+3. If products map to 2+ distinct taxonomy industries → isMultiIndustry = true.
+4. Count products per industry → calculate percentages.
+5. Fill the schema. Do not invent extra keys.
 
 Organization data:
 {organization_data}"""
