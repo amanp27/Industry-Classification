@@ -295,7 +295,7 @@ if not st.session_state.auto_init_done and os.getenv("OPENAI_API_KEY"):
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### 🏭 Industry Classifier")
+    st.markdown("## 🏭 Industry Classifier")
     st.markdown("<hr>", unsafe_allow_html=True)
     st.markdown("##### Configuration")
 
@@ -324,7 +324,7 @@ with st.sidebar:
                 except Exception as e:
                     st.error(str(e))
             else:
-                st.warning("Enter your API key first.")
+                st.warning("Enter your API key first.", icon="⚠️")
     else:
         # Show current model and allow model switching
         if st.button("Switch Model", type="primary"):
