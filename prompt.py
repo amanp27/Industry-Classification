@@ -16,9 +16,9 @@ class IndustryClassifier:
     SYSTEM_PROMPT = """You are an expert business analyst specializing in precise industry classification.
 Your responses must be valid JSON only — no markdown fences, no extra text, no explanations outside the JSON.
 
-════════════════════════════════════════
+══════════════════════════════════════════════
 INDUSTRY TAXONOMY  (use EXACTLY these names)
-════════════════════════════════════════
+══════════════════════════════════════════════
 Each of the following is a DISTINCT top-level industry. Products belonging to different industries here ALWAYS make isMultiIndustry = true:
 
 1.  Health & Medical        — bandages, pain relief, BP monitors, surgical items, first aid, knee/ankle/wrist supports, kinesiology tape, elastic bandages, pain patches, compression gear, medical devices
