@@ -16,84 +16,153 @@ class IndustryClassifier:
     SYSTEM_PROMPT = """You are an expert business analyst specializing in precise industry classification.
 Your responses must be valid JSON only — no markdown fences, no extra text, no explanations outside the JSON.
 
-══════════════════════════════════════════════
-INDUSTRY TAXONOMY  (use EXACTLY these names)
-══════════════════════════════════════════════
-Each of the following is a DISTINCT top-level industry. Products belonging to different industries here ALWAYS make isMultiIndustry = true:
+════════════════════════════════════════
+STEP 1: PRODUCT-TO-INDUSTRY MAPPING (DETERMINISTIC)
+════════════════════════════════════════
+Map EVERY product to EXACTLY ONE industry using these rules:
 
-1.  Health & Medical        — bandages, pain relief, BP monitors, surgical items, first aid, knee/ankle/wrist supports, kinesiology tape, elastic bandages, pain patches, compression gear, medical devices
-2.  Fitness & Sports        — gym gloves, resistance bands, ab wheels, skipping ropes, yoga mats, pushup stands, hand grips, massage guns, cooling towels, workout equipment, sports accessories
-3.  Beauty & Personal Care  — derma rollers, beard oil, wax beans, hair straighteners, curling irons, facial hair removers, nail clippers, bath brushes, skin care, hair care tools
-4.  Home Appliances         — vacuum cleaners, air coolers, fans, humidifiers, dryer blowers, home electrical appliances
-5.  Home & Living           — air fresheners, essential oils, diffusers, insect sprays, lint removers, lint rollers, drain powders, memory foam, fire extinguishers, home accessories
-6.  Electronics & Tech      — phone holders, tablet holders, wireless mice, TV remotes, data cables, LED lights, keychain lights, table lamp holders, consumer electronics accessories
-7.  Food & Beverage         — teas, edible products, food items, beverages, cooking ingredients
-8.  Tobacco & Vaping        — vapes, e-cigarettes, puff bars, vaping accessories, lighters, hip flasks, smoking accessories
-9.  Stationery & Office     — maths sets, geometry sets, rulers, triangles, office supplies, desk organizers, cash boxes
-10. Automotive              — car phone holders, car accessories, car care products
-11. Fashion & Apparel       — clothing, shoes, corsets, shapewear wraps, insoles, textiles
-12. Manufacturing Supplies  — industrial inks, chemicals, raw materials, printing supplies, varnishes
-13. Wholesale/Distribution  — when ONLY bulk commodities with no clear end-use category
-14. General Retail          — ONLY use this when a store's product mix is so diverse it defies categorisation into specific industries above
+**Electronics & Tech**
+- Electrical accessories: chokes, switches, plugs, sockets, wiring, circuit breakers, transformers, ballasts
+- Lighting: LED bulbs, spotlights, tube lights, lamps, fixtures
+- Consumer electronics: phones, tablets, TVs, remotes, cables, adapters, chargers
+- Tech accessories: phone holders, wireless mice, keyboards, USB devices
+
+**Fashion & Apparel**
+- Textiles: shirting fabric, linen, cotton, silk, polyester fabric, dress materials
+- Clothing: shirts, pants, dresses, jackets, uniforms
+- Footwear: shoes, sandals, boots, insoles
+- Accessories: belts, ties, scarves, shapewear
+
+**Home Appliances**
+- Large appliances: vacuum cleaners, air coolers, fans, humidifiers, heaters, dryers
+
+**Home & Living**
+- Home accessories: air fresheners, diffusers, organizers, storage, decor
+- Cleaning supplies: detergents, sprays, wipes, drain cleaners
+
+**Health & Medical**
+- Medical supplies: bandages, gauze, surgical items, first aid kits
+- Health devices: BP monitors, thermometers, glucose meters
+- Pain relief: pain patches, compression supports, braces, tapes
+
+**Fitness & Sports**
+- Gym equipment: weights, resistance bands, ab wheels, pushup stands
+- Sports gear: yoga mats, skipping ropes, hand grips, massage guns
+
+**Beauty & Personal Care**
+- Hair care: straighteners, curling irons, dryers, brushes
+- Skincare: derma rollers, wax, facial tools
+- Personal grooming: beard oil, nail clippers, bath brushes
+
+**Food & Beverage**
+- Edibles: teas, spices, snacks, drinks, cooking ingredients
+
+**Tobacco & Vaping**
+- Vapes, e-cigarettes, lighters, smoking accessories
+
+**Stationery & Office**
+- Office supplies: pens, paper, rulers, geometry sets, calculators, desk organizers
+
+**Automotive**
+- Car parts and accessories, car care products
+
+**Manufacturing Supplies**
+- Industrial materials: inks, chemicals, adhesives, solvents, printing supplies
 
 ════════════════════════════════════════
-isMultiIndustry RULES  — READ CAREFULLY
+STEP 2: COUNT DISTINCT INDUSTRIES (DETERMINISTIC)
 ════════════════════════════════════════
-Set isMultiIndustry = TRUE when products span 2 or more DISTINCT industries from the taxonomy above.
+After mapping every product:
+1. Count unique industries
+2. If unique_industries >= 2 → isMultiIndustry = TRUE
+3. If unique_industries == 1 → isMultiIndustry = FALSE
 
-CRITICAL: Do NOT collapse different industries into one just because they are all "consumer goods" or all "retail products".
-- Fitness equipment + Health/Medical products = MULTI-INDUSTRY (Fitness & Sports + Health & Medical)
-- Home Appliances + Beauty tools = MULTI-INDUSTRY (Home Appliances + Beauty & Personal Care)
-- Vapes + First Aid kits = MULTI-INDUSTRY (Tobacco & Vaping + Health & Medical)
-- UV inks + flexo inks + varnish = SINGLE INDUSTRY (all Manufacturing Supplies)
-- Resistance bands + gym gloves + yoga mat = SINGLE INDUSTRY (all Fitness & Sports)
-
-Rule of thumb: if you find yourself needing 3+ industry names from the taxonomy to describe the products, isMultiIndustry is definitely true.
+NO EXCEPTIONS. This is a simple count, not a judgment call.
 
 ════════════════════════════════════════
-PERCENTAGE CALCULATION
+EXAMPLE: DETERMINISTIC CLASSIFICATION
 ════════════════════════════════════════
-Count the number of products belonging to each industry, divide by total products, round to nearest 5%.
-All percentages must sum to exactly 100.
-List industries from highest to lowest percentage.
+Input products:
+1. "4-PIN-CHOKE" → Electronics & Tech
+2. "NEON-CHOKE" → Electronics & Tech
+3. "1-COLOR-CHOKE" → Electronics & Tech
+4. "H02-SPOTLIGHT" → Electronics & Tech
+5. "H109-SPOTLIGHT" → Electronics & Tech
+6. "H109-SPOTLIGHT-BL" → Electronics & Tech
+7. "Shirting Linen" → Fashion & Apparel
+
+Industry count:
+- Electronics & Tech: 6 products (86%)
+- Fashion & Apparel: 1 product (14%)
+
+Unique industries = 2 → isMultiIndustry = TRUE
+
+This result is IDENTICAL regardless of which model runs it.
+
+════════════════════════════════════════
+STEP 3: PERCENTAGE CALCULATION
+════════════════════════════════════════
+percentage = (products_in_industry / total_products) * 100
+Round to nearest 5%. All percentages must sum to exactly 100.
 Only include industries with at least 5% share.
 
 ════════════════════════════════════════
-BUSINESS TYPE
+BUSINESS TYPE (DETERMINISTIC RULES)
 ════════════════════════════════════════
-- Retailer: consumer-ready individual products (no bulk units), diverse product mix for end-users
-- Wholesaler: bulk quantities (Kg, L, large unit counts), B2B focus
-- Manufacturer: raw materials, production inputs, industrial quantities
-- Distributor: branded goods in moderate quantities for resale
-- Mixed: combination of the above
+1. Check units field:
+   - "Bx" (box), "pcs" (pieces), "unit" → IF quantity in description is >100 → Wholesaler
+   - "Kg", "L" with large quantities → Wholesaler
+   - Small quantities or no units → Retailer
+
+2. Check product diversity:
+   - 2+ distinct industries → likely Retailer (unless all bulk units)
+   - 1 industry + bulk units → Wholesaler
+   - Industrial materials → Manufacturer
+
+For this input:
+- Units: "pcs", "Bx" with "200 pcs per box" → Wholesaler (bulk quantities)
 
 ════════════════════════════════════════
-CONFIDENCE SCORE
+CONFIDENCE SCORE (DETERMINISTIC RULES)
 ════════════════════════════════════════
-This is a SINGLE score (0.0–1.0) reflecting your overall certainty about the ENTIRE classification output.
-It does NOT measure how "single" or "multi" the industry is — it measures how confident you are in your analysis.
+Start at 1.0, subtract penalties:
 
-Ask yourself:
-- Are the product names clear and descriptive? (high confidence)
-- Is the industry mapping obvious? (high confidence)
-- Are there ambiguous products that could belong to multiple industries? (lower confidence)
-- Are descriptions missing or vague? (lower confidence)
-- Is the business type determination uncertain? (lower confidence)
+- Missing descriptions for >50% products: -0.10
+- Vague product names (e.g. "Item A"): -0.05 per vague product (max -0.20)
+- Missing units: -0.05
+- Ambiguous category assignment: -0.10
 
-Scoring guide:
-- 0.92–1.0:  Crystal clear products, zero ambiguity, every product maps perfectly to an industry
-- 0.80–0.91: Mostly clear, a few products are generic (e.g. "Axe", "Triangles") but overall classification is solid
-- 0.65–0.79: Meaningful ambiguity — several vague product names, or business type is hard to determine
-- 0.50–0.64: High uncertainty — many products are unclear, or product mix defies standard industry categories
-- below 0.50: Insufficient data or completely ambiguous product list
+Final score clamped to [0.50, 1.0].
 
-Example 1: "UV Cyan Ink, Offset Magenta, Flexo Varnish" → 0.98 confidence (printing supplies, very clear)
-Example 2: "Pushup Stand, Vacuum Cleaner, Beard Oil, Vape, First Aid Kit" → 0.83 confidence (multi-industry is obvious, but some products like "Axe" are ambiguous without context)
-Example 3: "Item A, Product B, Thing C" → 0.45 confidence (no idea what these are)"""
+For this input:
+- 6/7 products have clear names: -0.00
+- 1/7 has no description: -0.05
+- Units present: -0.00
+- Clear categories: -0.00
+Score: 0.95
 
-    USER_PROMPT_TEMPLATE = """Classify the organization below. Return ONLY a valid JSON object, no other text.
+════════════════════════════════════════
+CRITICAL CONSISTENCY RULES
+════════════════════════════════════════
+1. ALWAYS map "Shirting", "Linen", "Fabric" → Fashion & Apparel
+2. ALWAYS map "CHOKE", "SPOTLIGHT", "LED", "Electrical" → Electronics & Tech
+3. ALWAYS count distinct industries from step 1
+4. If count >= 2 → isMultiIndustry = TRUE (no exceptions)
+5. Never collapse industries into "General Retail" unless product mix is truly uncategorizable
 
-Required schema:
+These rules ensure gpt-4o-mini and gpt-4o produce IDENTICAL results."""
+
+    USER_PROMPT_TEMPLATE = """Classify the organization below. Follow the exact steps in the system prompt.
+
+MANDATORY PROCESS:
+1. Map each product to an industry using the deterministic mapping rules
+2. Count distinct industries
+3. If count >= 2 → isMultiIndustry = TRUE, else FALSE
+4. Calculate percentages (product_count / total * 100, round to 5%)
+5. Determine business type using unit/quantity rules
+6. Calculate confidence score using penalty system
+
+Return ONLY this JSON structure (no markdown, no extra keys):
 {{
   "_id": "<original id>",
   "orgName": "<original name>",
@@ -103,27 +172,22 @@ Required schema:
     "industries": [
       {{
         "industry": "<name from taxonomy>",
-        "subCategory": "<specific subcategory e.g. Pain Relief Products>",
-        "percentage": <integer, multiples of 5, sums to 100>,
+        "subCategory": "<specific subcategory>",
+        "percentage": <integer, multiple of 5, sum=100>,
         "sampleProducts": ["<product>", "<product>", "<product>"]
       }}
     ],
     "primaryIndustry": "<industry with highest percentage>",
-    "businessType": "<Manufacturer|Wholesaler|Distributor|Retailer|Mixed>",
-    "confidenceScore": <float 0.0-1.0, reflects certainty across ALL decisions>,
-    "reasoning": "<2-3 sentences: list the distinct industry categories found, explain why isMultiIndustry is true/false, note business type signals>"
+    "businessType": "<Manufacturer|Wholesaler|Retailer|Distributor|Mixed>",
+    "confidenceScore": <float 0.5-1.0>,
+    "reasoning": "<2-3 sentences: (1) list distinct industries found, (2) state product count per industry, (3) explain isMultiIndustry decision>"
   }}
 }}
 
-Step-by-step instructions:
-1. Read every product name carefully.
-2. Map each product to an industry from the taxonomy.
-3. If products map to 2+ distinct taxonomy industries → isMultiIndustry = true.
-4. Count products per industry → calculate percentages.
-5. Fill the schema. Do not invent extra keys.
-
 Organization data:
-{organization_data}"""
+{organization_data}
+
+CRITICAL REMINDER: Map "Shirting Linen" → Fashion & Apparel, "CHOKE/SPOTLIGHT" → Electronics & Tech. If you find 2+ distinct industries, isMultiIndustry MUST be true."""
 
     def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4o-mini"):
         """
@@ -164,7 +228,7 @@ Organization data:
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
-                temperature=0.2,
+                temperature=0.0,  # Completely deterministic - no randomness
                 max_tokens=2048,
                 response_format={"type": "json_object"},   # guarantees valid JSON back
                 messages=[

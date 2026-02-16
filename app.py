@@ -481,7 +481,7 @@ with tab1:
                 json_str = json.dumps(res, indent=2, ensure_ascii=False)
                 st.code(json_str, language="json", line_numbers=False)
                 st.download_button(
-                    label="📋 Copy JSON",
+                    label="📋 Download JSON",
                     data=json_str,
                     file_name=f"classification_{res.get('_id', 'result')}.json",
                     mime="application/json",
