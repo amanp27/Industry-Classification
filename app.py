@@ -92,7 +92,7 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; color-scheme: d
 
 /* ─── Result / info panels ─── */
 .result-panel {
-    background: #0d0f18;
+    background: #131625;
     border: 1px solid #1e2438;
     border-radius: 10px;
     padding: 1.1rem 1.3rem;
@@ -218,48 +218,78 @@ div[data-testid="stAlert"][class*="info"]    { background: rgba(37,99,235,0.1) !
 [data-testid="stExpander"] summary { font-size: 0.83rem !important; font-weight: 500 !important; color: #5a647a !important; }
 [data-testid="stExpander"] summary:hover { color: #8b95b0 !important; }
 
-/* ─── Dataframe — FORCE light text on dark background ─── */
+/* ─── Dataframe — NUCLEAR OPTION: Force visible text ─── */
 [data-testid="stDataFrame"] {
     border-radius: 10px !important;
     overflow: hidden !important;
     border: 1px solid #1e2438 !important;
-}
-/* Target all dataframe cells */
-[data-testid="stDataFrame"] div[data-testid="stDataFrameResizable"],
-[data-testid="stDataFrame"] div,
-[data-testid="stDataFrame"] table,
-[data-testid="stDataFrame"] tbody,
-[data-testid="stDataFrame"] tr,
-[data-testid="stDataFrame"] td {
     background: #0d0f18 !important;
-    color: #a9b3cf !important;
 }
-/* Headers */
-[data-testid="stDataFrame"] thead th,
-[data-testid="stDataFrame"] th {
+
+/* Target ALL possible text elements with maximum specificity */
+[data-testid="stDataFrame"] *,
+[data-testid="stDataFrame"] div,
+[data-testid="stDataFrame"] span,
+[data-testid="stDataFrame"] p,
+[data-testid="stDataFrame"] td,
+[data-testid="stDataFrame"] th,
+[data-testid="stDataFrame"] [role="cell"],
+[data-testid="stDataFrame"] [role="columnheader"],
+[data-testid="stDataFrame"] [class*="cell"],
+[data-testid="stDataFrame"] [class*="Cell"],
+[data-testid="stDataFrame"] [data-testid*="cell"] {
+    color: #c9d8f0 !important;
+    background: transparent !important;
+}
+
+/* Headers - darker text */
+[data-testid="stDataFrame"] thead *,
+[data-testid="stDataFrame"] th,
+[data-testid="stDataFrame"] [role="columnheader"] {
     background: #131625 !important;
-    color: #5a647a !important;
+    color: #6b7a99 !important;
     font-size: 0.72rem !important;
     text-transform: uppercase !important;
     letter-spacing: 0.6px !important;
     font-weight: 600 !important;
-    border-bottom: 1px solid #1e2438 !important;
 }
-/* Cell borders */
+
+/* Table structure */
+[data-testid="stDataFrame"] table {
+    background: #0d0f18 !important;
+}
+
+[data-testid="stDataFrame"] tbody {
+    background: #0d0f18 !important;
+}
+
+[data-testid="stDataFrame"] tr {
+    background: #0d0f18 !important;
+}
+
 [data-testid="stDataFrame"] td {
-    border-bottom: 1px solid #161825 !important;
-    font-size: 0.82rem !important;
-    padding: 0.5rem 0.7rem !important;
-}
-/* Hover state */
-[data-testid="stDataFrame"] tr:hover td {
-    background: #131625 !important;
-}
-/* Selected cell */
-[data-testid="stDataFrame"] [aria-selected="true"],
-[data-testid="stDataFrame"] .cell-selected {
-    background: #1a1e2e !important;
+    background: #0d0f18 !important;
     color: #c9d8f0 !important;
+    border-bottom: 1px solid #1a1e2e !important;
+    font-size: 0.83rem !important;
+    padding: 0.6rem 0.8rem !important;
+}
+
+/* Hover */
+[data-testid="stDataFrame"] tr:hover,
+[data-testid="stDataFrame"] tr:hover td,
+[data-testid="stDataFrame"] tr:hover * {
+    background: #161b27 !important;
+    color: #e8edf8 !important;
+}
+
+/* Selected/Active cells */
+[data-testid="stDataFrame"] [aria-selected="true"],
+[data-testid="stDataFrame"] [aria-selected="true"] *,
+[data-testid="stDataFrame"] .selected,
+[data-testid="stDataFrame"] .active {
+    background: #1c2235 !important;
+    color: #e8edf8 !important;
 }
 
 /* ─── Caption ─── */
@@ -295,7 +325,7 @@ if not st.session_state.auto_init_done and os.getenv("OPENAI_API_KEY"):
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🏭 Industry Classifier")
+    st.markdown("### 🏭 Industry Classifier")
     st.markdown("<hr>", unsafe_allow_html=True)
     st.markdown("##### Configuration")
 
@@ -324,7 +354,7 @@ with st.sidebar:
                 except Exception as e:
                     st.error(str(e))
             else:
-                st.warning("Enter your API key first.", icon="⚠️")
+                st.warning("Enter your API key first.")
     else:
         # Show current model and allow model switching
         if st.button("Switch Model", type="primary"):
@@ -481,7 +511,7 @@ with tab1:
                 json_str = json.dumps(res, indent=2, ensure_ascii=False)
                 st.code(json_str, language="json", line_numbers=False)
                 st.download_button(
-                    label="📋 Download JSON",
+                    label="📋 Copy JSON",
                     data=json_str,
                     file_name=f"classification_{res.get('_id', 'result')}.json",
                     mime="application/json",
