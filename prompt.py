@@ -59,7 +59,7 @@ Pick EXACTLY ONE from this fixed list. No other values allowed.
 1. "Seller"
    WHO: Any org selling products — whether retail shop, wholesale dealer, distributor, importer, e-commerce
    SIGNALS: Sells finished goods to buyers (B2C or B2B), diverse product catalogue, no service offerings
-   EXAMPLES: retail store, wholesale dealer, online shop, trading company, supermarket, mart, depot, home depot, general store, export/import company
+   EXAMPLES: retail store, wholesale dealer, online shop, trading company, depot, home depot, general store, export/import company
 
 2. "Manufacturer"
    WHO: Org that produces/makes goods
@@ -81,19 +81,25 @@ Pick EXACTLY ONE from this fixed list. No other values allowed.
    SIGNALS: Cooking equipment, food ingredients, restaurant supplies, catering services
    EXAMPLES: restaurant, hotel kitchen, catering company, bakery, food stall, cafe
 
-6. "Mixed"
+6. "Supermarket"
+   WHO: General merchandise store selling a wide mix of everyday consumer products under one roof
+   SIGNALS: Org name contains MART, SUPERMARKET, HYPERMARKET, MINIMART, or sells a very broad mix (food + household + personal care + electronics together)
+   EXAMPLES: Easy Mart, Quick Mart, SuperMart, FreshMart, any store with "MART" in the name
+
+7. "Mixed"
    WHO: Org clearly operating in BOTH product sales AND services simultaneously
    SIGNALS: Evidence of both selling products AND providing services
    EXAMPLES: hardware shop that also does installation, clinic that also sells medical supplies
 
 DECISION RULES (in order — stop at first match):
-- Products only, no service signals → "Seller"
+- Org name contains "MART", "SUPERMARKET", "HYPERMARKET", "MINIMART", "SUPERSTORE" → "Supermarket"
 - Raw materials / production inputs → "Manufacturer"
-- Org name has "DEPOT", "MART", "STORE", "SHOP", "TRADING", "SUPPLIERS", "WHOLESALER", "DISTRIBUTOR", "IMPORTER", "EXPORTER" → "Seller"
+- Org name has "DEPOT", "STORE", "SHOP", "TRADING", "SUPPLIERS", "WHOLESALER", "DISTRIBUTOR", "IMPORTER", "EXPORTER" → "Seller"
 - Org name has "CLINIC", "HOSPITAL", "DR.", "DOCTOR", "DENTAL", "LAW", "CONSULT", "ENGINEER" → "Professional Service"
 - Org name has "RESTAURANT", "HOTEL", "BAKERY", "CATERING", "CAFE", "KITCHEN" → "Food Service"
 - Org name has "REPAIR", "MAINTENANCE", "INSTALLATION", "SERVICES", "CONTRACTORS" → "Maintenance & Installation"
-- Cannot clearly decide between Seller and one other class → "Mixed"
+- Products only, no service signals → "Seller"
+- Cannot clearly decide → "Mixed"
 
 == STEP 5: CONFIDENCE SCORE ==
 Start at 1.0, subtract penalties:
@@ -106,7 +112,8 @@ Clamp final score to [0.50, 1.0].
 == CONSISTENCY RULES ==
 - "Shirting", "Linen", "Fabric", "Cloth" → ALWAYS Fashion & Apparel
 - "CHOKE", "SPOTLIGHT", "LED", "Switch", "Plug" → ALWAYS Electronics & Tech
-- "DEPOT", "MART", "HOME DEPOT", "TRADING" in org name → operationType = "Seller"
+- "MART", "SUPERMARKET", "MINIMART" in org name → operationType = "Supermarket"
+- "DEPOT", "HOME DEPOT", "TRADING" in org name → operationType = "Seller"
 - If count >= 2 → isMultiIndustry = TRUE (no exceptions)"""
 
     USER_PROMPT_TEMPLATE = """Classify the organization below. Follow every step in the system prompt strictly.
@@ -132,7 +139,7 @@ Return ONLY this exact JSON (no extra keys, no markdown):
       }}
     ],
     "primaryIndustry": "<industry with highest percentage>",
-    "operationType": "<Seller|Manufacturer|Maintenance & Installation|Professional Service|Food Service|Mixed>",
+    "operationType": "<Seller|Manufacturer|Maintenance & Installation|Professional Service|Food Service|Supermarket|Mixed>",
     "confidenceScore": <float 0.5-1.0>,
     "reasoning": "<2 sentences max: (1) list industries found with product counts, (2) explain operationType choice>"
   }}
