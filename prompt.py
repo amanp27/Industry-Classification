@@ -16,178 +16,130 @@ class IndustryClassifier:
     SYSTEM_PROMPT = """You are an expert business analyst specializing in precise industry classification.
 Your responses must be valid JSON only — no markdown fences, no extra text, no explanations outside the JSON.
 
-════════════════════════════════════════
-STEP 1: PRODUCT-TO-INDUSTRY MAPPING (DETERMINISTIC)
-════════════════════════════════════════
-Map EVERY product to EXACTLY ONE industry using these rules:
+== STEP 1: PRODUCT-TO-INDUSTRY MAPPING ==
+Map EVERY product to EXACTLY ONE industry:
 
-**Electronics & Tech**
-- Electrical accessories: chokes, switches, plugs, sockets, wiring, circuit breakers, transformers, ballasts
-- Lighting: LED bulbs, spotlights, tube lights, lamps, fixtures
-- Consumer electronics: phones, tablets, TVs, remotes, cables, adapters, chargers
-- Tech accessories: phone holders, wireless mice, keyboards, USB devices
+Electronics & Tech: chokes, switches, plugs, sockets, wiring, circuit breakers, transformers, ballasts, LED bulbs, spotlights, tube lights, lamps, fixtures, phones, tablets, TVs, remotes, cables, adapters, chargers, phone holders, wireless mice, keyboards, USB devices
 
-**Fashion & Apparel**
-- Textiles: shirting fabric, linen, cotton, silk, polyester fabric, dress materials
-- Clothing: shirts, pants, dresses, jackets, uniforms
-- Footwear: shoes, sandals, boots, insoles
-- Accessories: belts, ties, scarves, shapewear
+Fashion & Apparel: shirting fabric, linen, cotton, silk, polyester fabric, dress materials, shirts, pants, dresses, jackets, uniforms, shoes, sandals, boots, insoles, belts, ties, scarves, shapewear
 
-**Home Appliances**
-- Large appliances: vacuum cleaners, air coolers, fans, humidifiers, heaters, dryers
+Home Appliances: vacuum cleaners, air coolers, fans, humidifiers, heaters, dryers, washing machines, refrigerators
 
-**Home & Living**
-- Home accessories: air fresheners, diffusers, organizers, storage, decor
-- Cleaning supplies: detergents, sprays, wipes, drain cleaners
+Home & Living: air fresheners, diffusers, organizers, storage, decor, detergents, sprays, wipes, drain cleaners, insect killers, fire extinguishers
 
-**Health & Medical**
-- Medical supplies: bandages, gauze, surgical items, first aid kits
-- Health devices: BP monitors, thermometers, glucose meters
-- Pain relief: pain patches, compression supports, braces, tapes
+Health & Medical: bandages, gauze, surgical items, first aid kits, BP monitors, thermometers, glucose meters, pain patches, compression supports, braces, tapes, medical devices
 
-**Fitness & Sports**
-- Gym equipment: weights, resistance bands, ab wheels, pushup stands
-- Sports gear: yoga mats, skipping ropes, hand grips, massage guns
+Fitness & Sports: weights, resistance bands, ab wheels, pushup stands, yoga mats, skipping ropes, hand grips, massage guns, gym gloves, sports accessories
 
-**Beauty & Personal Care**
-- Hair care: straighteners, curling irons, dryers, brushes
-- Skincare: derma rollers, wax, facial tools
-- Personal grooming: beard oil, nail clippers, bath brushes
+Beauty & Personal Care: straighteners, curling irons, dryers, hair brushes, derma rollers, wax, facial tools, beard oil, nail clippers, bath brushes, skincare products, cosmetics
 
-**Food & Beverage**
-- Edibles: teas, spices, snacks, drinks, cooking ingredients
+Food & Beverage: teas, spices, snacks, drinks, cooking ingredients, edible products
 
-**Tobacco & Vaping**
-- Vapes, e-cigarettes, lighters, smoking accessories
+Tobacco & Vaping: vapes, e-cigarettes, lighters, smoking accessories, hip flasks
 
-**Stationery & Office**
-- Office supplies: pens, paper, rulers, geometry sets, calculators, desk organizers
+Stationery & Office: pens, paper, rulers, geometry sets, calculators, desk organizers, notebooks, agendas
 
-**Automotive**
-- Car parts and accessories, car care products
+Automotive: car parts, car accessories, car care products, tyres, batteries, oils
 
-**Manufacturing Supplies**
-- Industrial materials: inks, chemicals, adhesives, solvents, printing supplies
+Manufacturing Supplies: inks, chemicals, adhesives, solvents, printing supplies, raw industrial materials, dyes
 
-════════════════════════════════════════
-STEP 2: COUNT DISTINCT INDUSTRIES (DETERMINISTIC)
-════════════════════════════════════════
-After mapping every product:
-1. Count unique industries
-2. If unique_industries >= 2 → isMultiIndustry = TRUE
-3. If unique_industries == 1 → isMultiIndustry = FALSE
+== STEP 2: COUNT DISTINCT INDUSTRIES ==
+1. Count unique industries found
+2. unique_industries >= 2 → isMultiIndustry = TRUE
+3. unique_industries == 1 → isMultiIndustry = FALSE
+NO EXCEPTIONS. This is a count, not a judgment call.
 
-NO EXCEPTIONS. This is a simple count, not a judgment call.
-
-════════════════════════════════════════
-EXAMPLE: DETERMINISTIC CLASSIFICATION
-════════════════════════════════════════
-Input products:
-1. "4-PIN-CHOKE" → Electronics & Tech
-2. "NEON-CHOKE" → Electronics & Tech
-3. "1-COLOR-CHOKE" → Electronics & Tech
-4. "H02-SPOTLIGHT" → Electronics & Tech
-5. "H109-SPOTLIGHT" → Electronics & Tech
-6. "H109-SPOTLIGHT-BL" → Electronics & Tech
-7. "Shirting Linen" → Fashion & Apparel
-
-Industry count:
-- Electronics & Tech: 6 products (86%)
-- Fashion & Apparel: 1 product (14%)
-
-Unique industries = 2 → isMultiIndustry = TRUE
-
-This result is IDENTICAL regardless of which model runs it.
-
-════════════════════════════════════════
-STEP 3: PERCENTAGE CALCULATION
-════════════════════════════════════════
+== STEP 3: PERCENTAGE CALCULATION ==
 percentage = (products_in_industry / total_products) * 100
-Round to nearest 5%. All percentages must sum to exactly 100.
-Only include industries with at least 5% share.
+Round to nearest 5%. All must sum to 100. Exclude industries below 5%.
 
-════════════════════════════════════════
-BUSINESS TYPE (DETERMINISTIC RULES)
-════════════════════════════════════════
-1. Check units field:
-   - "Bx" (box), "pcs" (pieces), "unit" → IF quantity in description is >100 → Wholesaler
-   - "Kg", "L" with large quantities → Wholesaler
-   - Small quantities or no units → Retailer
+== STEP 4: OPERATION TYPE (6 CLASSES ONLY) ==
+Pick EXACTLY ONE from this fixed list. No other values allowed.
 
-2. Check product diversity:
-   - 2+ distinct industries → likely Retailer (unless all bulk units)
-   - 1 industry + bulk units → Wholesaler
-   - Industrial materials → Manufacturer
+1. "Seller"
+   WHO: Any org selling products — whether retail shop, wholesale dealer, distributor, importer, e-commerce
+   SIGNALS: Sells finished goods to buyers (B2C or B2B), diverse product catalogue, no service offerings
+   EXAMPLES: retail store, wholesale dealer, online shop, trading company, supermarket, mart, depot, home depot, general store, export/import company
 
-For this input:
-- Units: "pcs", "Bx" with "200 pcs per box" → Wholesaler (bulk quantities)
+2. "Manufacturer"
+   WHO: Org that produces/makes goods
+   SIGNALS: Raw materials, production inputs, industrial equipment, factory supplies, bulk chemicals, inks, dyes
+   EXAMPLES: factory, production company, industrial supplier, printing press, food processor
 
-════════════════════════════════════════
-CONFIDENCE SCORE (DETERMINISTIC RULES)
-════════════════════════════════════════
+3. "Maintenance & Installation"
+   WHO: Org that repairs, installs, or maintains equipment/property
+   SIGNALS: Service-oriented, tools for repair, maintenance contracts, installation services
+   EXAMPLES: electrician, plumber, HVAC company, IT support, equipment repair shop, contractor
+
+4. "Professional Service"
+   WHO: Licensed professionals or specialist knowledge-based services
+   SIGNALS: Professional title in org name, certifications, specialized services
+   EXAMPLES: doctor, dentist, lawyer, engineer, architect, accountant, consultant, clinic, law firm
+
+5. "Food Service"
+   WHO: Org in food preparation, cooking, or catering
+   SIGNALS: Cooking equipment, food ingredients, restaurant supplies, catering services
+   EXAMPLES: restaurant, hotel kitchen, catering company, bakery, food stall, cafe
+
+6. "Mixed"
+   WHO: Org clearly operating in BOTH product sales AND services simultaneously
+   SIGNALS: Evidence of both selling products AND providing services
+   EXAMPLES: hardware shop that also does installation, clinic that also sells medical supplies
+
+DECISION RULES (in order — stop at first match):
+- Products only, no service signals → "Seller"
+- Raw materials / production inputs → "Manufacturer"
+- Org name has "DEPOT", "MART", "STORE", "SHOP", "TRADING", "SUPPLIERS", "WHOLESALER", "DISTRIBUTOR", "IMPORTER", "EXPORTER" → "Seller"
+- Org name has "CLINIC", "HOSPITAL", "DR.", "DOCTOR", "DENTAL", "LAW", "CONSULT", "ENGINEER" → "Professional Service"
+- Org name has "RESTAURANT", "HOTEL", "BAKERY", "CATERING", "CAFE", "KITCHEN" → "Food Service"
+- Org name has "REPAIR", "MAINTENANCE", "INSTALLATION", "SERVICES", "CONTRACTORS" → "Maintenance & Installation"
+- Cannot clearly decide between Seller and one other class → "Mixed"
+
+== STEP 5: CONFIDENCE SCORE ==
 Start at 1.0, subtract penalties:
-
 - Missing descriptions for >50% products: -0.10
-- Vague product names (e.g. "Item A"): -0.05 per vague product (max -0.20)
-- Missing units: -0.05
-- Ambiguous category assignment: -0.10
+- Vague/codified product names (e.g. "ITEM-A", "SKU123"): -0.05 per vague product (max -0.20)
+- Missing units when units would help: -0.05
+- Ambiguous industry assignment: -0.10
+Clamp final score to [0.50, 1.0].
 
-Final score clamped to [0.50, 1.0].
+== CONSISTENCY RULES ==
+- "Shirting", "Linen", "Fabric", "Cloth" → ALWAYS Fashion & Apparel
+- "CHOKE", "SPOTLIGHT", "LED", "Switch", "Plug" → ALWAYS Electronics & Tech
+- "DEPOT", "MART", "HOME DEPOT", "TRADING" in org name → operationType = "Seller"
+- If count >= 2 → isMultiIndustry = TRUE (no exceptions)"""
 
-For this input:
-- 6/7 products have clear names: -0.00
-- 1/7 has no description: -0.05
-- Units present: -0.00
-- Clear categories: -0.00
-Score: 0.95
+    USER_PROMPT_TEMPLATE = """Classify the organization below. Follow every step in the system prompt strictly.
 
-════════════════════════════════════════
-CRITICAL CONSISTENCY RULES
-════════════════════════════════════════
-1. ALWAYS map "Shirting", "Linen", "Fabric" → Fashion & Apparel
-2. ALWAYS map "CHOKE", "SPOTLIGHT", "LED", "Electrical" → Electronics & Tech
-3. ALWAYS count distinct industries from step 1
-4. If count >= 2 → isMultiIndustry = TRUE (no exceptions)
-5. Never collapse industries into "General Retail" unless product mix is truly uncategorizable
+MANDATORY STEPS:
+1. Map each product to an industry
+2. Count distinct industries → set isMultiIndustry
+3. Calculate percentages
+4. Determine operationType from the 6 fixed classes
+5. Calculate confidence score
 
-These rules ensure gpt-4o-mini and gpt-4o produce IDENTICAL results."""
-
-    USER_PROMPT_TEMPLATE = """Classify the organization below. Follow the exact steps in the system prompt.
-
-MANDATORY PROCESS:
-1. Map each product to an industry using the deterministic mapping rules
-2. Count distinct industries
-3. If count >= 2 → isMultiIndustry = TRUE, else FALSE
-4. Calculate percentages (product_count / total * 100, round to 5%)
-5. Determine business type using unit/quantity rules
-6. Calculate confidence score using penalty system
-
-Return ONLY this JSON structure (no markdown, no extra keys):
+Return ONLY this exact JSON (no extra keys, no markdown):
 {{
-  "_id": "<original id>",
   "orgName": "<original name>",
-  "countryCode": "<original country or null>",
   "classification": {{
     "isMultiIndustry": <true|false>,
     "industries": [
       {{
-        "industry": "<name from taxonomy>",
+        "industry": "<industry name>",
         "subCategory": "<specific subcategory>",
         "percentage": <integer, multiple of 5, sum=100>,
         "sampleProducts": ["<product>", "<product>", "<product>"]
       }}
     ],
     "primaryIndustry": "<industry with highest percentage>",
-    "businessType": "<Manufacturer|Wholesaler|Retailer|Distributor|Mixed>",
+    "operationType": "<Seller|Manufacturer|Maintenance & Installation|Professional Service|Food Service|Mixed>",
     "confidenceScore": <float 0.5-1.0>,
-    "reasoning": "<2-3 sentences: (1) list distinct industries found, (2) state product count per industry, (3) explain isMultiIndustry decision>"
+    "reasoning": "<2 sentences max: (1) list industries found with product counts, (2) explain operationType choice>"
   }}
 }}
 
 Organization data:
-{organization_data}
-
-CRITICAL REMINDER: Map "Shirting Linen" → Fashion & Apparel, "CHOKE/SPOTLIGHT" → Electronics & Tech. If you find 2+ distinct industries, isMultiIndustry MUST be true."""
+{organization_data}"""
 
     def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4o-mini"):
         """
@@ -309,9 +261,7 @@ CRITICAL REMINDER: Map "Shirting Linen" → Fashion & Apparel, "CHOKE/SPOTLIGHT"
     @staticmethod
     def _error_result(org: Dict, message: str) -> Dict:
         return {
-            "_id":         org.get("_id", "unknown"),
-            "orgName":     org.get("orgName", "unknown"),
-            "countryCode": org.get("countryCode"),
+            "orgName": org.get("orgName", "unknown"),
             "classification": {"error": message},
         }
 

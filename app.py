@@ -456,7 +456,7 @@ with tab1:
             def _stat(col, label, value, cls=""):
                 col.markdown(f'<div class="stat-card"><div class="label">{label}</div><div class="value {cls}">{value}</div></div>', unsafe_allow_html=True)
 
-            _stat(c1, "Organization ID", res.get("_id", "—"))
+            _stat(c1, "Organization", res.get("orgName", "—"))
             _stat(c2, "Country", res.get("countryCode") or "—")
             conf = clf.get("confidenceScore", 0)
             _stat(c3, "Confidence", f"{conf:.0%}", "green" if conf >= 0.85 else ("amber" if conf >= 0.65 else "red"))
@@ -464,7 +464,7 @@ with tab1:
             # Summary strip
             st.markdown('<p class="section-title" style="margin-top:1.2rem;">Summary</p>', unsafe_allow_html=True)
             is_multi = clf.get("isMultiIndustry", False)
-            btype    = clf.get("businessType", "—")
+            btype    = clf.get("operationType", "—")
             primary  = clf.get("primaryIndustry", "—")
             multi_b  = '<span class="badge badge-amber">Multi-Industry</span>' if is_multi else '<span class="badge badge-slate">Single Industry</span>'
             st.markdown(f"""
@@ -475,7 +475,7 @@ with tab1:
   </div>
   <div style="width:1px;background:#1e2438;height:32px;flex-shrink:0;"></div>
   <div>
-    <div style="font-size:0.65rem;color:#2a3050;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:4px;font-weight:600;">Business Type</div>
+    <div style="font-size:0.65rem;color:#2a3050;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:4px;font-weight:600;">Operation Type</div>
     <span class="badge badge-blue">{btype}</span>
   </div>
   <div style="width:1px;background:#1e2438;height:32px;flex-shrink:0;"></div>
@@ -550,8 +550,7 @@ with tab2:
                     try:
                         batch_results.append(st.session_state.classifier.classify_organization(org))
                     except Exception as e:
-                        batch_results.append({"_id": org.get("_id"), "orgName": name,
-                                              "countryCode": org.get("countryCode"),
+                        batch_results.append({"orgName": name,
                                               "classification": {"error": str(e)}})
                     progress_bar.progress((i + 1) / max_items)
                 st.session_state.results = batch_results
@@ -581,13 +580,11 @@ with tab2:
             for r in results:
                 clf = r.get("classification", {})
                 rows.append({
-                    "ID":               r.get("_id", "—"),
-                    "Organization":     r.get("orgName", "—"),
-                    "Country":          r.get("countryCode") or "—",
+                    "Organization":    r.get("orgName", "—"),
                     "Primary Industry": clf.get("primaryIndustry", "Error" if "error" in clf else "—"),
-                    "Business Type":    clf.get("businessType", "—"),
-                    "Multi-Industry":   "Yes" if clf.get("isMultiIndustry") else "No",
-                    "Confidence":       f'{clf.get("confidenceScore",0):.0%}' if "error" not in clf else "—",
+                    "Operation Type":  clf.get("operationType", "—"),
+                    "Multi-Industry":  "Yes" if clf.get("isMultiIndustry") else "No",
+                    "Confidence":      f'{clf.get("confidenceScore",0):.0%}' if "error" not in clf else "—",
                 })
             st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
@@ -642,10 +639,10 @@ with tab3:
             st.plotly_chart(fig_bar, use_container_width=True)
 
         with ch2:
-            st.markdown('<p class="section-title">Business Type Breakdown</p>', unsafe_allow_html=True)
+            st.markdown('<p class="section-title">Operation Type Breakdown</p>', unsafe_allow_html=True)
             bt_count = {}
             for r in results:
-                k = r["classification"].get("businessType", "Unknown")
+                k = r["classification"].get("operationType", "Unknown")
                 bt_count[k] = bt_count.get(k, 0) + 1
             fig_pie = go.Figure(go.Pie(
                 labels=list(bt_count.keys()), values=list(bt_count.values()),
@@ -703,7 +700,7 @@ with tab3:
                         f'padding:0.5rem 0;border-bottom:1px solid #1a1e2e;font-size:0.83rem;">'
                         f'<span style="color:#8b95b0;font-weight:500;">{o.get("orgName","—")}</span>'
                         f'<span style="display:flex;gap:0.6rem;align-items:center;">'
-                        f'<span class="badge badge-slate">{c2.get("businessType","—")}</span>'
+                        f'<span class="badge badge-slate">{c2.get("operationType","—")}</span>'
                         f'<span style="font-size:0.76rem;font-weight:600;color:{conf_col};">{conf_val:.0%}</span>'
                         f'</span></div>',
                         unsafe_allow_html=True,
