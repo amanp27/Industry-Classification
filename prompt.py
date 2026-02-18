@@ -35,6 +35,8 @@ Beauty & Personal Care: straighteners, curling irons, dryers, hair brushes, derm
 
 Food & Beverage: teas, spices, snacks, drinks, cooking ingredients, edible products
 
+Maintenance & Installation (as industry): laundry services (lavar, planchar, lavado), dry cleaning, repair services, cleaning services, installation work
+
 Tobacco & Vaping: vapes, e-cigarettes, lighters, smoking accessories, hip flasks
 
 Stationery & Office: pens, paper, rulers, geometry sets, calculators, desk organizers, notebooks, agendas
@@ -57,49 +59,67 @@ Round to nearest 5%. All must sum to 100. Exclude industries below 5%.
 Pick EXACTLY ONE from this fixed list. No other values allowed.
 
 1. "Seller"
-   WHO: Any org selling products — whether retail shop, wholesale dealer, distributor, importer, e-commerce
-   SIGNALS: Sells finished goods to buyers (B2C or B2B), diverse product catalogue, no service offerings
-   EXAMPLES: retail store, wholesale dealer, online shop, trading company, depot, home depot, general store, export/import company
+   WHO: Org that ONLY sells products, no evidence of services or maintenance
+   SIGNALS: Product catalogue only, no service language, no repair/installation signals
+   EXAMPLES: retail store, wholesale dealer, online shop, trading company, depot, home depot, general store
 
-2. "Manufacturer"
+2. "Seller and Services"
+   WHO: Org that sells products AND also provides some form of professional/general services
+   SIGNALS: Products for sale + service language, consulting, advice, or support mentioned
+   EXAMPLES: electronics shop that also offers IT support, hardware store that also consults
+
+3. "Manufacturer"
    WHO: Org that produces/makes goods
    SIGNALS: Raw materials, production inputs, industrial equipment, factory supplies, bulk chemicals, inks, dyes
    EXAMPLES: factory, production company, industrial supplier, printing press, food processor
 
-3. "Maintenance & Installation"
+4. "Maintenance & Installation"
    WHO: Org that repairs, installs, or maintains equipment/property
    SIGNALS: Service-oriented, tools for repair, maintenance contracts, installation services
    EXAMPLES: electrician, plumber, HVAC company, IT support, equipment repair shop, contractor
 
-4. "Professional Service"
+5. "Professional Service"
    WHO: Licensed professionals or specialist knowledge-based services
    SIGNALS: Professional title in org name, certifications, specialized services
    EXAMPLES: doctor, dentist, lawyer, engineer, architect, accountant, consultant, clinic, law firm
 
-5. "Food Service"
+6. "Food Service"
    WHO: Org in food preparation, cooking, or catering
    SIGNALS: Cooking equipment, food ingredients, restaurant supplies, catering services
    EXAMPLES: restaurant, hotel kitchen, catering company, bakery, food stall, cafe
 
-6. "Supermarket"
+7. "Supermarket"
    WHO: General merchandise store selling a wide mix of everyday consumer products under one roof
    SIGNALS: Org name contains MART, SUPERMARKET, HYPERMARKET, MINIMART, or sells a very broad mix (food + household + personal care + electronics together)
    EXAMPLES: Easy Mart, Quick Mart, SuperMart, FreshMart, any store with "MART" in the name
 
-7. "Mixed"
-   WHO: Org clearly operating in BOTH product sales AND services simultaneously
-   SIGNALS: Evidence of both selling products AND providing services
-   EXAMPLES: hardware shop that also does installation, clinic that also sells medical supplies
+8. "Seller, Service and Maintenance"
+   WHO: Org that sells physical products AND provides services AND does repairs/maintenance/installation
+   SIGNALS: Physical products for sale + professional services + maintenance/repair/installation work
+   EXAMPLES: electrical shop that sells goods, consults, and installs; hardware company that sells, advises, and repairs
+   NOTE: Do NOT use this for orgs that only provide services (laundry, hotel) without selling physical goods
+
+9. "Service and Maintenance"
+   WHO: Org that ONLY provides services and/or maintenance — no physical product sales
+   SIGNALS: All "products" are actually services (laundry, ironing, room rental, cleaning, repair)
+   EXAMPLES: laundry shop, dry cleaner, apartment hotel, cleaning company, repair-only workshop
+
+10. "Mixed"
+   WHO: Org whose operation type doesn't clearly fit any single class above
+   SIGNALS: Genuinely ambiguous — cannot determine primary mode of operation from available data
 
 DECISION RULES (in order — stop at first match):
 - Org name contains "MART", "SUPERMARKET", "HYPERMARKET", "MINIMART", "SUPERSTORE" → "Supermarket"
 - Raw materials / production inputs → "Manufacturer"
-- Org name has "DEPOT", "STORE", "SHOP", "TRADING", "SUPPLIERS", "WHOLESALER", "DISTRIBUTOR", "IMPORTER", "EXPORTER" → "Seller"
 - Org name has "CLINIC", "HOSPITAL", "DR.", "DOCTOR", "DENTAL", "LAW", "CONSULT", "ENGINEER" → "Professional Service"
 - Org name has "RESTAURANT", "HOTEL", "BAKERY", "CATERING", "CAFE", "KITCHEN" → "Food Service"
-- Org name has "REPAIR", "MAINTENANCE", "INSTALLATION", "SERVICES", "CONTRACTORS" → "Maintenance & Installation"
+- Org name has "LAVANDERÍA", "LAUNDRY", "LAVANDERIA", "DRY CLEAN", "APARTA-HOTEL", "HOSTAL" → start with service base
+- ALL products are services (laundry, ironing, room rental, cleaning) with NO physical goods for sale → "Service and Maintenance"
+- Evidence of selling physical goods + services + maintenance/installation → "Seller, Service and Maintenance"
+- Evidence of selling physical goods + services (no maintenance) → "Seller and Services"
+- Org name has "DEPOT", "STORE", "SHOP", "TRADING", "SUPPLIERS", "WHOLESALER", "DISTRIBUTOR", "IMPORTER", "EXPORTER" → "Seller"
 - Products only, no service signals → "Seller"
-- Cannot clearly decide → "Mixed"
+- Cannot clearly determine → "Mixed"
 
 == STEP 5: CONFIDENCE SCORE ==
 Start at 1.0, subtract penalties:
@@ -110,11 +130,23 @@ Start at 1.0, subtract penalties:
 Clamp final score to [0.50, 1.0].
 
 == CONSISTENCY RULES ==
-- "Shirting", "Linen", "Fabric", "Cloth" → ALWAYS Fashion & Apparel
+- "Shirting", "Linen", "Fabric", "Cloth", "Sabana", "Corcha", "Funda", "Colchon", "Frisa", "Toalla", "Mantel", "Cortina" → ALWAYS Home & Living (hotel/laundry linens, NOT fashion)
+- "Lavar", "Planchar", "Planchado", "Lavado", "Lavandería", "Washing", "Ironing", "Dry Clean" → ALWAYS Maintenance & Installation (laundry service)
+- "Renta de Habitaciones", "Room Rental", "Alquiler" → ALWAYS Professional Service (accommodation)
 - "CHOKE", "SPOTLIGHT", "LED", "Switch", "Plug" → ALWAYS Electronics & Tech
 - "MART", "SUPERMARKET", "MINIMART" in org name → operationType = "Supermarket"
-- "DEPOT", "HOME DEPOT", "TRADING" in org name → operationType = "Seller"
-- If count >= 2 → isMultiIndustry = TRUE (no exceptions)"""
+- "DEPOT", "STORE", "SHOP", "TRADING" in org name → operationType = "Seller"
+- "APARTA-HOTEL", "HOSTAL", "HOSPEDAJE", "POSADA" in org name alone → operationType = "Professional Service"
+- "LAVANDERÍA" + "HOTEL/APARTA-HOTEL" in org name together → operationType = "Service and Maintenance"
+- "LAVANDERÍA", "LAUNDRY", "LAVANDERIA", "DRY CLEAN" in org name → includes laundry service
+- If org name has HOTEL + LAVANDERÍA → operationType = "Seller, Service and Maintenance"
+- If count >= 2 → isMultiIndustry = TRUE (no exceptions)
+
+== MULTILINGUAL PRODUCT SIGNALS (Spanish/French/Arabic/Portuguese) ==
+Laundry services (→ Maintenance & Installation): Lavar, Lavado, Planchar, Planchado, Planchando, Lavandería, Secado, Doblado, Hamper
+Hotel/accommodation (→ Professional Service): Renta de Habitaciones, Alquiler, Habitacion, Hostal
+Linens/bedding (→ Home & Living): Sabana, Corcha, Funda, Colchon, Frisa, Toalla, Mantel, Servilleta, Cortina, Almohada
+Clothing items being serviced (→ Maintenance & Installation, NOT Fashion): Vestido Lavar, Poloche Lavar, Pantalon Lavar — these are laundry items, not clothing for sale"""
 
     USER_PROMPT_TEMPLATE = """Classify the organization below. Follow every step in the system prompt strictly.
 
@@ -122,12 +154,17 @@ MANDATORY STEPS:
 1. Map each product to an industry
 2. Count distinct industries → set isMultiIndustry
 3. Calculate percentages
-4. Determine operationType from the 6 fixed classes
+4. Determine operationType from the fixed classes
 5. Calculate confidence score
 
 Return ONLY this exact JSON (no extra keys, no markdown):
 {{
   "orgName": "<original name>",
+  "productCount": null,
+  "primaryIndustry": "<industry with highest percentage>",
+  "operationType": "<Seller|Seller and Services|Seller, Service and Maintenance|Service and Maintenance|Manufacturer|Maintenance & Installation|Professional Service|Food Service|Supermarket|Mixed>",
+  "confidenceScore": <float 0.5-1.0>,
+  "AIreasoning": "<2 sentences max: (1) list industries found (DO NOT state any product counts or numbers — only industry names and percentages), (2) explain operationType choice based on org name and product signals>",
   "classification": {{
     "isMultiIndustry": <true|false>,
     "industries": [
@@ -137,11 +174,7 @@ Return ONLY this exact JSON (no extra keys, no markdown):
         "percentage": <integer, multiple of 5, sum=100>,
         "sampleProducts": ["<product>", "<product>", "<product>"]
       }}
-    ],
-    "primaryIndustry": "<industry with highest percentage>",
-    "operationType": "<Seller|Manufacturer|Maintenance & Installation|Professional Service|Food Service|Supermarket|Mixed>",
-    "confidenceScore": <float 0.5-1.0>,
-    "reasoning": "<2 sentences max: (1) list industries found with product counts, (2) explain operationType choice>"
+    ]
   }}
 }}
 
@@ -181,6 +214,9 @@ Organization data:
         Returns:
             Dict with classification results (or an error entry on failure).
         """
+        # Count products in Python — never trust LLM to count accurately
+        actual_product_count = len(organization_data.get("product_names", []))
+
         org_json_str = json.dumps(organization_data, ensure_ascii=False, indent=2)
         user_message = self.USER_PROMPT_TEMPLATE.format(organization_data=org_json_str)
 
@@ -197,7 +233,30 @@ Organization data:
             )
 
             raw = response.choices[0].message.content.strip()
-            return json.loads(raw)
+            result = json.loads(raw)
+
+            # ── Always overwrite productCount with true Python-computed value ──
+            result["productCount"] = actual_product_count
+
+            # ── Rebuild AIreasoning with accurate numbers (LLM often hallucinates counts) ──
+            industries = result.get("classification", {}).get("industries", [])
+            total = actual_product_count
+            industry_parts = []
+            for ind in industries:
+                pct = ind.get("percentage", 0)
+                real_count = round((pct / 100) * total)
+                industry_parts.append(
+                    f"{ind.get('industry', '?')} ({pct}% ≈ {real_count} products)"
+                )
+            op_type = result.get("operationType", "—")
+            industries_str = ", ".join(industry_parts) if industry_parts else "—"
+            result["AIreasoning"] = (
+                f"Industries found: {industries_str}. "
+                f"Total products: {total}. "
+                f"Operation type '{op_type}' determined from org name signals and product nature."
+            )
+
+            return result
 
         except json.JSONDecodeError as e:
             return self._error_result(organization_data, f"JSON parse error: {e}")
@@ -268,7 +327,12 @@ Organization data:
     @staticmethod
     def _error_result(org: Dict, message: str) -> Dict:
         return {
-            "orgName": org.get("orgName", "unknown"),
+            "orgName":        org.get("orgName", "unknown"),
+            "productCount":   len(org.get("product_names", [])),
+            "primaryIndustry": None,
+            "operationType":  None,
+            "confidenceScore": None,
+            "AIreasoning":    None,
             "classification": {"error": message},
         }
 

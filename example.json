@@ -1,5 +1,1125 @@
 [
 {
+    "_id": "93627",
+    "orgName": "astanonline ",
+    "businessId": "",
+    "countryCode": null,
+    "product_names": [
+        {
+            "productName": "sijaayad baaj",
+            "categoryName": "",
+            "unit": "8",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "sjiyad akhtar",
+            "categoryName": "",
+            "unit": "4",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "sijaayd sibidhi",
+            "categoryName": "",
+            "unit": "5 ",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "mobile holder",
+            "categoryName": "",
+            "unit": "60",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "carfiso",
+            "categoryName": "",
+            "unit": "120",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "burashado bilaa dhag",
+            "categoryName": "",
+            "unit": "93",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "buraashad baraf",
+            "categoryName": "",
+            "unit": "76",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "burashad dhagleh",
+            "categoryName": "",
+            "unit": "33",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "koob sawir leh",
+            "categoryName": "",
+            "unit": "200",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar qissa gaban",
+            "categoryName": "",
+            "unit": "4",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar misk gaban",
+            "categoryName": "",
+            "unit": "4",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar assaf 200ml",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar leveren200ml",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar 9pm blue",
+            "categoryName": "",
+            "unit": "8",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "nivea men",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "flower magac",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar mousuf",
+            "categoryName": "",
+            "unit": "4",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "sijaayad buni",
+            "categoryName": "",
+            "unit": "2",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar she jaban",
+            "categoryName": "",
+            "unit": "2",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar pinthuran jaban",
+            "categoryName": "",
+            "unit": "4",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar heath jaban",
+            "categoryName": "",
+            "unit": "9",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar manasik jaban",
+            "categoryName": "",
+            "unit": "13",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar saara jaban",
+            "categoryName": "",
+            "unit": "5",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar yara jaban",
+            "categoryName": "",
+            "unit": "8",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar dubai nigth",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar blue for men jaban",
+            "categoryName": "",
+            "unit": "16",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar morodo lux jaban",
+            "categoryName": "",
+            "unit": "5",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar morine jaban",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar victory jaban",
+            "categoryName": "",
+            "unit": "6 ",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar maira",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar brive 777 jaban",
+            "categoryName": "",
+            "unit": "3",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar the prine jaban",
+            "categoryName": "",
+            "unit": "3",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar mini",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "muraayado jaban",
+            "categoryName": "",
+            "unit": "14",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "saacad rizen",
+            "categoryName": "",
+            "unit": "32",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "saacad quarts",
+            "categoryName": "",
+            "unit": "13",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "saacad rolex",
+            "categoryName": "",
+            "unit": "30",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "iskaaf iyo koofiyad",
+            "categoryName": "",
+            "unit": "1",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "sijayad akhtar",
+            "categoryName": "",
+            "unit": "4",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "frame",
+            "categoryName": "",
+            "unit": "3",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "saacad jaban",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "muraayado rag jaban",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "set collection",
+            "categoryName": "",
+            "unit": "2",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar now jaban",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "SIJAAYAD YAR",
+            "categoryName": "",
+            "unit": "1",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar 3x3",
+            "categoryName": "",
+            "unit": "4",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "ubax",
+            "categoryName": "",
+            "unit": "1",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "saacadc jaban set",
+            "categoryName": "",
+            "unit": "5",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "koob shabeel",
+            "categoryName": "",
+            "unit": "2",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "koob shaah",
+            "categoryName": "",
+            "unit": "1",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar khamra",
+            "categoryName": "",
+            "unit": "1",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar samiya",
+            "categoryName": "",
+            "unit": "3",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "ubax sawir",
+            "categoryName": "",
+            "unit": "5",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar jidh",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "sacad gif",
+            "categoryName": "",
+            "unit": "1",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar suevage 2",
+            "categoryName": "",
+            "unit": "2",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar 9pm jaban",
+            "categoryName": "",
+            "unit": "4",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "sijaayad madaw",
+            "categoryName": "",
+            "unit": "7",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "sijaayad bardo",
+            "categoryName": "",
+            "unit": "9",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "sijaayad blue",
+            "categoryName": "",
+            "unit": "7",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "ubax magacleh",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar jorjina",
+            "categoryName": "",
+            "unit": "24",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar pint huuran",
+            "categoryName": "",
+            "unit": "24",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar lara",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "box saacad",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "box gift",
+            "categoryName": "",
+            "unit": "1",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "boonbalo",
+            "categoryName": "",
+            "unit": "1",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "buug",
+            "categoryName": "",
+            "unit": "3",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "box cadaana",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "bow bow",
+            "categoryName": "",
+            "unit": "5",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "stkers",
+            "categoryName": "",
+            "unit": "200",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadara obsidaan",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar phanton",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar for her",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar nitros",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "ubax gift",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar al sayaad",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar manaar",
+            "categoryName": "",
+            "unit": "12",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar clasic water",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "cadar marine",
+            "categoryName": "",
+            "unit": "6",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        }
+    ]
+},
+{
+    "_id": "93624",
+    "orgName": "Group Ani Investments",
+    "businessId": "5401146280",
+    "countryCode": "AO",
+    "product_names": [
+        {
+            "productName": "Esprit Lata 24x0,33 L",
+            "categoryName": "Latas",
+            "unit": "Cx",
+            "productCode": "03-00001",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Savanna Lata 24x0.33 L",
+            "categoryName": "Latas",
+            "unit": "Cx",
+            "productCode": "03-00006",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Mustang Lata 24x0.33 L",
+            "categoryName": "Latas",
+            "unit": "Cx",
+            "productCode": "03-00007",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Hunters Gold RGB 24x330",
+            "categoryName": "RGB",
+            "unit": "Cx",
+            "productCode": "03-00009",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Porta 6 Tinto 4x3 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "910009",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Graça Rose 12x750 Ml",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00062",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Porta 6 Tinto 12x375 ml",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "910008",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Vinho Tinto Dos Amigos 6x750 Ml",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910086",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Esprit RGB 24x330 ml",
+            "categoryName": "RGB",
+            "unit": "Cx",
+            "productCode": "03-00010",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Savanna RGB 24x0.33 L",
+            "categoryName": "RGB",
+            "unit": "Cx",
+            "productCode": "03-00008",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nederburg Chenin Blanc 6x0,75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00023",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Amarula Raspberry Choc. 12x750 ml",
+            "categoryName": "Espirituosas",
+            "unit": "Cx",
+            "productCode": "02-00056",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Amarula Gin 6x750 ml",
+            "categoryName": "Espirituosas",
+            "unit": "Cx",
+            "productCode": "02-00063",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Whisky Nights 6x0,75 L",
+            "categoryName": "",
+            "unit": "Cx",
+            "productCode": "02-00014",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Whisky Scottish Leader 3Y 6x0.75 L",
+            "categoryName": "",
+            "unit": "Cx",
+            "productCode": "02-00024",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Esprit NRB 24x250 ml",
+            "categoryName": "RTD",
+            "unit": "Cx",
+            "productCode": "03-00004",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Savanna NRB Cartoon 24x0,33L",
+            "categoryName": "RTD",
+            "unit": "Cx",
+            "productCode": "03-00013",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "JC  Le Roux La Fleurette 6x0.75 L",
+            "categoryName": "Espumantes",
+            "unit": "Cx",
+            "productCode": "02-00018",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "JC Le Roux La Chanson 6x0,75 L",
+            "categoryName": "Espumantes",
+            "unit": "Cx",
+            "productCode": "02-00019",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Espum. Pongracz 6x0,75 L",
+            "categoryName": "Espumantes",
+            "unit": "Cx",
+            "productCode": "02-00071",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nederburg 5600 Cab.Sauvignon Ti 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00022",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nederburg Baronne 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00030",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nederburg Paarl Cab Sauv Ti 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00031",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nederburg Sauvignon Blanc 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00049",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nederburg Edelrood 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00066",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Two Oceans Sauvignon Blanc 6x750 ml",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00001",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Two Oceans Cabernet Sauvig / Merlot 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00002",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Tassenberg 12x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00059",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sedgwicks Old Brown 12x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00057",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Graça Br 12x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00061",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Capenheimer 12x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00058",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sr. Tavora Douro 6x0.75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910001",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Terra de Suão Alentejo 6x0.75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910011",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Julia Florista Tinto 6x0.75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910002",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sovibor Borba Tinto 2023 6x0.75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910056",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sovibor Borba Branco 2023 6x0,75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910057",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sovibor Borba Res. Tinto 6x0.75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910058",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Porta 6 Rose 6x0.75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910006",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Porta 6 Tinto Reserva 6x0.75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910085",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Monte Cascas Colheita Branco Douro 6x0.75 L",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910012",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Messias Douro Cachão Br 6x0.75 L 2024",
+            "categoryName": "Vinhos Portugueses",
+            "unit": "Cx",
+            "productCode": "910080",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Agua das Pedras Tangerina 24x250 ml",
+            "categoryName": "Agua",
+            "unit": "Cx",
+            "productCode": "900772",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Hunters Gold NRB 24x250",
+            "categoryName": "RTD",
+            "unit": "Cx",
+            "productCode": "03-00002",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Savanna NRB 24x250",
+            "categoryName": "RTD",
+            "unit": "Cx",
+            "productCode": "03-00005",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Mustang NRB 24x250",
+            "categoryName": "RTD",
+            "unit": "Cx",
+            "productCode": "03-00012",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Agua Preciosa 12x1500 Ml",
+            "categoryName": "Agua",
+            "unit": "Cx",
+            "productCode": "900901",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Agua Preciosa 24x500 Ml",
+            "categoryName": "Agua",
+            "unit": "Cx",
+            "productCode": "900902",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "JC Leroux Domain 6x0.75 L",
+            "categoryName": "Espumantes",
+            "unit": "Cx",
+            "productCode": "02-00033",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Mustang RGB 24x330",
+            "categoryName": "RGB",
+            "unit": "Cx",
+            "productCode": "03-00011",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Agua Das Pedras 24x250 Ml",
+            "categoryName": "Agua",
+            "unit": "Cx",
+            "productCode": "900768",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Agua das pedras Limão 24x250 ml",
+            "categoryName": "Agua",
+            "unit": "Cx",
+            "productCode": "900769",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Agua Das Pedras Maracujá 24x250 Ml",
+            "categoryName": "Agua",
+            "unit": "Cx",
+            "productCode": "900770",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Amarula Cream 6x0.75 L",
+            "categoryName": "Espirituosas",
+            "unit": "Cx",
+            "productCode": "02-00034",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "4 Th Street Branco 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00048",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "4 Th Street Rose 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00029",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "4 Th Street Tinto 6x0.75 L",
+            "categoryName": "Vinhos Sul Africanos",
+            "unit": "Cx",
+            "productCode": "02-00028",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Agua Das Pedras Frutos Vermelhos 24x250 ml",
+            "categoryName": "Agua",
+            "unit": "Cx",
+            "productCode": "900771",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Amarula Ethiop Coffee 12x750 ml",
+            "categoryName": "Espirituosas",
+            "unit": "Cx",
+            "productCode": "02-00055",
+            "typeOfCommodity": 0,
+            "discription": ""
+        }
+    ]
+},
+{
     "_id": "93621",
     "orgName": "KBA ELECTRICALS - HOME DEPOT",
     "businessId": "",
@@ -54,7 +1174,1183 @@
             "discription": "200 pcs per box"
         },
         {
-            "productName": "Shirting Linen",
+            "productName": "H304-WH-SIL-WWBL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "H304-WH-SIL-WHBL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-1617-WALLLAMP/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-801-PUSH-SPOTLIGHT-3W-WH/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-801-PUSH-SPOTLIGHT-3W-WHBL/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-COB-GLASS-PANEL-15W-WHWW/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "40 pcs per box"
+        },
+        {
+            "productName": "HF-COB-GLASS-PANEL-20W-WHWWW/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-801-PUSH-SPOTLIGHT-3W-WWBL/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-COB-GLASS-PANEL-20W-WHBL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-COB-GLASS-PANEL-6W-BWW/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-COB-GLASS-PANEL-6W-WWBL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-H304-BLK-GLD-WHWW/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-H6-7W-BLK-CHR-WHBL/BX",
+            "categoryName": "DOWN LIGHT",
+            "unit": "Bx",
+            "productCode": "DOWNL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-H6-7W-BLK-GLD-WHBL/BX",
+            "categoryName": "DOWN LIGHT",
+            "unit": "Bx",
+            "productCode": "DOWNL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-H6-7W-SIL-GLD-WHBL/BX",
+            "categoryName": "DOWN LIGHT",
+            "unit": "Bx",
+            "productCode": "DOWNL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-H605-5W-BLK-CHR/BX",
+            "categoryName": "DOWN LIGHT",
+            "unit": "Bx",
+            "productCode": "DOWNL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-H605-5W-BLK-GLD/BX",
+            "categoryName": "",
+            "unit": "Bx",
+            "productCode": "DOWNL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-H605-5W-SIL-GLD-WHBL/BX",
+            "categoryName": "DOWN LIGHT",
+            "unit": "Bx",
+            "productCode": "DOWNL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-LN56-PURIFICATION-56W/BX",
+            "categoryName": "PURF LIGHT",
+            "unit": "Bx",
+            "productCode": "PURF",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-LN96-PURIFICATION-96W-WW/BX",
+            "categoryName": "PURF LIGHT",
+            "unit": "Bx",
+            "productCode": "PURF",
+            "typeOfCommodity": 1,
+            "discription": "20 pcs per box"
+        },
+        {
+            "productName": "HF-P611-8-SURFACEPANEL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "SURFACE",
+            "typeOfCommodity": 1,
+            "discription": "20 pcs per box"
+        },
+        {
+            "productName": "HF-P611-4-SURFACEPANEL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "SURFACE",
+            "typeOfCommodity": 1,
+            "discription": "40 pcs per box"
+        },
+        {
+            "productName": "HF-P612-WALLLAMP-WH/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P815-WALLLAMP-WW/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P862-WALLLAMP/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P871-WALLLAMP-GRN/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P867-WALLLAMP-WHGRN/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P871-WALLLAMP-WH/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P871-WALLLAMP-BL/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P871-WALLLAMP-WW/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P873-WALLLAMP-WH/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-P873-WALLLAMP-WW/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-RP048-48W-WHBL/BX",
+            "categoryName": "DOWN LIGHT",
+            "unit": "Bx",
+            "productCode": "DOWNL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-PRL030-SURFACEPANEL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "SURFACE",
+            "typeOfCommodity": 1,
+            "discription": "20 pcs per box"
+        },
+        {
+            "productName": "HF-P875-WALLLAMP/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "STICKER-ROPELIGHT-RED-50M-10MM-120P/BOX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 50 metres"
+        },
+        {
+            "productName": "STICKER-ROPELIGHT-GLD-50M-8MM-120P/BX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 50 metres"
+        },
+        {
+            "productName": "HF-RP18-RIMLESS-PANEL-18W-WHGRN/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "60 pcs per box"
+        },
+        {
+            "productName": "HF-RP24-RIMLESS-PANEL-24W-WHGRN/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "40 pcs per box"
+        },
+        {
+            "productName": "HF-RP075-75W-WH/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "20  pcs per box"
+        },
+        {
+            "productName": "HF-RP36-RIMLESS-PANEL-36W-WHBL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "20 pcs per box"
+        },
+        {
+            "productName": "HF-RP075-75W-WHBL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "20 pcs per box"
+        },
+        {
+            "productName": "ROPELIGHT-NEONFLEX-100M-816M/BX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 100 metres"
+        },
+        {
+            "productName": "STICKER-ROPELIGHT-GLD-50M-10MM-120P/BX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 50 metres"
+        },
+        {
+            "productName": "HF-RP36-RIMLESS-PANEL-36W-WHWW/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "20 pcs per box"
+        },
+        {
+            "productName": "HF-RP10-RIMLESS-PANEL-10W-WWBL/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-RP075-75W-WHWW/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "20 pcs per box"
+        },
+        {
+            "productName": "HF-SED-WW/BX",
+            "categoryName": "",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-SP0010-GU10-10W-WH/BX",
+            "categoryName": "",
+            "unit": "Bx",
+            "productCode": "GU10Spot",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "STICKER-ROPELIGHT-GLD-100M-10MM-120P/BX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 100 metres"
+        },
+        {
+            "productName": "RP18-WALLLAMP-WHGRN/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "60 pcs per box"
+        },
+        {
+            "productName": "HF-RP10-RIMLESS-PANEL-10W-WHGRN/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF109-3W-COBDOWNLIGHT-WW/BX",
+            "categoryName": "DOWN LIGHT",
+            "unit": "Bx",
+            "productCode": "DOWNL",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HO2-SPOTLIGHT-WH-3W-WHBL/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-SP007-GU10-7W-WH/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "GU10Spot",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "ROPELIGHT-WIRELESS-BLWH-100M-12MM-120P/BX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 100 metres"
+        },
+        {
+            "productName": "ROPELIGHT-WIRELESS-WW-50M-12MM-120P/BX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 50 metres"
+        },
+        {
+            "productName": "ROPELIGHT-NEONFLEX-50M-816M/BX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 50 metres"
+        },
+        {
+            "productName": "HF-P874-WALLLAMP/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "ROPELIGHT-WIRELESS-BLWW-100M-12MM-120P/BX",
+            "categoryName": "ROPE LIGHT",
+            "unit": "Bx",
+            "productCode": "ROPL",
+            "typeOfCommodity": 1,
+            "discription": "Total length of 100 metres"
+        },
+        {
+            "productName": "HF-H304-WH-SIL-WHWW/BX",
+            "categoryName": "PANEL LIGHT",
+            "unit": "Bx",
+            "productCode": "PANEL",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "LED-SOLAR-WALLLAMP-WHGRN/BX",
+            "categoryName": "WALL LIGHT",
+            "unit": "Bx",
+            "productCode": "WALL",
+            "typeOfCommodity": 1,
+            "discription": "40 pcs per box"
+        },
+        {
+            "productName": "H02-SPOTLIGHT-3W-WH/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "H109-SPOTLIGHT-3W-WHBL/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-CP97-5W-3C-WHWW/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "GU10Spot",
+            "typeOfCommodity": 1,
+            "discription": "100 pcs per box"
+        },
+        {
+            "productName": "HF-CP97-ANTI-GLARE-GU10-5W-3C-WW/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "GU10Spot",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-CP97-ANTI-GLARE-GU10-5W-3C-WH/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "GU10Spot",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        },
+        {
+            "productName": "HF-LN96-PURIFICATION-76W-WH/BX",
+            "categoryName": "PURF LIGHT",
+            "unit": "Bx",
+            "productCode": "PURF",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "HF-NO-1.2M-180W/BX",
+            "categoryName": "FLOOD LIGHT",
+            "unit": "Bx",
+            "productCode": "FLOODL",
+            "typeOfCommodity": 1,
+            "discription": "30 pcs per box"
+        },
+        {
+            "productName": "H109-SPOTLIGHT-WH-3W-WHWW/BX",
+            "categoryName": "SPOT LIGHT",
+            "unit": "Bx",
+            "productCode": "SPOT",
+            "typeOfCommodity": 1,
+            "discription": "200 pcs per box"
+        }
+    ]
+},
+{
+    "_id": "93598",
+    "orgName": "HENSAT TELECOMMUNICATIONS ",
+    "businessId": "",
+    "countryCode": "NG",
+    "product_names": [
+        {
+            "productName": "2m Diameter Wire mesh Dish e.g Orbitron ST-10 or Approved Equal Brand DSTV",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Multiple Lnb Daul Brand DSTV",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "75 Ohms Low loss 100% shielded Co-ax CableTo Each Outlet From Amp/Splitters  Brand ASTEL  100m",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Visual modulator For modifiers Brand ASTEL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Combiner/dipliexer  Brand TELEVES",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "FTA Satellite  Receiver  Brand HENSAT",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Single Lnb Brand DSTV",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Subscription  3 Months (Compact Package)",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "LABOUR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "3 Months Subscription (Collective Package) 9600x8x3",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Dstv Subscription"
+        },
+        {
+            "productName": "DE STRONG 3030",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Receiver"
+        },
+        {
+            "productName": "HENSAT 2090 PLUS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Receiver"
+        },
+        {
+            "productName": "STRONG 4888",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Receiver"
+        },
+        {
+            "productName": "STRONG 4970H",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Receiver"
+        },
+        {
+            "productName": "MASTER  S100",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RECEIVER"
+        },
+        {
+            "productName": "EAGLE EYE CABLE 25M",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "COAXIAL CABLE"
+        },
+        {
+            "productName": "DSTV LNB",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Lnbf"
+        },
+        {
+            "productName": "DSTV SINGLE LNB",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "DSTV"
+        },
+        {
+            "productName": "DSTV 2 WAY LNB",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "DSTV"
+        },
+        {
+            "productName": "ALCAD200 BOOSTER",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "ALCAD"
+        },
+        {
+            "productName": "RF CONNECTOR ORIGINAL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "FCONNECTOR"
+        },
+        {
+            "productName": "OLD BALANCE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "TV HANGER 32 INCH",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Inline Transient Overvoltage Protection  e.g Esp Cctv Or Approved Equal Brand CANAL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Signal Modulators",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Televes"
+        },
+        {
+            "productName": "ZAPPER DECODER",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "DSTV"
+        },
+        {
+            "productName": "UHF ANTENNA",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Tv/Male  CONNECTOR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "GENERIC"
+        },
+        {
+            "productName": "Multi Channel  Indoor Headed Mixer/Amplifier  58db",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "TELEVES"
+        },
+        {
+            "productName": "Installation  Material  Tape",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "TAPE"
+        },
+        {
+            "productName": "Dstv  Single lnb",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "HST 001",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "HENSAT 2090  RECEIVER",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "HST 002",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "DE STRONG 3030 RECEIVER",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "HST 003",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Dstv Zapper Decoder",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Rf Connector Pack",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Male Connector  Pack",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "75 Ohms Low loss 100% Shielded  Co-ax Cable 300m",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "ASTEL"
+        },
+        {
+            "productName": "1.2m Ku Band Upset Enable,daul Lnb Treated Steel Dish (90cm)",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "DSTV"
+        },
+        {
+            "productName": "Multiple Lnb",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "TELEVES"
+        },
+        {
+            "productName": "Pre Amplifier (For Weak Signals Only)",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "8 Outgoing Way Small Gain Amplifier",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "JMA"
+        },
+        {
+            "productName": "5 Input Multiswitch System,24v Dc,40-2150 MHz 8 Outputs",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "TELEVES"
+        },
+        {
+            "productName": "Agile Tv Modulator",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "ASTEL"
+        },
+        {
+            "productName": "20db Line Amplifier",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "TELEVES"
+        },
+        {
+            "productName": "Channel Combiner  8CH",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "ASTEL"
+        },
+        {
+            "productName": "CAT.B LINE PROTECTION",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "DMARC"
+        },
+        {
+            "productName": "Multi Channel  Indoor Headed Mixer/Amplifier  45db",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "TELEVES"
+        },
+        {
+            "productName": "Inline Transient Overvoltage Protection",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "CANAL"
+        },
+        {
+            "productName": "8 Way RF Coupler/Splitter",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "ASTEL"
+        },
+        {
+            "productName": "Dstv 60cm Dish",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Dish"
+        },
+        {
+            "productName": "DSTV ORIGINAL DISH",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Dish"
+        },
+        {
+            "productName": "Hdmi To Av Converter",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "converter"
+        },
+        {
+            "productName": "Av To Hdmi Converter",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "converter"
+        },
+        {
+            "productName": "DSTV 2 WAY LNBF",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "HST 004",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "TELEVES MODULATOR 5859",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "HST 006",
+            "typeOfCommodity": 0,
+            "discription": "TELEVES"
+        },
+        {
+            "productName": "TELEVGOLDEN DISEQC",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "switch"
+        },
+        {
+            "productName": "SLTV DECODER",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "DECODER"
+        },
+        {
+            "productName": "HDMI CABLE 1.5M",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "HDMI cable"
+        },
+        {
+            "productName": "F CONNECTOR ORIGINAL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "F CONNECTOR Ordinary",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "TARGET LNB SINGLE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Adaptor 12v 2a",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Tokunbo"
+        },
+        {
+            "productName": "DSTV ORIGINAL DISH  90CM",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Dish"
+        },
+        {
+            "productName": "Dstv 60cm Dish Thick",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Dish"
+        },
+        {
+            "productName": "GOTV DECODER",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "GOTV"
+        },
+        {
+            "productName": "Gotv Antenna",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Gotv"
+        },
+        {
+            "productName": "Gotv Antenna ORIGINAL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "GOTV"
+        },
+        {
+            "productName": "Dmarc Tv guard",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Dmarc"
+        },
+        {
+            "productName": "Kettle Wire 3pin",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Tokunbo"
+        },
+        {
+            "productName": "Laptop Cable 3pin",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Tokunbo"
+        },
+        {
+            "productName": "Hdmi CABLE Fiber 50m",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Hdmi CABLE Fiber 30m",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Hdmi CABLE Fiber 20m",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Hdmi CABLE Fiber 10m",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "USB TO DC CABLE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Male Connector",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Dstv Av Wire 1-3",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -63,15 +2359,838 @@
         }
     ]
 },
-
 {
-    "_id": "93153",
-    "orgName": "ECHO WORLD ENTERPRISE",
+    "_id": "93579",
+    "orgName": "Divine Arizona",
     "businessId": "",
-    "countryCode": "MY",
+    "countryCode": "NG",
     "product_names": [
         {
-            "productName": "Water Meter Copper Ball Valve Change",
+            "productName": "Chloroquine tab 10x10",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Chloroquine phosphate"
+        },
+        {
+            "productName": "Biophage 1000mg",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Metformin 1000mg"
+        },
+        {
+            "productName": "Lokmal combi",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Box(20",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Artemether lumefantrine"
+        },
+        {
+            "productName": "Hydrochlorothiazide",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Para 1000mg 1x10",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Box(20",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Paracetamol 1000mg"
+        },
+        {
+            "productName": "Emtrim forte",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Cotrimoxazole 960mg"
+        },
+        {
+            "productName": "Lokmal x24",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Box(20",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Artemether lumefantrine"
+        },
+        {
+            "productName": "Nystatin drop",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emgyl 200mg",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Diasunate 1x3",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Artesunate amodiaquine"
+        },
+        {
+            "productName": "Lumal DS",
+            "categoryName": "SKG Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Artemether lumefantrine"
+        },
+        {
+            "productName": "Emzovasc 10mg",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Amlodopine 10mg"
+        },
+        {
+            "productName": "Metrotab 400mg",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Metronidazole 400mh"
+        },
+        {
+            "productName": "Zortafen tab",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Diclofenac potassium"
+        },
+        {
+            "productName": "Torvastin 10mg",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Atorvastatin 10mg"
+        },
+        {
+            "productName": "Diasunate 1x6",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Artesunate amodiaquine"
+        },
+        {
+            "productName": "Para Dispersible",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Box(20",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emzotan tab",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Losartan"
+        },
+        {
+            "productName": "Maldox tab",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Maldox Dispersible",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Biophage 500mg",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Metformin 500mg"
+        },
+        {
+            "productName": "Emzophage 500mg",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Metformin 500mg"
+        },
+        {
+            "productName": "Amivit sy",
+            "categoryName": "SKG Pharm.",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Erythromycin susp",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emprin 75mg",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Folic x100",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Folic acid"
+        },
+        {
+            "productName": "Emmox Dispersible",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Ammoxicillin 250mg"
+        },
+        {
+            "productName": "Maldox suspension",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Bco sy",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "CPM suspension",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Chlorpheniramine"
+        },
+        {
+            "productName": "Emmox suspension",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Ammoxicillin"
+        },
+        {
+            "productName": "Emcap suspension",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Paracetamol"
+        },
+        {
+            "productName": "Cofex Expectorant",
+            "categoryName": "SKG Pharm.",
+            "unit": "Dozen",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Novavite sy",
+            "categoryName": "SKG Pharm.",
+            "unit": "Dozen",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "SKG vitamin c sy",
+            "categoryName": "SKG Pharm.",
+            "unit": "Dozen",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "SKG Para Sy",
+            "categoryName": "SKG Pharm.",
+            "unit": "Rll(x6",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Paracetamol"
+        },
+        {
+            "productName": "Gripewater 100ml",
+            "categoryName": "SKG Pharm.",
+            "unit": "Dozen",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Metropaed suspension",
+            "categoryName": "SKG Pharm.",
+            "unit": "Rll(x6",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Metronidazole"
+        },
+        {
+            "productName": "Novalyn linctus",
+            "categoryName": "SKG Pharm.",
+            "unit": "Dozen",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emzoron tonic",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Rll(x6",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Metaprin",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Lady's own tonic",
+            "categoryName": "SKG Pharm.",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nova-3-sulfa",
+            "categoryName": "SKG Pharm.",
+            "unit": "Tin",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "King's tonic",
+            "categoryName": "SKG Pharm.",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Rulox suspension",
+            "categoryName": "SKG Pharm.",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Cofex chesty",
+            "categoryName": "SKG Pharm.",
+            "unit": "Dozen",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Novalor suspension",
+            "categoryName": "SKG Pharm.",
+            "unit": "Rll(x6",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Chloroquine phosphate"
+        },
+        {
+            "productName": "Rexifen cap 200mg",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Asprin x1000",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Tin",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emvite x1000",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Tin",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Multivitamin"
+        },
+        {
+            "productName": "Rexifen cap 400mg",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Ibuprofen"
+        },
+        {
+            "productName": "Primpex DS",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Cotrimoxazole"
+        },
+        {
+            "productName": "Fluconazole suspension",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Azithro 250mg",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Azithromycin 250mg"
+        },
+        {
+            "productName": "Zolat 400mg",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Box(40",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Albendazole 400mg"
+        },
+        {
+            "productName": "Avrotrim tab",
+            "categoryName": "Avro Pharm",
+            "unit": "Bx(100",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Cotrimoxazole 480mg"
+        },
+        {
+            "productName": "Fimin sy",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "CPM Blister",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Pcs",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Folic ×1000",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Tins",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Metrotab 200mg",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Metronidazole 200mg"
+        },
+        {
+            "productName": "Emgyl tab 400mg",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Metronidazole 400mg"
+        },
+        {
+            "productName": "Zinc tab1x10",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Zinc sulphate 20mg"
+        },
+        {
+            "productName": "Emtrim tab",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Bx(100",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Cotrimoxazole 480mg"
+        },
+        {
+            "productName": "Keep On",
+            "categoryName": "SKG Pharm.",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emcap x100",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Paracetamol 500mg"
+        },
+        {
+            "productName": "Emtrim suspension",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Cotrimoxazole"
+        },
+        {
+            "productName": "Emzoclox drop",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emzolyn Child",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Primpex suspension",
+            "categoryName": "SKG Pharm.",
+            "unit": "Rll(x6",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Cotrimoxazole"
+        },
+        {
+            "productName": "Novadex x1000",
+            "categoryName": "SKG Pharm.",
+            "unit": "Tin",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Paracetamol 500mg"
+        },
+        {
+            "productName": "Emcap x1000",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Tin",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Paracetamol 500mg"
+        },
+        {
+            "productName": "Vit c x1000",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Tin",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Ascorbic acid"
+        },
+        {
+            "productName": "Cenocide x1000",
+            "categoryName": "SKG Pharm.",
+            "unit": "Tin",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Hydrogen peroxide",
+            "categoryName": "SKG Pharm.",
+            "unit": "Carton",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Primpex tab",
+            "categoryName": "SKG Pharm.",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emzor Para x96",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Crt(20",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Paracetamol 500mg"
+        },
+        {
+            "productName": "Vit c sy(Emzor)",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Ascorbic acid"
+        },
+        {
+            "productName": "Avroapetit sy",
+            "categoryName": "Avro Pharm",
+            "unit": "Packet",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Emgyl suspension",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Metronidazole"
+        },
+        {
+            "productName": "Emzolyn Adult",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Chloroquine sy",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Chloroquine phosphate"
+        },
+        {
+            "productName": "CPM x1000",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Tin",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Chlorpheniramine maleate"
+        },
+        {
+            "productName": "Zolat Susp",
+            "categoryName": "Emzor Pharm.",
+            "unit": "Roll",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        }
+    ]
+},
+{
+    "_id": "93574",
+    "orgName": "Easy Mart",
+    "businessId": "",
+    "countryCode": "ZW",
+    "product_names": [
+        {
+            "productName": "Pushup Stand",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Ab Wheel",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Okop Car Phone Holder",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Vacuum Cleaner",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Back Pain Support",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "MWKS Compression Knee Support",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Pain Relief Spray",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sheen Shield",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Supplements Shaker",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Hip Flask",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Air Cooler Fan",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Humidifier",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Air Freshener",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Hot Shaper",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Maths Set",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Derma Roller",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Power Resistance Bands",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Straightening Brush",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Curling Iron",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Drain Unblocking Powder",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -79,7 +3198,7 @@
             "discription": ""
         },
         {
-            "productName": "Kitchen Water Leaking Repair",
+            "productName": "Triangles",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -87,7 +3206,7 @@
             "discription": ""
         },
         {
-            "productName": "Bar Water Tap, Wast, Flexible Hose Pipe, Angel Ball Valbe Change",
+            "productName": "Fascial Massage Gun",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -95,7 +3214,7 @@
             "discription": ""
         },
         {
-            "productName": "Old Balance",
+            "productName": "Axe",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -103,7 +3222,7 @@
             "discription": ""
         },
         {
-            "productName": "Kitchen Socket Repair And Rewiring",
+            "productName": "Body Weight Scale",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -111,7 +3230,7 @@
             "discription": ""
         },
         {
-            "productName": "Cabinet Door Repair",
+            "productName": "Tablet Holder",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -119,7 +3238,7 @@
             "discription": ""
         },
         {
-            "productName": "SS/ Kitchen Power Socket Repair And Rewiring",
+            "productName": "Waist Protector",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -127,7 +3246,7 @@
             "discription": ""
         },
         {
-            "productName": "SS/ In front Led Signboard Light Change And Rewiring",
+            "productName": "Stress Balls",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -135,7 +3254,7 @@
             "discription": ""
         },
         {
-            "productName": "SCORE BAR / Female toilet bowl Reinstall",
+            "productName": "Surgical Bandage",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -143,7 +3262,7 @@
             "discription": ""
         },
         {
-            "productName": "F N I / Cabinet Door Repair",
+            "productName": "Essential Oils Set",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -151,7 +3270,7 @@
             "discription": ""
         },
         {
-            "productName": "BNH / Light Dimmer Change",
+            "productName": "Diffusers",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -159,7 +3278,7 @@
             "discription": ""
         },
         {
-            "productName": "BNH/ Toilet Water Ball valve Change",
+            "productName": "Lemon Ginger Tea",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -167,7 +3286,7 @@
             "discription": ""
         },
         {
-            "productName": "BNH/ Toilet Water Tap Change",
+            "productName": "Elastic Bandage",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -175,7 +3294,7 @@
             "discription": ""
         },
         {
-            "productName": "DRAVIDIAN / Certain Pipe Change And Reinstall",
+            "productName": "Pain Patches",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -183,7 +3302,7 @@
             "discription": ""
         },
         {
-            "productName": "Oven Power Connection Repair",
+            "productName": "Beard Oil",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -191,7 +3310,7 @@
             "discription": ""
         },
         {
-            "productName": "Ceiling Repair, Manhole Install 3 Pcs",
+            "productName": "Foot Massage Pad",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -199,7 +3318,7 @@
             "discription": ""
         },
         {
-            "productName": "Dravidian Ceiling Repair",
+            "productName": "Quality Bandaid",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -207,7 +3326,7 @@
             "discription": ""
         },
         {
-            "productName": "Southern Spice Chiller Door Repair",
+            "productName": "15K Puff Vape",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -215,7 +3334,7 @@
             "discription": ""
         },
         {
-            "productName": "Southern Spice Deep fryer Flugtop Change",
+            "productName": "10K Puff Vape",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -223,7 +3342,7 @@
             "discription": ""
         },
         {
-            "productName": "BNH Ladies Toilet Flush Repair",
+            "productName": "Mini Fan",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -231,7 +3350,7 @@
             "discription": ""
         },
         {
-            "productName": "Fire N Ice Elcb Buy 250 And Working Charge 00",
+            "productName": "Plastic Desk Phone Holder",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -239,7 +3358,7 @@
             "discription": ""
         },
         {
-            "productName": "Fire N Ice Led Display 16 Pcs Power Supply Change",
+            "productName": "Jack Daniels Hip Flask Set",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -247,7 +3366,7 @@
             "discription": ""
         },
         {
-            "productName": "Bar Chiller Compressor Change And Gas Charge",
+            "productName": "First Aid Kit",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -255,7 +3374,7 @@
             "discription": ""
         },
         {
-            "productName": "2 Bar Chiller Service And Gas Top Up",
+            "productName": "Lint Remover",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -263,7 +3382,7 @@
             "discription": ""
         },
         {
-            "productName": "Led Screen Power Supply Change 16 Pcs And Signal Cable Change 4 Pcs",
+            "productName": "Strapped Knee Support",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -271,7 +3390,7 @@
             "discription": ""
         },
         {
-            "productName": "Kitchen Chiller Fan Motor Change",
+            "productName": "Gym Gloves",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -279,7 +3398,7 @@
             "discription": ""
         },
         {
-            "productName": "Kitchen Store Cabinet Install",
+            "productName": "Fabric Resistance Bands",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -287,7 +3406,7 @@
             "discription": ""
         },
         {
-            "productName": "Kitchen Deep fryer Auto Controller Thermostat Cange",
+            "productName": "Knuckled Fitness Gloves",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -295,7 +3414,7 @@
             "discription": ""
         },
         {
-            "productName": "Sign Boad 12v 30a Waterproof Power Supply Change",
+            "productName": "Ankle Support",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -303,7 +3422,7 @@
             "discription": ""
         },
         {
-            "productName": "BNH Wall And Chilling Repair",
+            "productName": "Facial Hair Remover",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -311,7 +3430,7 @@
             "discription": ""
         },
         {
-            "productName": "FIRE N ICE Bar Chiller Gas Gas Refill",
+            "productName": "Kinesiology Tape",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -319,7 +3438,7 @@
             "discription": ""
         },
         {
-            "productName": "FIRE N ICE Led Display Power Wire And Signal Wire Buy 20 PCs Change 16 Pcs",
+            "productName": "Elastic Resistance Bands",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -327,7 +3446,7 @@
             "discription": ""
         },
         {
-            "productName": "DRAVIDIAN Cable Trunking Install With Black Paint",
+            "productName": "LED Tv Remote",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -335,7 +3454,7 @@
             "discription": ""
         },
         {
-            "productName": "DRAVIDIAN Bar Chiller Gas Refill",
+            "productName": "SF Knee Support",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -343,7 +3462,7 @@
             "discription": ""
         },
         {
-            "productName": "Flavor Outside 2 Speaker Install With New Wiring",
+            "productName": "Lint Roller",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -351,7 +3470,7 @@
             "discription": ""
         },
         {
-            "productName": "Flavor Outside Hanging Led Light Install With Wiring",
+            "productName": "Waterproof Tape",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -359,7 +3478,7 @@
             "discription": ""
         },
         {
-            "productName": "Nawabs Aircon Water Leaking Repair",
+            "productName": "Skipping Rope",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -367,7 +3486,7 @@
             "discription": ""
         },
         {
-            "productName": "Old Balance (INV 2) 850",
+            "productName": "Shoe Insoles",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -375,7 +3494,7 @@
             "discription": ""
         },
         {
-            "productName": "Flavor Kitchen Freezer Fan Motor Capacitor Change Abd Gas Refill",
+            "productName": "Yoga Mat",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -383,7 +3502,7 @@
             "discription": ""
         },
         {
-            "productName": "Flavor Bar Water Filter Water Pipe Connection And Electric Connection",
+            "productName": "Memory Foam",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -391,7 +3510,7 @@
             "discription": ""
         },
         {
-            "productName": "Chiller Digital Thermostat Change",
+            "productName": "Bath Brush",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -399,7 +3518,7 @@
             "discription": ""
         },
         {
-            "productName": "Chiller Switch Change And Leaking Repair",
+            "productName": "Mini Pepper Spray",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -407,7 +3526,7 @@
             "discription": ""
         },
         {
-            "productName": "3 Pin Multi Socket And 3 Pin Socket Top Change",
+            "productName": "Multiple Function Spring",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -415,7 +3534,7 @@
             "discription": ""
         },
         {
-            "productName": "H 7 feet × D 5 Feet × S 3 Feet Cabinet For Rubbish  Using Holo 1×1×2.3 = 10 Pcs And Net 7×03 = 4 Pcs",
+            "productName": "Hand Grips",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -423,7 +3542,7 @@
             "discription": ""
         },
         {
-            "productName": "Transport",
+            "productName": "BP Monitor",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -431,7 +3550,7 @@
             "discription": ""
         },
         {
-            "productName": "Door Lock And Door Hinge",
+            "productName": "4 Wheel Ab Wheel",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -439,7 +3558,7 @@
             "discription": ""
         },
         {
-            "productName": "Working Charge",
+            "productName": "Cooling Towel",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -447,7 +3566,7 @@
             "discription": ""
         },
         {
-            "productName": "Buffet Element Change",
+            "productName": "Wrist Support",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -455,7 +3574,7 @@
             "discription": ""
         },
         {
-            "productName": "Bar Chiller Thermostat Change",
+            "productName": "Wrap Corset",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -463,7 +3582,7 @@
             "discription": ""
         },
         {
-            "productName": "Office Aircon Reinstall",
+            "productName": "Wireless Mouse",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -471,7 +3590,7 @@
             "discription": ""
         },
         {
-            "productName": "Nawab's Outside Hanging Led Light Install 30 Rool",
+            "productName": "Wax Beans",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -479,7 +3598,7 @@
             "discription": ""
         },
         {
-            "productName": "Flavor Kitchen 4 Door Chiller Compressor Change And Gas Fill",
+            "productName": "Smart Tv Remote",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -487,7 +3606,7 @@
             "discription": ""
         },
         {
-            "productName": "Flavor Bar 2 Door Chiller Compressor Change And Gas Fill",
+            "productName": "Table Lamp Holder",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -495,7 +3614,7 @@
             "discription": ""
         },
         {
-            "productName": "Flavor Ball Room Sound And Light Install 2 Day",
+            "productName": "Insect Killer Spray",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -503,7 +3622,7 @@
             "discription": ""
         },
         {
-            "productName": "Camera New Wiring Repair and Online Nawab's, Spice N Ice G Floor, 1st Floor, 2nd Floor And 3rd Floor",
+            "productName": "Keychain Cob Light",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -511,7 +3630,7 @@
             "discription": ""
         },
         {
-            "productName": "Spice N Ice Distribution Board 3 Phase Bar , Elcb, Mcb, Fuse Replace Done",
+            "productName": "Gas Lighter",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -519,7 +3638,7 @@
             "discription": ""
         },
         {
-            "productName": "Spice N Ice Out Side Speaker Wire Repair",
+            "productName": "Small Mount Tape",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -527,7 +3646,7 @@
             "discription": ""
         },
         {
-            "productName": "Nawab's Wall Socket Rewiring And Light Fixed",
+            "productName": "Data Cable Set",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -535,7 +3654,7 @@
             "discription": ""
         },
         {
-            "productName": "Spice N Ice Outside Rgb Spot Light Install And Cob Strip Light Install",
+            "productName": "Lighter Flashlight",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -543,7 +3662,7 @@
             "discription": ""
         },
         {
-            "productName": "Deep fryer Round Pin Metal Gland Socket Change 2 Pcs",
+            "productName": "Nail Clippers Set",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -551,7 +3670,7 @@
             "discription": ""
         },
         {
-            "productName": "Flavor Ball Room Sound And Light Install",
+            "productName": "Desk Metal Phone Stand",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -559,7 +3678,7 @@
             "discription": ""
         },
         {
-            "productName": "3 Gang Switch Change",
+            "productName": "Metal Cash Box",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -567,7 +3686,7 @@
             "discription": ""
         },
         {
-            "productName": "Fire N Ice Water Motor Auto Controller Change",
+            "productName": "Fancy Nail Clippers",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -575,7 +3694,7 @@
             "discription": ""
         },
         {
-            "productName": "BNH staircase 2 Spot Light Change",
+            "productName": "Dryer Blower",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -583,7 +3702,7 @@
             "discription": ""
         },
         {
-            "productName": "Fire N Ice Toilet Bowl Water Leaking Repair",
+            "productName": "Fire Extinguisher \ud83d\udd25\ud83e\uddef",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -591,25 +3710,23 @@
             "discription": ""
         },
         {
-            "productName": "Fire N Ice And Southern Spice Table Repair",
+            "productName": "Pepper Spray \ud83c\udf36\ufe0f",
             "categoryName": "",
             "unit": "",
             "productCode": "",
             "typeOfCommodity": 0,
             "discription": ""
         }
-
     ]
 },
-
 {
-    "_id": "92453",
-    "orgName": "TABBA MART",
+    "_id": "93568",
+    "orgName": "Dr Rohan Badgujar",
     "businessId": "",
-    "countryCode": "EG",
+    "countryCode": "IN",
     "product_names": [
         {
-            "productName": "Strawberry",
+            "productName": "Root Canal Of Tooth Number 36 And 46.",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -617,7 +3734,39 @@
             "discription": ""
         },
         {
-            "productName": "Banana",
+            "productName": "Balaji Dalvi Tooth Numbef 21 & 22",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Root canal"
+        },
+        {
+            "productName": "Santosh Mithbawkar Tooth No 47",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Root canal 2 sittings"
+        },
+        {
+            "productName": "Bharbhari Priya Tooth No 35",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Root canal 2 sittings"
+        },
+        {
+            "productName": "Balaji Dalvi Tooth Number 21 & 22",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "Root canal",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Deosthali Mandar Tooth No 47",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -625,7 +3774,7 @@
             "discription": ""
         },
         {
-            "productName": "Ariel Detergent",
+            "productName": "Sumit More Tooth No 21",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -633,7 +3782,7 @@
             "discription": ""
         },
         {
-            "productName": "Prill Dishwashing",
+            "productName": "Raghunathan Meera Tooth No 45",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -641,7 +3790,39 @@
             "discription": ""
         },
         {
-            "productName": "Fine Toilet Paper",
+            "productName": "Vimal Deshmukh Tooth No 14",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Root canal 2 sittings"
+        },
+        {
+            "productName": "Mayur Thakkar Tooth No 37",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Root canal 2 sittings"
+        },
+        {
+            "productName": "R Vaidyanathan Tootn No 26",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Root canal 2 sittings"
+        },
+        {
+            "productName": "Bhide Jyotsna Toith No 37",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Root canal 2 sittings"
+        },
+        {
+            "productName": "Laxman Ajatrao Tooth No 38",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -649,7 +3830,7 @@
             "discription": ""
         },
         {
-            "productName": "Clorox",
+            "productName": "Katkar Kailas Tooth No 17",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -657,7 +3838,7 @@
             "discription": ""
         },
         {
-            "productName": "Velveta Softener",
+            "productName": "Aarush Darne Tooth No 36",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -665,7 +3846,23 @@
             "discription": ""
         },
         {
-            "productName": "Loreal Shampoo",
+            "productName": "C V Gopalkrishnan Tooth No 46",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Re Rct of 46 tooth"
+        },
+        {
+            "productName": "Full Mouth Implant",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "osstem implants"
+        },
+        {
+            "productName": "Root Canal Of Tooth No 36 & 37",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -673,7 +3870,7 @@
             "discription": ""
         },
         {
-            "productName": "Sofy Maxy",
+            "productName": "Composite Filling Of Tooth No 36 & 37",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -681,7 +3878,7 @@
             "discription": ""
         },
         {
-            "productName": "Close Up Toothpaste",
+            "productName": "PFM MLS CROWN ON 36 & 37",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -689,7 +3886,15 @@
             "discription": ""
         },
         {
-            "productName": "Shower Gel",
+            "productName": "Mubarak Gilani",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Re endodontic treatment"
+        },
+        {
+            "productName": "Full Mouth Scaling",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -697,7 +3902,7 @@
             "discription": ""
         },
         {
-            "productName": "Toothpaste ORAL B",
+            "productName": "Composite Restoration Of Tooth No 12",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -705,7 +3910,7 @@
             "discription": ""
         },
         {
-            "productName": "Al Doha Rice",
+            "productName": "Root Canal Of Tooth No 36",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -713,7 +3918,223 @@
             "discription": ""
         },
         {
-            "productName": "Egg",
+            "productName": "Sanjay Kadam",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 11 --- 2 sittings"
+        },
+        {
+            "productName": "Vaidya Sharvari",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 25"
+        },
+        {
+            "productName": "Ankita Kundhadia",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 24"
+        },
+        {
+            "productName": "Jyotsna Bhide",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 37"
+        },
+        {
+            "productName": "Priya Bharbhari",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 35"
+        },
+        {
+            "productName": "Aphale Suchitra",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Re Rct of 15"
+        },
+        {
+            "productName": "Deepa Badrinarayan",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 43,12 & 11"
+        },
+        {
+            "productName": "Meera Raghunathan",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 45"
+        },
+        {
+            "productName": "Anant Pai",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 22"
+        },
+        {
+            "productName": "Kailas Katkar",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 17"
+        },
+        {
+            "productName": "Mandar Deosthali",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 47"
+        },
+        {
+            "productName": "Vinay Venkatachalam",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 16"
+        },
+        {
+            "productName": "Sumit More",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 21"
+        },
+        {
+            "productName": "Amruta Pai",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 21, 44 & 45"
+        },
+        {
+            "productName": "Mayur Thakkar",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 37"
+        },
+        {
+            "productName": "R Vaidyanathan",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 26"
+        },
+        {
+            "productName": "Dilip Kulkarni",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 28"
+        },
+        {
+            "productName": "Laxman Ajatrao",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 38"
+        },
+        {
+            "productName": "Aarush Darne",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 36"
+        },
+        {
+            "productName": "C.V. Gopalkrishnan",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "ReRct of 46"
+        },
+        {
+            "productName": "Vimal Deshmukh",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 14"
+        },
+        {
+            "productName": "Balaji Dalvi",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 21"
+        },
+        {
+            "productName": "Santosh Mithbawkar",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 37"
+        },
+        {
+            "productName": "Zaheer Kanji",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "RCT of 16, 26,27,36 single visit"
+        },
+        {
+            "productName": "Hawa Uncle",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 12,11,21,22"
+        },
+        {
+            "productName": "Zudeda Kuheni",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 37"
+        },
+        {
+            "productName": "Ashish Sawant",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 47"
+        },
+        {
+            "productName": "Mehendi Merchant",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -721,7 +4142,719 @@
             "discription": ""
         },
         {
-            "productName": "Juhayna Milk",
+            "productName": "Azeema",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 25"
+        },
+        {
+            "productName": "Siraj Lalani",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "ReRct of 46"
+        },
+        {
+            "productName": "Mallick Aziz Merchant",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 15"
+        },
+        {
+            "productName": "Patricia Pinto",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 47"
+        },
+        {
+            "productName": "Parin Dhorila",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 16"
+        },
+        {
+            "productName": "Munira Motorwala",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 41;44 &45"
+        },
+        {
+            "productName": "Amin Jiwani",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rerct of 46"
+        },
+        {
+            "productName": "Gulam",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": "Rct of 16; 26 27 & 36"
+        },
+        {
+            "productName": "Insiya Nullwala",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "Fair prognosis patient & dr rozmin mam has been informed",
+            "typeOfCommodity": 0,
+            "discription": "Rerct of 17"
+        }
+    ]
+},
+{
+    "_id": "93533",
+    "orgName": "PRINTORIA",
+    "businessId": "",
+    "countryCode": null,
+    "product_names": [
+        {
+            "productName": "BLOC NOTE GRIS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BLOCN002",
+            "typeOfCommodity": 1,
+            "discription": "GRIS A BPOUCLE RECTANGLE DOREE"
+        },
+        {
+            "productName": "BLOC NOTE MARRON",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BLOCN001",
+            "typeOfCommodity": 1,
+            "discription": "MARRON A BOUCLE RECTANGLE DOREE"
+        },
+        {
+            "productName": "BLOC NOTE  BLEU MARINE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BLOCN003",
+            "typeOfCommodity": 1,
+            "discription": "BLEU MARINE PRESSE"
+        },
+        {
+            "productName": "BLOC NOTE TISSE NOIR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BLOCN004",
+            "typeOfCommodity": 1,
+            "discription": "NOIR TISSEE"
+        },
+        {
+            "productName": "BLOC NOTE GM NOIR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BLOCN005",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BLOC NOTE GM GRIS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BLOCN006",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BLOC NOTE PM GRIS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BLOC007",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BLOC NOTE PM NOIR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BLOCN008",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "AGENDA ROUGE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AG002",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "AGENDA GRIS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AG003",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "AGENDA ROSE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AG004",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "AGENDA BLEU CIEL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AG006",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "AGENDA MARRON",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AG007",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "TROUSSE NOIR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "TR001",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "TROUSSE DOREE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "TR002",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "TROUSSE MARRON",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "TR003",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG BLANC",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MB",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG EN VERRE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MV",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "AGENDA SPIRALE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AGS",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE ORANGE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C23",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE NOIR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C1",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE BLANC",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C2",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE ROUGE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C3",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE VIOLET",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C4",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE BEIGE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C5",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASUETTE MARRON CAFE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C6",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE MARRON CHOCOLAT",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C7",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE CAMEL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C8",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE ROSE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C9",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE FUSHIA",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C10",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE GRENAT",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C11",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE JAUNE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C12",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE JAUNE D'OEUFS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C13",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CAQUETTE JAUNE MOUTARDE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C14",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE BLEU ELECTRIQUE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C15",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE BLEU CIEL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C16",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE BLEU TURQUOISE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C17",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE BLEU MARINE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C18",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE VERT POMME",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C19",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE VERT CLAIR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C20",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE  VERT EMERAUDE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C21",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE VERT ARMEE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C22",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE AUBERGINE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG MATE BLEU CIEL",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MM",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG MATE JAUNE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MM",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG MATE ROUGE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MM",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG MATE ROSE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MM",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG MATE VIOLET",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MM",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG MATE MR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MM",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "MUG MATE MME",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "MM",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO METALLIQUE ROUGE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLM1",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO METALLIQUE GRENAT",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLM2",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO METALLIQUE BLANC",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLM3",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO EN BOIS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLB",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO PLASTIQUE BLANC",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLP",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO PLASTIQUE JAUNE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLP",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO PLASTIQUE BLEU",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLP",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO PLASTIQUE ROUGE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLP",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO PLASTIQUE VERT",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLP",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "STYLO PLASTIQUE NOIR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "STYLP",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "PORTE CLE ROND",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "PC",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "PORTE CLE EN BOIS CARRE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "PC",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "GOURDE NOIR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "G",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "GOURDE ROSE GM",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "G",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "COFFRET DUO",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "CCD",
+            "typeOfCommodity": 1,
+            "discription": "2COMPARTIMENT + FENETRE"
+        },
+        {
+            "productName": "COFFRET TRIO",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "CCT",
+            "typeOfCommodity": 1,
+            "discription": "3 COMPARTIMENT +FENETRE"
+        },
+        {
+            "productName": "PORTE GOURDE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "PG",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BOITE NOEL PM",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BT",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BOITE NOEL MM",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BT",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BOITE A BIJOUX",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "BT",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "AGENDA BLEU MARINE 2026",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AG",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "CASQUETTE GRIS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "C",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "GOURDE BLANC",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "G",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BLOC NOTE VOLAMENA",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BLOC NOTE TISSE GRIS",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BLOC NOTE TISSE DOREE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "BLOC NOTE TISSE BLEU MARINE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "T-shirt",
+            "categoryName": "",
+            "unit": "Pcs",
+            "productCode": "001",
+            "typeOfCommodity": 0,
+            "discription": "prix détail :45 000Ar\nprix à partir 25 pièces :40 000Ar"
+        },
+        {
+            "productName": "Mug Personnalisé En Recto/Verso",
+            "categoryName": "",
+            "unit": "Pcs",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Livraison",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -729,7 +4862,55 @@
             "discription": ""
         },
         {
-            "productName": "Mushroom",
+            "productName": "Stylo",
+            "categoryName": "",
+            "unit": "Pcs",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Agenda Personnalisé",
+            "categoryName": "",
+            "unit": "Pcs",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "PARAPLUIE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "P",
+            "typeOfCommodity": 1,
+            "discription": "1 LOGO SUR PARAPLUIE \nET \n1 LOGO SUR L'ETUI"
+        },
+        {
+            "productName": "AGENDA BLEU MARINE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AG001",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "AGENDA BEIGE",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "AG008",
+            "typeOfCommodity": 1,
+            "discription": ""
+        }
+    ]
+},
+{
+    "_id": "93489",
+    "orgName": "Dapoer Cibeureum",
+    "businessId": "",
+    "countryCode": "ID",
+    "product_names": [
+        {
+            "productName": "Kacang",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -737,7 +4918,7 @@
             "discription": ""
         },
         {
-            "productName": "Koki Fillet",
+            "productName": "Udang Windu",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -745,7 +4926,7 @@
             "discription": ""
         },
         {
-            "productName": "Koki Liver",
+            "productName": "mie ayam isi 4",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -753,7 +4934,7 @@
             "discription": ""
         },
         {
-            "productName": "Squid",
+            "productName": "Ayam serundeng utuh",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -761,7 +4942,7 @@
             "discription": ""
         },
         {
-            "productName": "Fish Fillet",
+            "productName": "Telor",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -769,7 +4950,7 @@
             "discription": ""
         },
         {
-            "productName": "Ciren Vit D3",
+            "productName": "Singkong keju",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -777,7 +4958,7 @@
             "discription": ""
         },
         {
-            "productName": "Sukker Stevia",
+            "productName": "Lupis",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -785,7 +4966,7 @@
             "discription": ""
         },
         {
-            "productName": "Copad 100000 Lu",
+            "productName": "Sempol",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -793,7 +4974,7 @@
             "discription": ""
         },
         {
-            "productName": "Broncho Vaxom",
+            "productName": "Cabe gendot",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -801,7 +4982,7 @@
             "discription": ""
         },
         {
-            "productName": "Trio Clar 42/cap",
+            "productName": "Rinso",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -809,7 +4990,7 @@
             "discription": ""
         },
         {
-            "productName": "Solvadol",
+            "productName": "Cabe Jablay",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -817,7 +4998,7 @@
             "discription": ""
         },
         {
-            "productName": "Apple",
+            "productName": "CRM",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -825,7 +5006,7 @@
             "discription": ""
         },
         {
-            "productName": "Corn",
+            "productName": "Cilok",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -833,7 +5014,7 @@
             "discription": ""
         },
         {
-            "productName": "Brocoli",
+            "productName": "Kertas HVS",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -841,7 +5022,7 @@
             "discription": ""
         },
         {
-            "productName": "Kamena Hand Wash",
+            "productName": "Tape ketan 250 gr",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -849,7 +5030,7 @@
             "discription": ""
         },
         {
-            "productName": "Dettol Soap Bar",
+            "productName": "Tape uli 250 gr",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -857,7 +5038,7 @@
             "discription": ""
         },
         {
-            "productName": "Spanish",
+            "productName": "Tape ketan",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -865,7 +5046,7 @@
             "discription": ""
         },
         {
-            "productName": "Cappuccino",
+            "productName": "Dodol mini wijen 500gr",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -873,7 +5054,7 @@
             "discription": ""
         },
         {
-            "productName": "Mocca",
+            "productName": "Dodol mini ori",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -881,7 +5062,7 @@
             "discription": ""
         },
         {
-            "productName": "Aa",
+            "productName": "Tape ketan 500 gr",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -889,7 +5070,7 @@
             "discription": ""
         },
         {
-            "productName": "Mix Sweet",
+            "productName": "Tape uli 500 gr",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -897,7 +5078,7 @@
             "discription": ""
         },
         {
-            "productName": "Indomie 40 Pcs",
+            "productName": "Beras Mawar",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -905,7 +5086,7 @@
             "discription": ""
         },
         {
-            "productName": "Maggi Chicken Soup",
+            "productName": "Bebek",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -913,7 +5094,7 @@
             "discription": ""
         },
         {
-            "productName": "Afia Corn Oil 6 Pcs",
+            "productName": "Tahu susu",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -921,7 +5102,7 @@
             "discription": ""
         },
         {
-            "productName": "Haloub Ghee",
+            "productName": "bumbu",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -929,7 +5110,7 @@
             "discription": ""
         },
         {
-            "productName": "Fern Butter",
+            "productName": "Manggis",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -937,7 +5118,7 @@
             "discription": ""
         },
         {
-            "productName": "Healthy Brown Eggs (30 Eggs)",
+            "productName": "Facial wash",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -945,7 +5126,7 @@
             "discription": ""
         },
         {
-            "productName": "Juhayna Milk 1 Liter (6 packs)",
+            "productName": "Night cream",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -953,7 +5134,7 @@
             "discription": ""
         },
         {
-            "productName": "Medjool Dates",
+            "productName": "Day cream",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -961,7 +5142,7 @@
             "discription": ""
         },
         {
-            "productName": "Ginger",
+            "productName": "Kacang Lurik",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -969,7 +5150,7 @@
             "discription": ""
         },
         {
-            "productName": "Cardamom Powder",
+            "productName": "Mie ayam TJ",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -977,7 +5158,7 @@
             "discription": ""
         },
         {
-            "productName": "White Pepper",
+            "productName": "Sop buntut",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -985,7 +5166,7 @@
             "discription": ""
         },
         {
-            "productName": "Sonbolat All Purpose Flour",
+            "productName": "Rebusan nampan",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -993,7 +5174,7 @@
             "discription": ""
         },
         {
-            "productName": "El Saa Rice 5 Kg",
+            "productName": "Iga bakar",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1001,7 +5182,7 @@
             "discription": ""
         },
         {
-            "productName": "Koki Chicken Fillet 900 Gram",
+            "productName": "Ayam ingkung 1/4",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1009,7 +5190,7 @@
             "discription": ""
         },
         {
-            "productName": "Frozen Shrimp",
+            "productName": "Sate lilit Bl",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1017,7 +5198,7 @@
             "discription": ""
         },
         {
-            "productName": "Sea Bass 4 Pcs",
+            "productName": "Bawang Merah",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1025,7 +5206,7 @@
             "discription": ""
         },
         {
-            "productName": "Medium Squid",
+            "productName": "Bawang Putih",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1033,7 +5214,7 @@
             "discription": ""
         },
         {
-            "productName": "Calamari",
+            "productName": "Cabe Merah Keriting",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1041,7 +5222,7 @@
             "discription": ""
         },
         {
-            "productName": "Diva Elegance Shower 4 Liter",
+            "productName": "Iga ekonomis",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1049,7 +5230,7 @@
             "discription": ""
         },
         {
-            "productName": "Oxy Grow 9 Kg",
+            "productName": "Ayam serundeng Paha",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1057,7 +5238,7 @@
             "discription": ""
         },
         {
-            "productName": "Papia Premium Tissue",
+            "productName": "Ceker yanpa tulang",
             "categoryName": "",
             "unit": "",
             "productCode": "",
@@ -1065,14 +5246,925 @@
             "discription": ""
         },
         {
-            "productName": "Garbage Bags Rolls",
+            "productName": "Sambosa Mini/ jumbo dag",
             "categoryName": "",
             "unit": "",
             "productCode": "",
             "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Risol Mozarella",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Kacang Edamame",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Kacabg Edamame 1/2 kg",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Kacang Edamame 1/2 kg",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Ayam bakar 1 ekor",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Beras Sehat/Unggul",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Jagung",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Mpek mpek kulit 600gr",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "M Sunco 2 lt",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Bubur ayam",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Mie ayam ori",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Cilok Mercon",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nasi tulang iga",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nasi Jinggo",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Iga tulang",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Jilbab",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nasi Dorendo",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Iga bakar + Nasi",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Iga bakar tanpa nasi",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Tape singkong",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Daging kepala",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sayap",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Tahu bakso",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Melon Jepang",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nugget Promo",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Beras BMW",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Garam jempol",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sasa 250 gr",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Telur",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Bakso",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Cilok Kriwil",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "tape besek",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Mie ayam isi 5",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Lakban",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Isolasi Sdg",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        }
+    ]
+},
+{
+    "_id": "93446",
+    "orgName": "EL-OLIVE GLOBAL TRADING (SUPER MARKET)",
+    "businessId": "",
+    "countryCode": "GH",
+    "product_names": [
+        {
+            "productName": "Drink",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Malta Guinness  330mls",
+            "categoryName": "",
+            "unit": "can",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Bigoo  Cocktail Drink 350ml",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Rasta Malt 500ml",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Rush Energy Drink 350mls",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Tampico 500ml",
+            "categoryName": "",
+            "unit": "bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "U Fresh Banana Juice",
+            "categoryName": "",
+            "unit": "bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "U Fresh Soy Chocolate",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Voltic Natural Mineral Water 1.5L",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Voltic Natural Mineral Water 750mls",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Bigoo Orange Drink 350ml",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Disposable underpad6",
+            "categoryName": "",
+            "unit": "60*90",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Heaven 10 mosquito coil",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "BON TEA",
+            "categoryName": "",
+            "unit": "1.8g*1",
+            "productCode": "4792021028250",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Cuettie Baby diaper",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Saftcare Sanitary pad",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Strawberry Bon Tea",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Toilet paper",
+            "categoryName": "",
+            "unit": "84pcs",
+            "productCode": "6036000094392",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Saftcare Baby diaper 25×",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Cark break",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Wheat bread",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Chocolate cream",
+            "categoryName": "",
+            "unit": "144pcs",
+            "productCode": "6033000525413",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "King Cracker",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Tomato mix",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Run Energy Drink 500ml",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "U Fresh Cup",
+            "categoryName": "",
+            "unit": "cup",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "FAMILY",
+            "categoryName": "",
+            "unit": "25pcs",
+            "productCode": "6935897634004",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "MILO",
+            "categoryName": "",
+            "unit": "60pcs",
+            "productCode": "6033000089274",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Kivo",
+            "categoryName": "",
+            "unit": "20pcs",
+            "productCode": "784300169963",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "COWBELL",
+            "categoryName": "",
+            "unit": "30pcs",
+            "productCode": "6008155002027",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "MALTA GUINNESS 330mls",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Verna Mineral Water 0.5L",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Bel Aqua",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "La Vonce",
+            "categoryName": "",
+            "unit": "5pcs",
+            "productCode": "6971006991033",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Gino",
+            "categoryName": "",
+            "unit": "50pcs",
+            "productCode": "8410300368793",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "JAMAA SOAP",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Wanda Soap",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "BELAQUA",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Family mackerel",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "U Fresh Soy Milk",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "TEN SUGAR",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Bowl",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sugar",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Tom tom",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Bubble gum",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Bing Pop",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Kremela",
+            "categoryName": "",
+            "unit": "95",
+            "productCode": "6008155014785",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Bigoo Cola Drink 350ml",
+            "categoryName": "",
+            "unit": "bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Super Mint",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Spaghetti",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Beta Malt 330mls",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Water",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Two Sugar",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Vim Ener Drink",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Rich Tea Cream",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Joy Special Bread",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Joy SB Rolls",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Geisha 18g",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "President 123",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Sugar bread",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Saba soap",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Geisha Soap",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "SunLight",
+            "categoryName": "",
+            "unit": "120g ",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Pepsodent 123",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Carbolic Soap",
+            "categoryName": "",
+            "unit": "115g",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Royal Apple Drink  350ml",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Cool park",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Daniya Special Ice",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Force Malt 350ml",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Kalyppo 200ml",
+            "categoryName": "",
+            "unit": "pack",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "Verna Mineral Water 0.75L",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "10 over 10 Energy Drink",
+            "categoryName": "",
+            "unit": "Bottle",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "5 STAR ⭐ Energy",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Water \ud83c\udf0a",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "BEL~Malt",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "Nido",
+            "categoryName": "",
+            "unit": "",
+            "productCode": "",
+            "typeOfCommodity": 0,
+            "discription": ""
+        },
+        {
+            "productName": "U FRESH GRAPE JUICE",
+            "categoryName": "",
+            "unit": "BOTTLE",
+            "productCode": "",
+            "typeOfCommodity": 1,
+            "discription": ""
+        },
+        {
+            "productName": "NIDO",
+            "categoryName": "",
+            "unit": "PACK",
+            "productCode": "",
+            "typeOfCommodity": 1,
             "discription": ""
         }
     ]
 }
-
 ]

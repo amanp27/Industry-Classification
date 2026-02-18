@@ -458,14 +458,14 @@ with tab1:
 
             _stat(c1, "Organization", res.get("orgName", "—"))
             _stat(c2, "Country", res.get("countryCode") or "—")
-            conf = clf.get("confidenceScore", 0)
+            conf = res.get("confidenceScore", clf.get("confidenceScore", 0))
             _stat(c3, "Confidence", f"{conf:.0%}", "green" if conf >= 0.85 else ("amber" if conf >= 0.65 else "red"))
 
             # Summary strip
             st.markdown('<p class="section-title" style="margin-top:1.2rem;">Summary</p>', unsafe_allow_html=True)
             is_multi = clf.get("isMultiIndustry", False)
-            btype    = clf.get("operationType", "—")
-            primary  = clf.get("primaryIndustry", "—")
+            btype    = res.get("operationType", clf.get("operationType", "—"))
+            primary  = res.get("primaryIndustry", clf.get("primaryIndustry", "—"))
             multi_b  = '<span class="badge badge-amber">Multi-Industry</span>' if is_multi else '<span class="badge badge-slate">Single Industry</span>'
             st.markdown(f"""
 <div class="result-panel" style="display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;padding:0.9rem 1.2rem;">
@@ -504,7 +504,7 @@ with tab1:
 
             # Reasoning
             st.markdown('<p class="section-title">AI Reasoning</p>', unsafe_allow_html=True)
-            st.markdown(f'<div class="reasoning-box">{clf.get("reasoning","—")}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="reasoning-box">{res.get("AIreasoning", clf.get("reasoning","—"))}</div>', unsafe_allow_html=True)
 
             # Raw JSON with proper formatting and copy button
             with st.expander("View raw JSON"):
@@ -566,7 +566,7 @@ with tab2:
             st.markdown('<p class="section-title">Batch Summary</p>', unsafe_allow_html=True)
 
             multi_n  = sum(1 for r in good if r["classification"].get("isMultiIndustry"))
-            avg_conf = sum(r["classification"].get("confidenceScore", 0) for r in good) / len(good) if good else 0
+            avg_conf = sum(r.get("confidenceScore", r.get("classification", {}).get("confidenceScore", 0)) for r in good) / len(good) if good else 0
             s1, s2, s3, s4 = st.columns(4)
             def _sc(col, lbl, val, cls=""):
                 col.markdown(f'<div class="stat-card"><div class="label">{lbl}</div><div class="value {cls}">{val}</div></div>', unsafe_allow_html=True)
@@ -581,10 +581,10 @@ with tab2:
                 clf = r.get("classification", {})
                 rows.append({
                     "Organization":    r.get("orgName", "—"),
-                    "Primary Industry": clf.get("primaryIndustry", "Error" if "error" in clf else "—"),
-                    "Operation Type":  clf.get("operationType", "—"),
+                    "Primary Industry": r.get("primaryIndustry", clf.get("primaryIndustry", "Error" if "error" in clf else "—")),
+                    "Operation Type":  r.get("operationType", clf.get("operationType", "—")),
                     "Multi-Industry":  "Yes" if clf.get("isMultiIndustry") else "No",
-                    "Confidence":      f'{clf.get("confidenceScore",0):.0%}' if "error" not in clf else "—",
+                    "Confidence":      f'{r.get("confidenceScore", clf.get("confidenceScore",0)):.0%}' if "error" not in clf else "—",
                 })
             st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
@@ -624,7 +624,7 @@ with tab3:
             st.markdown('<p class="section-title">Primary Industry Distribution</p>', unsafe_allow_html=True)
             ind_count = {}
             for r in results:
-                k = r["classification"].get("primaryIndustry", "Unknown")
+                k = r.get("primaryIndustry", r.get("classification", {}).get("primaryIndustry", "Unknown"))
                 ind_count[k] = ind_count.get(k, 0) + 1
             df_ind = pd.DataFrame(sorted(ind_count.items(), key=lambda x: x[1], reverse=True), columns=["Industry","Count"])
             fig_bar = px.bar(df_ind, x="Count", y="Industry", orientation="h",
@@ -642,7 +642,7 @@ with tab3:
             st.markdown('<p class="section-title">Operation Type Breakdown</p>', unsafe_allow_html=True)
             bt_count = {}
             for r in results:
-                k = r["classification"].get("operationType", "Unknown")
+                k = r.get("operationType", r["classification"].get("operationType", "Unknown"))
                 bt_count[k] = bt_count.get(k, 0) + 1
             fig_pie = go.Figure(go.Pie(
                 labels=list(bt_count.keys()), values=list(bt_count.values()),
@@ -660,7 +660,7 @@ with tab3:
 
         with ch3:
             st.markdown('<p class="section-title">Confidence Score Distribution</p>', unsafe_allow_html=True)
-            confs = [r["classification"].get("confidenceScore", 0) for r in results]
+            confs = [r.get("confidenceScore", r.get("classification", {}).get("confidenceScore", 0)) for r in results]
             fig_hist = px.histogram(x=confs, nbins=15, color_discrete_sequence=["#2563eb"])
             fig_hist.update_layout(**LAYOUT,
                                    height=240,
@@ -691,16 +691,16 @@ with tab3:
 
         for industry, count in sorted(ind_count.items(), key=lambda x: x[1], reverse=True)[:6]:
             with st.expander(f"{industry}  ·  {count} org{'s' if count != 1 else ''}"):
-                for o in [r for r in results if r["classification"].get("primaryIndustry") == industry][:8]:
+                for o in [r for r in results if r.get("primaryIndustry", r.get("classification", {}).get("primaryIndustry")) == industry][:8]:
                     c2       = o["classification"]
-                    conf_val = c2.get("confidenceScore", 0)
+                    conf_val = o.get("confidenceScore", c2.get("confidenceScore", 0))
                     conf_col = "#4ade80" if conf_val >= 0.85 else ("#fbbf24" if conf_val >= 0.65 else "#f87171")
                     st.markdown(
                         f'<div style="display:flex;justify-content:space-between;align-items:center;'
                         f'padding:0.5rem 0;border-bottom:1px solid #1a1e2e;font-size:0.83rem;">'
                         f'<span style="color:#8b95b0;font-weight:500;">{o.get("orgName","—")}</span>'
                         f'<span style="display:flex;gap:0.6rem;align-items:center;">'
-                        f'<span class="badge badge-slate">{c2.get("operationType","—")}</span>'
+                        f'<span class="badge badge-slate">{o.get("operationType", c2.get("operationType","—"))}</span>'
                         f'<span style="font-size:0.76rem;font-weight:600;color:{conf_col};">{conf_val:.0%}</span>'
                         f'</span></div>',
                         unsafe_allow_html=True,
