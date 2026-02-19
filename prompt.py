@@ -19,31 +19,33 @@ Your responses must be valid JSON only — no markdown fences, no extra text, no
 == STEP 1: PRODUCT-TO-INDUSTRY MAPPING ==
 Map EVERY product to EXACTLY ONE industry:
 
-Electronics & Tech: chokes, switches, plugs, sockets, wiring, circuit breakers, transformers, ballasts, LED bulbs, spotlights, tube lights, lamps, fixtures, phones, tablets, TVs, remotes, cables, adapters, chargers, phone holders, wireless mice, keyboards, USB devices
+Electronics & Tech: chokes, switches, plugs, sockets, wiring, circuit breakers, transformers, ballasts, LED bulbs, spotlights, tube lights, lamps, fixtures, phones, tablets, TVs, remotes, cables, adapters, chargers, phone holders, wireless mice, keyboards, USB devices, batteries (AA, AAA, C, D cell, 9V), zero watt bulbs, energy saving bulbs, CFL, tape (electrical/insulation: black tape, white tape, red tape, osaka tape), scotch tape, power banks
 
 Fashion & Apparel: shirting fabric, linen, cotton, silk, polyester fabric, dress materials, shirts, pants, dresses, jackets, uniforms, shoes, sandals, boots, insoles, belts, ties, scarves, shapewear
 
 Home Appliances: vacuum cleaners, air coolers, fans, humidifiers, heaters, dryers, washing machines, refrigerators
 
-Home & Living: air fresheners, diffusers, organizers, storage, decor, detergents, sprays, wipes, drain cleaners, insect killers, fire extinguishers
+Home & Living: air fresheners, diffusers, organizers, storage, decor, detergents, sprays, wipes, drain cleaners, insect killers, fire extinguishers, disposable cups/glasses/plates, tissue paper, napkins
 
-Health & Medical: bandages, gauze, surgical items, first aid kits, BP monitors, thermometers, glucose meters, pain patches, compression supports, braces, tapes, medical devices
+Health & Medical: bandages, gauze, surgical items, first aid kits, BP monitors, thermometers, glucose meters, pain patches, compression supports, braces, tapes (medical), medical devices, sani plast, band-aid, plasters, ispaghol (psyllium husk), johar joshanda, herbal health sachets, digestive powders, rose patel (ayurvedic), khama cream, irani cream, herbal remedies, OTC medicines, supplements, cotton swabs, wipes (medical/hygiene context)
 
 Fitness & Sports: weights, resistance bands, ab wheels, pushup stands, yoga mats, skipping ropes, hand grips, massage guns, gym gloves, sports accessories
 
-Beauty & Personal Care: straighteners, curling irons, dryers, hair brushes, derma rollers, wax, facial tools, beard oil, nail clippers, bath brushes, skincare products, cosmetics
+Beauty & Personal Care: straighteners, curling irons, hair dryers, hair brushes, derma rollers, wax, facial tools, beard oil, nail clippers, bath brushes, skincare products, cosmetics, razors (trim razor, hygiene razor, universal razor, 7 o'clock blade, treat blade, platinum blade, shaving blades), shaving cream, wipes (personal care), rocket wipes, hair wax, pomade, grooming products
 
-Food & Beverage: teas, spices, snacks, drinks, cooking ingredients, edible products
+Food & Beverage: teas (isb tea, green tea, black tea sachets), spices, snacks, drinks, cooking ingredients, edible products, candies (kish candy, local candy, caramel toffee, gold coin, choco beans, cc stick, imli teeka, lolypop, bigtop lolypop, doremon lolypop, lolypop 5), chocolates (ramtin chocolate, nani chocolate, dream caramel chocolate, spark), gum (trigum, tridegum, cat bubble, panda), juices (smiley juice), bubble gum jar, lawa shak, till patti
 
-Maintenance & Installation (as industry): laundry services (lavar, planchar, lavado), dry cleaning, repair services, cleaning services, installation work
+Tobacco & Vaping: vapes, e-cigarettes, lighters (simple lighter, gerari lighter, heater lighter, pine light, any brand lighter), smoking accessories, hip flasks, matchboxes, disposable lighters
 
-Tobacco & Vaping: vapes, e-cigarettes, lighters, smoking accessories, hip flasks
+Tobacco & Pan Products: supari (raseeli supari, bombay sapari), paan masala, gutka, khaini, chewing tobacco, mouth freshener pouches, elaichi (cardamom pouches sold as mouth freshener), tulsi (paan/mouth freshener brand), shahi meewa, sultan (pan masala brand), ratan, delhi/dehli (pan masala), host (pan masala), josh black, knight rider, sathi, mond blue, mond red, milano, olivia (mouth freshener/supari brand), touch blue, touch green, gemsa elfi, platinum blue, qm55, ramtin irani, clay (chewing product), paan products — NOTE: Tulsi, Shahi Meewa, Sultan, Ratan, Delhi, Host, Josh Black, Knight Rider, Sathi, Mond, Milano, Olivia, Touch are South Asian pan masala / supari brands, NOT food
 
 Stationery & Office: pens, paper, rulers, geometry sets, calculators, desk organizers, notebooks, agendas
 
 Automotive: car parts, car accessories, car care products, tyres, batteries, oils
 
 Manufacturing Supplies: inks, chemicals, adhesives, solvents, printing supplies, raw industrial materials, dyes
+
+General Trade & Wholesale: mixed small goods traders who sell a broad combination of unrelated everyday consumer items — including pan masala, lighters, blades/razors, candies, batteries, bulbs, tapes, health sachets, and other fast-moving consumer goods (FMCG) in one portfolio. Use this when an org sells 4 or more distinct industry categories together with no clear dominant industry above 60%.
 
 == STEP 2: COUNT DISTINCT INDUSTRIES ==
 1. Count unique industries found
@@ -55,7 +57,15 @@ NO EXCEPTIONS. This is a count, not a judgment call.
 percentage = (products_in_industry / total_products) * 100
 Round to nearest 5%. All must sum to 100. Exclude industries below 5%.
 
-== STEP 4: OPERATION TYPE (6 CLASSES ONLY) ==
+IMPORTANT for South Asian wholesale traders: Be very careful to correctly split:
+- Pan masala/supari brands (Tulsi, Olivia, Mond, Milano, Touch, Sultan, Knight Rider, Josh, Sathi etc.) → Tobacco & Pan Products
+- Lighters → Tobacco & Vaping
+- Blades/Razors → Beauty & Personal Care
+- Batteries/Bulbs/Electrical tape → Electronics & Tech
+- Candies/Chocolates/Gum/Juices → Food & Beverage
+- Herbal medicine sachets (Ispaghol, Johar Joshanda) → Health & Medical
+
+== STEP 4: OPERATION TYPE (9 CLASSES ONLY) ==
 Pick EXACTLY ONE from this fixed list. No other values allowed.
 
 1. "Seller"
@@ -63,61 +73,58 @@ Pick EXACTLY ONE from this fixed list. No other values allowed.
    SIGNALS: Product catalogue only, no service language, no repair/installation signals
    EXAMPLES: retail store, wholesale dealer, online shop, trading company, depot, home depot, general store
 
-2. "Seller and Services"
-   WHO: Org that sells products AND also provides some form of professional/general services
-   SIGNALS: Products for sale + service language, consulting, advice, or support mentioned
-   EXAMPLES: electronics shop that also offers IT support, hardware store that also consults
-
-3. "Manufacturer"
+2. "Manufacturer"
    WHO: Org that produces/makes goods
    SIGNALS: Raw materials, production inputs, industrial equipment, factory supplies, bulk chemicals, inks, dyes
    EXAMPLES: factory, production company, industrial supplier, printing press, food processor
 
-4. "Maintenance & Installation"
+3. "Maintenance & Installation"
    WHO: Org that repairs, installs, or maintains equipment/property
    SIGNALS: Service-oriented, tools for repair, maintenance contracts, installation services
    EXAMPLES: electrician, plumber, HVAC company, IT support, equipment repair shop, contractor
 
-5. "Professional Service"
+4. "Professional Service"
    WHO: Licensed professionals or specialist knowledge-based services
    SIGNALS: Professional title in org name, certifications, specialized services
    EXAMPLES: doctor, dentist, lawyer, engineer, architect, accountant, consultant, clinic, law firm
 
-6. "Food Service"
+5. "Food Service"
    WHO: Org in food preparation, cooking, or catering
    SIGNALS: Cooking equipment, food ingredients, restaurant supplies, catering services
    EXAMPLES: restaurant, hotel kitchen, catering company, bakery, food stall, cafe
 
-7. "Supermarket"
+6. "Supermarket"
    WHO: General merchandise store selling a wide mix of everyday consumer products under one roof
    SIGNALS: Org name contains MART, SUPERMARKET, HYPERMARKET, MINIMART, or sells a very broad mix (food + household + personal care + electronics together)
    EXAMPLES: Easy Mart, Quick Mart, SuperMart, FreshMart, any store with "MART" in the name
 
-8. "Seller, Service and Maintenance"
-   WHO: Org that sells physical products AND provides services AND does repairs/maintenance/installation
-   SIGNALS: Physical products for sale + professional services + maintenance/repair/installation work
-   EXAMPLES: electrical shop that sells goods, consults, and installs; hardware company that sells, advises, and repairs
-   NOTE: Do NOT use this for orgs that only provide services (laundry, hotel) without selling physical goods
+7. "Seller, Service and Maintenance"
+   WHO: Org that sells physical products AND also provides services OR maintenance/installation
+   SIGNALS: Physical products for sale + any combination of: consulting, advice, support, repair, installation, maintenance
+   EXAMPLES: electronics shop that sells + provides IT support, hardware store that sells + installs, auto parts dealer + repair shop
+   NOTE: Do NOT use this for orgs that only provide services without selling physical goods
 
-9. "Service and Maintenance"
-   WHO: Org that ONLY provides services and/or maintenance — no physical product sales
-   SIGNALS: All "products" are actually services (laundry, ironing, room rental, cleaning, repair)
-   EXAMPLES: laundry shop, dry cleaner, apartment hotel, cleaning company, repair-only workshop
+8. "Service"
+   WHO: Org that ONLY provides services — no physical product sales
+   SIGNALS: All revenue from services: accommodation (hotels, villas), laundry/dry cleaning, consulting, catering, event services
+   EXAMPLES: hotel, villa, laundry service, dry cleaner, event planner, catering service, consulting firm
+   NOTE: Includes Hotels & Villa (accommodation) and Laundry & Services (dry cleaning) as primary industries
 
-10. "Mixed"
+9. "Mixed"
    WHO: Org whose operation type doesn't clearly fit any single class above
    SIGNALS: Genuinely ambiguous — cannot determine primary mode of operation from available data
 
 DECISION RULES (in order — stop at first match):
 - Org name contains "MART", "SUPERMARKET", "HYPERMARKET", "MINIMART", "SUPERSTORE" → "Supermarket"
+- Org name contains "LAUNDRY", "LAUNDROMAT", "DRY CLEAN", "LAVANDERÍA", "LAVANDERIA", "DRYCLEANING" → "Service" (primary industry: Laundry & Services)
+- Org name contains "HOTEL", "VILLA", "MOTEL", "INN", "RESORT", "LODGE", "HOSTAL", "HOSPEDAJE" → "Service" (primary industry: Hotels & Villa)
+- Org name has "APARTA-HOTEL" + "LAVANDERÍA" together → "Service" (primary industry: Laundry & Services)
 - Raw materials / production inputs → "Manufacturer"
 - Org name has "CLINIC", "HOSPITAL", "DR.", "DOCTOR", "DENTAL", "LAW", "CONSULT", "ENGINEER" → "Professional Service"
-- Org name has "RESTAURANT", "HOTEL", "BAKERY", "CATERING", "CAFE", "KITCHEN" → "Food Service"
-- Org name has "LAVANDERÍA", "LAUNDRY", "LAVANDERIA", "DRY CLEAN", "APARTA-HOTEL", "HOSTAL" → start with service base
-- ALL products are services (laundry, ironing, room rental, cleaning) with NO physical goods for sale → "Service and Maintenance"
-- Evidence of selling physical goods + services + maintenance/installation → "Seller, Service and Maintenance"
-- Evidence of selling physical goods + services (no maintenance) → "Seller and Services"
-- Org name has "DEPOT", "STORE", "SHOP", "TRADING", "SUPPLIERS", "WHOLESALER", "DISTRIBUTOR", "IMPORTER", "EXPORTER" → "Seller"
+- Org name has "RESTAURANT", "BAKERY", "CATERING", "CAFE", "KITCHEN" → "Food Service"
+- ALL products are pure services (accommodation, laundry, consulting, events) with NO physical goods → "Service"
+- Evidence of selling physical goods + (services OR maintenance OR both) → "Seller, Service and Maintenance"
+- Org name has "DEPOT", "STORE", "SHOP", "TRADING", "SUPPLIERS", "WHOLESALER", "DISTRIBUTOR", "IMPORTER", "EXPORTER", "TRADERS", "TRADER", "ENTERPRISE", "GENERAL STORE" → "Seller"
 - Products only, no service signals → "Seller"
 - Cannot clearly determine → "Mixed"
 
@@ -131,22 +138,58 @@ Clamp final score to [0.50, 1.0].
 
 == CONSISTENCY RULES ==
 - "Shirting", "Linen", "Fabric", "Cloth", "Sabana", "Corcha", "Funda", "Colchon", "Frisa", "Toalla", "Mantel", "Cortina" → ALWAYS Home & Living (hotel/laundry linens, NOT fashion)
-- "Lavar", "Planchar", "Planchado", "Lavado", "Lavandería", "Washing", "Ironing", "Dry Clean" → ALWAYS Maintenance & Installation (laundry service)
-- "Renta de Habitaciones", "Room Rental", "Alquiler" → ALWAYS Professional Service (accommodation)
-- "CHOKE", "SPOTLIGHT", "LED", "Switch", "Plug" → ALWAYS Electronics & Tech
+- "Lavar", "Planchar", "Planchado", "Lavado", "Lavandería", "Washing", "Ironing", "Dry Clean" → ALWAYS Laundry & Services (laundry service products)
+- "Renta de Habitaciones", "Room Rental", "Alquiler", "Accommodation", "Accomodation" → ALWAYS Hotels & Villa (accommodation products)
+- "CHOKE", "SPOTLIGHT", "LED", "Switch", "Plug", "Bulb", "Battery", "AAA", "AA", "Zero watt" → ALWAYS Electronics & Tech
+- "Electrical tape", "Insulation tape", "Black tape", "White tape", "Red tape", "Osaka tape" → ALWAYS Electronics & Tech (NOT Stationery)
+- "Scotch tape", "Cello tape" used in general stationery context → Stationery & Office
+- "Supari", "Pan masala", "Tulsi", "Shahi Meewa", "Sultan", "Ratan", "Delhi", "Dehli", "Host", "Josh Black", "Knight Rider", "Sathi", "Mond", "Milano", "Olivia", "Touch Blue", "Touch Green", "Bombay Sapari", "Raseeli Supari", "Elaichi (pouch)" → ALWAYS Tobacco & Pan Products
+- "Lighter", "Gerari lighter", "Simple lighter", "Heater lighter", "Pine light" → ALWAYS Tobacco & Vaping
+- "Razor", "Blade", "Rezor", "Shaving" (Trim, Universal, Hygiene, 7 O'Clock, Treat, Platinum, Kangi) → ALWAYS Beauty & Personal Care
+- "Ispaghol", "Johar Joshanda", "Sani plast", "Saniplast", "Rose patel", "Khama cream", "Irani cream" → ALWAYS Health & Medical
+- "Candy", "Chocolate", "Gum", "Lolypop", "Lollipop", "Toffee", "Juice", "Snack", "Tea sachet", "Shak", "Till patti" → ALWAYS Food & Beverage
+- "Wipes" in grooming/personal hygiene context (Rocket wipes) → Beauty & Personal Care
+- "Wipes" in household cleaning context → Home & Living
 - "MART", "SUPERMARKET", "MINIMART" in org name → operationType = "Supermarket"
-- "DEPOT", "STORE", "SHOP", "TRADING" in org name → operationType = "Seller"
-- "APARTA-HOTEL", "HOSTAL", "HOSPEDAJE", "POSADA" in org name alone → operationType = "Professional Service"
-- "LAVANDERÍA" + "HOTEL/APARTA-HOTEL" in org name together → operationType = "Service and Maintenance"
-- "LAVANDERÍA", "LAUNDRY", "LAVANDERIA", "DRY CLEAN" in org name → includes laundry service
-- If org name has HOTEL + LAVANDERÍA → operationType = "Seller, Service and Maintenance"
+- "DEPOT", "STORE", "SHOP", "TRADING", "TRADERS", "TRADER", "ENTERPRISE" in org name → operationType = "Seller"
+- "LAUNDRY", "LAVANDERÍA", "LAUNDROMAT", "DRY CLEAN" in org name → operationType = "Service", primaryIndustry = "Laundry & Services"
+- "HOTEL", "VILLA", "MOTEL", "RESORT" in org name → operationType = "Service", primaryIndustry = "Hotels & Villa"
 - If count >= 2 → isMultiIndustry = TRUE (no exceptions)
+- If 4+ distinct industries found → consider primaryIndustry = "General Trade & Wholesale" and list all industries in breakdown
+
+== SOUTH ASIAN WHOLESALE TRADER RECOGNITION ==
+When an org name contains "TRADERS", "ENTERPRISE", "GENERAL STORE", "STORE", "SHOP" AND the product list contains a mix of:
+pan masala brands + lighters + blades/razors + candies/sweets + batteries/bulbs + health sachets
+→ This is a GENERAL TRADE / WHOLESALE organization
+→ primaryIndustry = whichever single industry has the highest % OR "General Trade & Wholesale" if no industry exceeds 35%
+→ operationType = "Seller"
+→ isMultiIndustry = TRUE (guaranteed, as these always span multiple industries)
+→ List ALL individual industries in the breakdown with accurate percentages
+
+KNOWN SOUTH ASIAN BRAND CLASSIFICATION REFERENCE:
+Pan Masala / Mouth Freshener / Supari brands → Tobacco & Pan Products:
+Tulsi, Shahi Meewa, Sultan, Ratan, Delhi/Dehli, Host, Josh Black, Knight Rider, Sathi, Mond Blue, Mond Red, Touch Blue, Touch Green, Milano, Olivia (all variants: 1-12), Gemsa Elfi, Platinum Blue, Qm55, Bombay Sapari, Raseeli Supari, Elaichi (pouch form), Clay, Pine Light (paan brand), Ramtin Irani, Panda, Cat Bubble
+
+Lighter brands → Tobacco & Vaping:
+Simple Lighter, Gerari Lighter, Heater Lighter, Pine Light (lighter variant)
+
+Blade/Razor brands → Beauty & Personal Care:
+Trim Razor/Rezor, Universal Razor, Hygiene Razor/Rezor, 7 O'Clock Blade, Treat Blade, Platinum Blade, Universal Razor Kangi
+
+Candy/Confectionery brands → Food & Beverage:
+Kish Candy, Local Candy, Caramel Toffee, Gold Coin, Choco Beans, CC Stick, Imli Teeka, Trigum Bubble Jar, Tridegum, Lolypop 5, Bigtop Lolypop, Doremon Lolypop, Ramtin Chocolate, Nani Chocolate, Dream Caramel Chocolate, Spark, Smiley Juice, Lawa Shak, Till Patti
+
+Health/Herbal brands → Health & Medical:
+Johar Joshanda, Ispaghol (Sashy/Box), Sani Plast, Rose Patel, Khama Irani Cream, Rocket Wipes (medical wipes)
+
+Electronics brands → Electronics & Tech:
+Power Plus AA/AAA/D, 777D (battery), Bulb Osaka B22/E27, Bulb Tuff B22/E27, Zero Watt 2 Pin, White Tape Osaka, Osaka Red Tape, Osaka Black Tape, Scotch Tape
 
 == MULTILINGUAL PRODUCT SIGNALS (Spanish/French/Arabic/Portuguese) ==
-Laundry services (→ Maintenance & Installation): Lavar, Lavado, Planchar, Planchado, Planchando, Lavandería, Secado, Doblado, Hamper
-Hotel/accommodation (→ Professional Service): Renta de Habitaciones, Alquiler, Habitacion, Hostal
+Laundry services (→ Laundry & Services): Lavar, Lavado, Planchar, Planchado, Planchando, Lavandería, Secado, Doblado, Hamper, Dry Clean, Press, Fold, Wash
+Hotel/accommodation (→ Hotels & Villa): Renta de Habitaciones, Alquiler, Habitacion, Hostal, Accommodation, Accomodation, Room Rental, Lodging
 Linens/bedding (→ Home & Living): Sabana, Corcha, Funda, Colchon, Frisa, Toalla, Mantel, Servilleta, Cortina, Almohada
-Clothing items being serviced (→ Maintenance & Installation, NOT Fashion): Vestido Lavar, Poloche Lavar, Pantalon Lavar — these are laundry items, not clothing for sale"""
+Clothing items being serviced (→ Laundry & Services, NOT Fashion): Vestido Lavar, Poloche Lavar, Pantalon Lavar, Native, Gown, Uniform with "wash/press/fold" context — these are laundry items, not clothing for sale"""
 
     USER_PROMPT_TEMPLATE = """Classify the organization below. Follow every step in the system prompt strictly.
 
@@ -162,7 +205,7 @@ Return ONLY this exact JSON (no extra keys, no markdown):
   "orgName": "<original name>",
   "productCount": null,
   "primaryIndustry": "<industry with highest percentage>",
-  "operationType": "<Seller|Seller and Services|Seller, Service and Maintenance|Service and Maintenance|Manufacturer|Maintenance & Installation|Professional Service|Food Service|Supermarket|Mixed>",
+  "operationType": "<Seller|Seller, Service and Maintenance|Service|Manufacturer|Maintenance & Installation|Professional Service|Food Service|Supermarket|Mixed>",
   "confidenceScore": <float 0.5-1.0>,
   "AIreasoning": "<2 sentences max: (1) list industries found (DO NOT state any product counts or numbers — only industry names and percentages), (2) explain operationType choice based on org name and product signals>",
   "classification": {{

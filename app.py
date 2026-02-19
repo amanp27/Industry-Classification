@@ -456,7 +456,7 @@ with tab1:
             def _stat(col, label, value, cls=""):
                 col.markdown(f'<div class="stat-card"><div class="label">{label}</div><div class="value {cls}">{value}</div></div>', unsafe_allow_html=True)
 
-            _stat(c1, "Organization", res.get("orgName", "—"))
+            _stat(c1, "Organization", f'<span class="org-name">{res.get("orgName", "—")}</span>')
             _stat(c2, "Country", res.get("countryCode") or "—")
             conf = res.get("confidenceScore", clf.get("confidenceScore", 0))
             _stat(c3, "Confidence", f"{conf:.0%}", "green" if conf >= 0.85 else ("amber" if conf >= 0.65 else "red"))
