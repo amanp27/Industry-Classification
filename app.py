@@ -3,12 +3,14 @@ Industry Classification UI  —  streamlit run ui.py
 """
 
 import streamlit as st
-import json, os
+import json, os, io
 from prompt import IndustryClassifier
 import pandas as pd
 from datetime import datetime
 import plotly.express as px
 import plotly.graph_objects as go
+from openpyxl import Workbook
+from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 
 st.set_page_config(
     page_title="Industry Classifier",
@@ -25,11 +27,9 @@ st.markdown("""
 html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; color-scheme: dark; }
 #MainMenu, footer, header { visibility: hidden; }
 
-/* ─── Base page ─── */
 .stApp { background: #0d0f18 !important; }
 .block-container { padding: 2rem 2.5rem 3rem !important; max-width: 1400px !important; }
 
-/* ─── Sidebar ─── */
 [data-testid="stSidebar"] {
     background: #080a10 !important;
     border-right: 1px solid #1a1e2e !important;
@@ -57,29 +57,24 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; color-scheme: d
     box-shadow: 0 4px 14px rgba(37,99,235,0.35) !important;
     transition: all 0.2s !important;
 }
-[data-testid="stSidebar"] .stButton > button:hover { background: #1d4ed8 !important; box-shadow: 0 4px 20px rgba(37,99,235,0.5) !important; }
+[data-testid="stSidebar"] .stButton > button:hover { background: #1d4ed8 !important; }
 [data-testid="stSidebar"] hr { border-color: #1a1e2e !important; margin: 0.8rem 0 !important; }
 [data-testid="stSidebar"] [data-testid="stFileUploader"] {
     background: #131625 !important; border: 1px dashed #2a3050 !important;
     border-radius: 8px !important; padding: 0.5rem !important;
 }
 
-/* ─── Page header ─── */
 .page-header { padding: 0.4rem 0 1.5rem; border-bottom: 1px solid #1a1e2e; margin-bottom: 1.5rem; }
 .page-header h1 { font-size: 1.5rem; font-weight: 600; color: #e2e8f8; margin: 0 0 0.2rem; letter-spacing: -0.3px; }
 .page-header p  { font-size: 0.84rem; color: #4a5470; margin: 0; }
 
-/* ─── Section labels ─── */
 .section-title {
     font-size: 0.7rem; font-weight: 600; text-transform: uppercase;
     letter-spacing: 0.9px; color: #3d4666; margin: 1.2rem 0 0.6rem;
 }
 
-/* ─── Stat cards ─── */
 .stat-card {
-    background: #131625;
-    border: 1px solid #1e2438;
-    border-radius: 10px;
+    background: #131625; border: 1px solid #1e2438; border-radius: 10px;
     padding: 1rem 1.2rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.03);
 }
@@ -90,16 +85,12 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; color-scheme: d
 .stat-card .value.amber { color: #fbbf24; }
 .stat-card .value.red   { color: #f87171; }
 
-/* ─── Result / info panels ─── */
 .result-panel {
-    background: #131625;
-    border: 1px solid #1e2438;
-    border-radius: 10px;
+    background: #131625; border: 1px solid #1e2438; border-radius: 10px;
     padding: 1.1rem 1.3rem;
     box-shadow: 0 2px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.03);
 }
 
-/* ─── Badges ─── */
 .badge { display: inline-block; padding: 0.2rem 0.65rem; border-radius: 999px; font-size: 0.72rem; font-weight: 600; }
 .badge-blue  { background: rgba(37,99,235,0.2);  color: #93c5fd; border: 1px solid rgba(37,99,235,0.3); }
 .badge-green { background: rgba(22,163,74,0.18); color: #86efac; border: 1px solid rgba(22,163,74,0.3); }
@@ -107,7 +98,6 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; color-scheme: d
 .badge-red   { background: rgba(220,38,38,0.18); color: #fca5a5; border: 1px solid rgba(220,38,38,0.3); }
 .badge-slate { background: rgba(71,85,105,0.25); color: #94a3b8;  border: 1px solid rgba(71,85,105,0.35); }
 
-/* ─── Industries breakdown rows ─── */
 .ind-row { display:flex; align-items:center; gap:0.8rem; padding:0.7rem 0; border-bottom:1px solid #1a1e2e; }
 .ind-row:last-child { border-bottom:none; }
 .ind-name { font-size:0.85rem; font-weight:500; color:#c8d4f0; flex:1; }
@@ -116,63 +106,42 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; color-scheme: d
 .pct-bar-bg   { flex:2; background:#1a1e2e; border-radius:4px; height:4px; }
 .pct-bar-fill { background: linear-gradient(90deg,#2563eb,#60a5fa); border-radius:4px; height:4px; }
 
-/* ─── Reasoning box ─── */
 .reasoning-box {
-    background: rgba(37,99,235,0.07);
-    border-left: 3px solid #2563eb;
-    border-radius: 0 8px 8px 0;
-    padding: 0.85rem 1rem;
-    font-size: 0.83rem;
-    color: #8b95b0;
-    line-height: 1.7;
+    background: rgba(37,99,235,0.07); border-left: 3px solid #2563eb;
+    border-radius: 0 8px 8px 0; padding: 0.85rem 1rem;
+    font-size: 0.83rem; color: #8b95b0; line-height: 1.7;
 }
 
-/* ─── Product chips ─── */
 .chip-list { display:flex; flex-wrap:wrap; gap:0.3rem; margin-top:0.3rem; }
 .chip {
-    background: #0d0f18;
-    color: #4a5470;
-    border: 1px solid #1e2438;
-    border-radius: 5px;
-    padding: 0.15rem 0.45rem;
-    font-size: 0.7rem;
-    font-family: 'DM Mono', monospace;
+    background: #0d0f18; color: #4a5470; border: 1px solid #1e2438;
+    border-radius: 5px; padding: 0.15rem 0.45rem;
+    font-size: 0.7rem; font-family: 'DM Mono', monospace;
 }
 
-/* ─── Empty state ─── */
 .empty-state { text-align:center; padding:3.5rem 1rem; color:#2a3050; }
 .empty-state .icon { font-size:2.2rem; margin-bottom:0.7rem; filter: grayscale(0.4) opacity(0.6); }
 .empty-state p { font-size:0.85rem; color:#2a3050; margin:0; }
 
-/* ─── Tabs ─── */
 [data-testid="stTabs"] [data-baseweb="tab-list"] {
-    background: transparent !important;
-    border-bottom: 1px solid #1a1e2e !important;
-    gap: 0.1rem;
+    background: transparent !important; border-bottom: 1px solid #1a1e2e !important; gap: 0.1rem;
 }
 [data-testid="stTabs"] [data-baseweb="tab"] {
     font-size: 0.82rem !important; font-weight: 500 !important;
     padding: 0.55rem 1.1rem !important; color: #3d4666 !important;
     background: transparent !important; border: none !important;
-    border-radius: 6px 6px 0 0 !important;
-    transition: color 0.15s !important;
+    border-radius: 6px 6px 0 0 !important; transition: color 0.15s !important;
 }
 [data-testid="stTabs"] [data-baseweb="tab"]:hover { color: #8b95b0 !important; }
 [data-testid="stTabs"] [aria-selected="true"] { color: #60a5fa !important; border-bottom: 2px solid #2563eb !important; }
 
-/* ─── Textarea — dark code editor look ─── */
 .stTextArea > div { border-radius: 8px !important; }
 .stTextArea textarea {
-    font-family: 'DM Mono', monospace !important;
-    font-size: 0.8rem !important;
-    line-height: 1.65 !important;
-    border-radius: 8px !important;
-    border: 1px solid #1e2438 !important;
-    background: #080a10 !important;
-    color: #7b92c4 !important;
-    caret-color: #60a5fa !important;
-    padding: 0.9rem 1rem !important;
-    box-shadow: inset 0 2px 8px rgba(0,0,0,0.4) !important;
+    font-family: 'DM Mono', monospace !important; font-size: 0.8rem !important;
+    line-height: 1.65 !important; border-radius: 8px !important;
+    border: 1px solid #1e2438 !important; background: #080a10 !important;
+    color: #7b92c4 !important; caret-color: #60a5fa !important;
+    padding: 0.9rem 1rem !important; box-shadow: inset 0 2px 8px rgba(0,0,0,0.4) !important;
 }
 .stTextArea textarea::placeholder { color: #232840 !important; }
 .stTextArea textarea:focus {
@@ -181,124 +150,63 @@ html, body, [class*="css"] { font-family: 'DM Sans', sans-serif; color-scheme: d
     outline: none !important;
 }
 
-/* ─── Buttons ─── */
 .stButton > button { border-radius: 8px !important; font-weight: 500 !important; font-size: 0.83rem !important; transition: all 0.2s !important; }
 [data-testid="stBaseButton-primary"] {
     background: #2563eb !important; border: none !important; color: #fff !important;
     box-shadow: 0 4px 14px rgba(37,99,235,0.35) !important;
 }
-[data-testid="stBaseButton-primary"]:hover { background: #1d4ed8 !important; box-shadow: 0 4px 20px rgba(37,99,235,0.5) !important; }
+[data-testid="stBaseButton-primary"]:hover { background: #1d4ed8 !important; }
 [data-testid="stBaseButton-secondary"] {
-    background: #131625 !important; border: 1px solid #1e2438 !important;
-    color: #4a5470 !important;
+    background: #131625 !important; border: 1px solid #1e2438 !important; color: #4a5470 !important;
 }
-[data-testid="stBaseButton-secondary"]:hover { background: #1a1e2e !important; color: #8b95b0 !important; border-color: #2a3050 !important; }
+[data-testid="stBaseButton-secondary"]:hover { background: #1a1e2e !important; color: #8b95b0 !important; }
 
-/* ─── Slider ─── */
 [data-testid="stSlider"] [data-baseweb="slider"] [role="slider"] { background: #2563eb !important; }
 
-/* ─── Progress bar ─── */
 [data-testid="stProgress"] > div > div { background: linear-gradient(90deg,#2563eb,#60a5fa) !important; border-radius: 4px !important; }
 [data-testid="stProgress"] > div { background: #1a1e2e !important; border-radius: 4px !important; }
 
-/* ─── Alerts ─── */
 [data-testid="stAlert"] { border-radius: 8px !important; font-size: 0.83rem !important; }
 div[data-testid="stAlert"][class*="success"] { background: rgba(22,163,74,0.1) !important; border-color: rgba(22,163,74,0.3) !important; color: #86efac !important; }
 div[data-testid="stAlert"][class*="error"]   { background: rgba(220,38,38,0.1) !important;  border-color: rgba(220,38,38,0.3) !important;  color: #fca5a5 !important; }
 div[data-testid="stAlert"][class*="warning"] { background: rgba(217,119,6,0.1) !important;  border-color: rgba(217,119,6,0.3) !important;  color: #fcd34d !important; }
 div[data-testid="stAlert"][class*="info"]    { background: rgba(37,99,235,0.1) !important;  border-color: rgba(37,99,235,0.3) !important;  color: #93c5fd !important; }
 
-/* ─── Expander ─── */
 [data-testid="stExpander"] {
-    background: #131625 !important;
-    border: 1px solid #1e2438 !important;
-    border-radius: 8px !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+    background: #131625 !important; border: 1px solid #1e2438 !important;
+    border-radius: 8px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
 }
 [data-testid="stExpander"] summary { font-size: 0.83rem !important; font-weight: 500 !important; color: #5a647a !important; }
 [data-testid="stExpander"] summary:hover { color: #8b95b0 !important; }
 
-/* ─── Dataframe — NUCLEAR OPTION: Force visible text ─── */
 [data-testid="stDataFrame"] {
-    border-radius: 10px !important;
-    overflow: hidden !important;
-    border: 1px solid #1e2438 !important;
-    background: #0d0f18 !important;
+    border-radius: 10px !important; overflow: hidden !important;
+    border: 1px solid #1e2438 !important; background: #0d0f18 !important;
 }
-
-/* Target ALL possible text elements with maximum specificity */
-[data-testid="stDataFrame"] *,
-[data-testid="stDataFrame"] div,
-[data-testid="stDataFrame"] span,
-[data-testid="stDataFrame"] p,
-[data-testid="stDataFrame"] td,
-[data-testid="stDataFrame"] th,
-[data-testid="stDataFrame"] [role="cell"],
-[data-testid="stDataFrame"] [role="columnheader"],
-[data-testid="stDataFrame"] [class*="cell"],
-[data-testid="stDataFrame"] [class*="Cell"],
-[data-testid="stDataFrame"] [data-testid*="cell"] {
-    color: #c9d8f0 !important;
-    background: transparent !important;
+[data-testid="stDataFrame"] *, [data-testid="stDataFrame"] div,
+[data-testid="stDataFrame"] span, [data-testid="stDataFrame"] p,
+[data-testid="stDataFrame"] td, [data-testid="stDataFrame"] th,
+[data-testid="stDataFrame"] [role="cell"], [data-testid="stDataFrame"] [role="columnheader"] {
+    color: #c9d8f0 !important; background: transparent !important;
 }
-
-/* Headers - darker text */
-[data-testid="stDataFrame"] thead *,
-[data-testid="stDataFrame"] th,
+[data-testid="stDataFrame"] thead *, [data-testid="stDataFrame"] th,
 [data-testid="stDataFrame"] [role="columnheader"] {
-    background: #131625 !important;
-    color: #6b7a99 !important;
-    font-size: 0.72rem !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.6px !important;
-    font-weight: 600 !important;
+    background: #131625 !important; color: #6b7a99 !important;
+    font-size: 0.72rem !important; text-transform: uppercase !important;
+    letter-spacing: 0.6px !important; font-weight: 600 !important;
 }
-
-/* Table structure */
-[data-testid="stDataFrame"] table {
-    background: #0d0f18 !important;
-}
-
-[data-testid="stDataFrame"] tbody {
-    background: #0d0f18 !important;
-}
-
-[data-testid="stDataFrame"] tr {
-    background: #0d0f18 !important;
-}
-
+[data-testid="stDataFrame"] table, [data-testid="stDataFrame"] tbody,
+[data-testid="stDataFrame"] tr { background: #0d0f18 !important; }
 [data-testid="stDataFrame"] td {
-    background: #0d0f18 !important;
-    color: #c9d8f0 !important;
+    background: #0d0f18 !important; color: #c9d8f0 !important;
     border-bottom: 1px solid #1a1e2e !important;
-    font-size: 0.83rem !important;
-    padding: 0.6rem 0.8rem !important;
+    font-size: 0.83rem !important; padding: 0.6rem 0.8rem !important;
 }
+[data-testid="stDataFrame"] tr:hover, [data-testid="stDataFrame"] tr:hover td,
+[data-testid="stDataFrame"] tr:hover * { background: #161b27 !important; color: #e8edf8 !important; }
 
-/* Hover */
-[data-testid="stDataFrame"] tr:hover,
-[data-testid="stDataFrame"] tr:hover td,
-[data-testid="stDataFrame"] tr:hover * {
-    background: #161b27 !important;
-    color: #e8edf8 !important;
-}
-
-/* Selected/Active cells */
-[data-testid="stDataFrame"] [aria-selected="true"],
-[data-testid="stDataFrame"] [aria-selected="true"] *,
-[data-testid="stDataFrame"] .selected,
-[data-testid="stDataFrame"] .active {
-    background: #1c2235 !important;
-    color: #e8edf8 !important;
-}
-
-/* ─── Caption ─── */
 [data-testid="stCaptionContainer"] p { color: #2a3050 !important; font-size: 0.78rem !important; }
-
-/* ─── Divider ─── */
 hr { border-color: #1a1e2e !important; }
-
-/* ─── Scrollbar ─── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: #0d0f18; }
 ::-webkit-scrollbar-thumb { background: #1e2438; border-radius: 3px; }
@@ -306,13 +214,144 @@ hr { border-color: #1a1e2e !important; }
 </style>
 """, unsafe_allow_html=True)
 
+
+# ── Excel export helper ──────────────────────────────────────────────────────
+def results_to_xlsx(results: list) -> bytes:
+    """
+    Flatten classification results into a styled Excel file.
+    Columns: orgName, productCount, operationType, primaryIndustry,
+             isMultiIndustry, industry_1, subcategory_1,
+             industry_2, subcategory_2, industry_3, subcategory_3
+    Returns raw bytes ready for st.download_button.
+    """
+    COLUMNS = [
+        "orgName", "productCount", "operationType", "primaryIndustry",
+        "isMultiIndustry",
+        "industry_1", "subcategory_1",
+        "industry_2", "subcategory_2",
+        "industry_3", "subcategory_3",
+    ]
+
+    # ── styles ──
+    HEADER_FONT    = Font(name="Arial", bold=True, color="FFFFFF", size=10)
+    HEADER_FILL    = PatternFill("solid", start_color="1E3A5F")   # dark navy
+    HEADER_ALIGN   = Alignment(horizontal="center", vertical="center", wrap_text=True)
+
+    DATA_FONT      = Font(name="Arial", size=10)
+    ALT_FILL       = PatternFill("solid", start_color="F0F4FA")   # very light blue-grey
+    CENTER_ALIGN   = Alignment(horizontal="center", vertical="center")
+    LEFT_ALIGN     = Alignment(horizontal="left",   vertical="center")
+
+    THIN           = Side(style="thin", color="D0D8E8")
+    BORDER         = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
+
+    TRUE_FILL      = PatternFill("solid", start_color="D1FAE5")   # green tint  for TRUE
+    FALSE_FILL     = PatternFill("solid", start_color="FEE2E2")   # red tint    for FALSE
+    TRUE_FONT      = Font(name="Arial", size=10, color="065F46",  bold=True)
+    FALSE_FONT     = Font(name="Arial", size=10, color="991B1B",  bold=True)
+
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Classification Results"
+
+    # ── header row ──
+    ws.append(COLUMNS)
+    for col_idx, _ in enumerate(COLUMNS, start=1):
+        cell = ws.cell(row=1, column=col_idx)
+        cell.font      = HEADER_FONT
+        cell.fill      = HEADER_FILL
+        cell.alignment = HEADER_ALIGN
+        cell.border    = BORDER
+    ws.row_dimensions[1].height = 30
+
+    # ── data rows ──
+    for row_idx, r in enumerate(results, start=2):
+        clf        = r.get("classification", {})
+        industries = clf.get("industries", [])
+        is_multi   = clf.get("isMultiIndustry", False)
+
+        # pull up to 3 industries
+        def _ind(n):
+            if n < len(industries):
+                return industries[n].get("industry", ""), industries[n].get("subCategory", "")
+            return "", ""
+
+        i1_name, i1_sub = _ind(0)
+        i2_name, i2_sub = _ind(1)
+        i3_name, i3_sub = _ind(2)
+
+        row_data = [
+            r.get("orgName", ""),
+            r.get("productCount", ""),
+            r.get("operationType", ""),
+            r.get("primaryIndustry", ""),
+            "TRUE" if is_multi else "FALSE",
+            i1_name, i1_sub,
+            i2_name, i2_sub,
+            i3_name, i3_sub,
+        ]
+        ws.append(row_data)
+
+        # alternating row fill
+        use_alt = (row_idx % 2 == 0)
+
+        for col_idx, value in enumerate(row_data, start=1):
+            cell        = ws.cell(row=row_idx, column=col_idx)
+            cell.font   = DATA_FONT
+            cell.border = BORDER
+            col_name    = COLUMNS[col_idx - 1]
+
+            # isMultiIndustry — colored TRUE/FALSE
+            if col_name == "isMultiIndustry":
+                if value == "TRUE":
+                    cell.fill = TRUE_FILL
+                    cell.font = TRUE_FONT
+                else:
+                    cell.fill = FALSE_FILL
+                    cell.font = FALSE_FONT
+                cell.alignment = CENTER_ALIGN
+
+            # numeric columns — centre aligned
+            elif col_name == "productCount":
+                cell.alignment = CENTER_ALIGN
+                if use_alt:
+                    cell.fill = ALT_FILL
+
+            # text columns — left aligned
+            else:
+                cell.alignment = LEFT_ALIGN
+                if use_alt:
+                    cell.fill = ALT_FILL
+
+        ws.row_dimensions[row_idx].height = 18
+
+    # ── column widths ──
+    col_widths = {
+        "orgName": 28, "productCount": 13, "operationType": 22,
+        "primaryIndustry": 24, "isMultiIndustry": 14,
+        "industry_1": 24, "subcategory_1": 22,
+        "industry_2": 24, "subcategory_2": 22,
+        "industry_3": 24, "subcategory_3": 22,
+    }
+    for col_idx, col_name in enumerate(COLUMNS, start=1):
+        ws.column_dimensions[ws.cell(row=1, column=col_idx).column_letter].width = col_widths.get(col_name, 18)
+
+    # ── freeze header ──
+    ws.freeze_panes = "A2"
+
+    # ── write to bytes ──
+    buf = io.BytesIO()
+    wb.save(buf)
+    buf.seek(0)
+    return buf.getvalue()
+
+
 # ── Session state ────────────────────────────────────────────────────────────
 for k, v in [("classifier", None), ("results", []), ("loaded_data", []),
              ("current_result", None), ("test_org", "")]:
     if k not in st.session_state:
         st.session_state[k] = v
 
-# Auto-initialize classifier if OPENAI_API_KEY env var exists (only once)
 if "auto_init_done" not in st.session_state:
     st.session_state.auto_init_done = False
 
@@ -321,7 +360,7 @@ if not st.session_state.auto_init_done and os.getenv("OPENAI_API_KEY"):
         st.session_state.classifier = IndustryClassifier(model="gpt-4o-mini")
         st.session_state.auto_init_done = True
     except:
-        pass  # silent fail, user can manually init if env var is invalid
+        pass
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -329,22 +368,16 @@ with st.sidebar:
     st.markdown("<hr>", unsafe_allow_html=True)
     st.markdown("##### Configuration")
 
-    # Only show API key input if env var is NOT set
     env_key_exists = bool(os.getenv("OPENAI_API_KEY"))
-    
     if env_key_exists:
-        st.markdown(
-            '<p style="font-size:0.78rem;color:#4a5470;line-height:1.5;">API key loaded from environment variable.</p>',
-            unsafe_allow_html=True
-        )
+        st.markdown('<p style="font-size:0.78rem;color:#4a5470;line-height:1.5;">API key loaded from environment variable.</p>', unsafe_allow_html=True)
         api_key = os.getenv("OPENAI_API_KEY")
     else:
         api_key = st.text_input("OpenAI API Key", type="password", placeholder="sk-...", value="")
-    
+
     model = st.selectbox("Model", ["gpt-4o-mini", "gpt-4o"],
                          help="gpt-4o-mini — fast & cheap  |  gpt-4o — highest accuracy")
 
-    # Only show init button if not auto-initialized OR if manually entering key
     if not env_key_exists or not st.session_state.classifier:
         if st.button("Initialize Classifier", type="primary"):
             if api_key:
@@ -356,18 +389,12 @@ with st.sidebar:
             else:
                 st.warning("Enter your API key first.")
     else:
-        # Show current model and allow model switching
         if st.button("Switch Model", type="primary"):
             try:
                 st.session_state.classifier = IndustryClassifier(api_key=api_key, model=model)
                 st.success(f"Switched to {model}")
             except Exception as e:
                 st.error(str(e))
-                st.success(f"Ready — {model}")
-            except Exception as e:
-                st.error(str(e))
-        else:
-            st.warning("Enter your API key first.")
 
     dot_col = "#4ade80" if st.session_state.classifier else "#f87171"
     dot_txt = "Classifier active" if st.session_state.classifier else "Not initialized"
@@ -451,7 +478,6 @@ with tab1:
         else:
             clf = res.get("classification", {})
 
-            # Stat cards row
             c1, c2, c3 = st.columns(3)
             def _stat(col, label, value, cls=""):
                 col.markdown(f'<div class="stat-card"><div class="label">{label}</div><div class="value {cls}">{value}</div></div>', unsafe_allow_html=True)
@@ -461,7 +487,6 @@ with tab1:
             conf = res.get("confidenceScore", clf.get("confidenceScore", 0))
             _stat(c3, "Confidence", f"{conf:.0%}", "green" if conf >= 0.85 else ("amber" if conf >= 0.65 else "red"))
 
-            # Summary strip
             st.markdown('<p class="section-title" style="margin-top:1.2rem;">Summary</p>', unsafe_allow_html=True)
             is_multi = clf.get("isMultiIndustry", False)
             btype    = res.get("operationType", clf.get("operationType", "—"))
@@ -483,7 +508,6 @@ with tab1:
 </div>
 """, unsafe_allow_html=True)
 
-            # Industries breakdown
             st.markdown('<p class="section-title">Industries Breakdown</p>', unsafe_allow_html=True)
             rows_html = ""
             for ind in clf.get("industries", []):
@@ -502,11 +526,9 @@ with tab1:
 </div>"""
             st.markdown(f'<div class="result-panel" style="padding:0.3rem 1.2rem;">{rows_html}</div>', unsafe_allow_html=True)
 
-            # Reasoning
             st.markdown('<p class="section-title">AI Reasoning</p>', unsafe_allow_html=True)
             st.markdown(f'<div class="reasoning-box">{res.get("AIreasoning", clf.get("reasoning","—"))}</div>', unsafe_allow_html=True)
 
-            # Raw JSON with proper formatting and copy button
             with st.expander("View raw JSON"):
                 json_str = json.dumps(res, indent=2, ensure_ascii=False)
                 st.code(json_str, language="json", line_numbers=False)
@@ -528,11 +550,20 @@ with tab2:
     else:
         total_orgs = len(st.session_state.loaded_data)
         cl, cr = st.columns([3, 1], gap="large")
+
         with cl:
             st.markdown('<p class="section-title">Select batch size</p>', unsafe_allow_html=True)
-            max_items = st.slider("orgs", min_value=1, max_value=min(total_orgs, 100),
-                                  value=min(5, total_orgs), label_visibility="collapsed")
-            st.caption(f"Processing **{max_items}** of **{total_orgs:,}** loaded organizations")
+            max_items = st.slider(
+                "orgs", min_value=1, max_value=min(total_orgs, 1000),
+                value=min(10, total_orgs), step=1, label_visibility="collapsed",
+            )
+            mins_low  = round(max_items * 3 / 60, 1)
+            mins_high = round(max_items * 8 / 60, 1)
+            time_str  = f"~{mins_low/60:.1f}–{mins_high/60:.1f} hrs" if mins_high >= 60 else f"~{mins_low}–{mins_high} min"
+            st.caption(f"Processing **{max_items}** of **{total_orgs:,}** loaded organizations · Est. time: **{time_str}** (gpt-4o-mini)")
+            if max_items >= 500:
+                st.warning(f"⚠ Large batch selected ({max_items:,} orgs). Make sure your OpenAI account has sufficient rate limits.")
+
         with cr:
             st.markdown('<p class="section-title">&nbsp;</p>', unsafe_allow_html=True)
             run_batch = st.button("Run Batch →", type="primary", use_container_width=True, key="run_batch")
@@ -550,8 +581,7 @@ with tab2:
                     try:
                         batch_results.append(st.session_state.classifier.classify_organization(org))
                     except Exception as e:
-                        batch_results.append({"orgName": name,
-                                              "classification": {"error": str(e)}})
+                        batch_results.append({"orgName": name, "classification": {"error": str(e)}})
                     progress_bar.progress((i + 1) / max_items)
                 st.session_state.results = batch_results
                 status_ph.empty()
@@ -580,18 +610,37 @@ with tab2:
             for r in results:
                 clf = r.get("classification", {})
                 rows.append({
-                    "Organization":    r.get("orgName", "—"),
+                    "Organization":     r.get("orgName", "—"),
                     "Primary Industry": r.get("primaryIndustry", clf.get("primaryIndustry", "Error" if "error" in clf else "—")),
-                    "Operation Type":  r.get("operationType", clf.get("operationType", "—")),
-                    "Multi-Industry":  "Yes" if clf.get("isMultiIndustry") else "No",
-                    "Confidence":      f'{r.get("confidenceScore", clf.get("confidenceScore",0)):.0%}' if "error" not in clf else "—",
+                    "Operation Type":   r.get("operationType", clf.get("operationType", "—")),
+                    "Multi-Industry":   "Yes" if clf.get("isMultiIndustry") else "No",
+                    "Confidence":       f'{r.get("confidenceScore", clf.get("confidenceScore",0)):.0%}' if "error" not in clf else "—",
                 })
             st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
+            # ── Download buttons ──────────────────────────────────────────
             ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-            st.download_button("Download results (JSON)",
-                               data=json.dumps(results, ensure_ascii=False, indent=2),
-                               file_name=f"classification_{ts}.json", mime="application/json")
+            dl1, dl2 = st.columns(2)
+
+            with dl1:
+                st.download_button(
+                    "⬇ Download results (JSON)",
+                    data=json.dumps(results, ensure_ascii=False, indent=2),
+                    file_name=f"classification_{ts}.json",
+                    mime="application/json",
+                    use_container_width=True,
+                )
+
+            with dl2:
+                # ── NEW: Excel export ──────────────────────────────────
+                xlsx_bytes = results_to_xlsx(results)
+                st.download_button(
+                    "📊 Download results (Excel)",
+                    data=xlsx_bytes,
+                    file_name=f"classification_{ts}.xlsx",
+                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    use_container_width=True,
+                )
 
             if errs:
                 with st.expander(f"⚠ {len(errs)} failed classification(s)"):
@@ -608,12 +657,10 @@ with tab3:
     if not results:
         st.markdown('<div class="empty-state"><div class="icon">📈</div><p>Run a batch classification to see analysis charts.</p></div>', unsafe_allow_html=True)
     else:
-        # Dark chart theme — plot_bgcolor lives ONLY in LAYOUT, never repeated
         COLORS = ["#2563eb","#3b82f6","#60a5fa","#93c5fd","#1d4ed8","#7c3aed"]
         BG = "#131625"
         LAYOUT = dict(
-            paper_bgcolor=BG,
-            plot_bgcolor=BG,
+            paper_bgcolor=BG, plot_bgcolor=BG,
             font=dict(family="DM Sans", size=11, color="#4a5470"),
             margin=dict(t=30, b=20, l=10, r=10),
         )
@@ -629,9 +676,7 @@ with tab3:
             df_ind = pd.DataFrame(sorted(ind_count.items(), key=lambda x: x[1], reverse=True), columns=["Industry","Count"])
             fig_bar = px.bar(df_ind, x="Count", y="Industry", orientation="h",
                              color="Count", color_continuous_scale=["#1e2438","#2563eb"])
-            fig_bar.update_layout(**LAYOUT,
-                                  showlegend=False,
-                                  coloraxis_showscale=False,
+            fig_bar.update_layout(**LAYOUT, showlegend=False, coloraxis_showscale=False,
                                   yaxis=dict(autorange="reversed", tickfont=dict(size=11), gridcolor="#1a1e2e", color="#4a5470"),
                                   xaxis=dict(gridcolor="#1a1e2e", color="#4a5470"),
                                   height=min(56*len(df_ind)+60, 380))
@@ -650,9 +695,7 @@ with tab3:
                 textfont=dict(size=10, color="#4a5470"),
                 hovertemplate="%{label}<br>%{value} orgs (%{percent})<extra></extra>",
             ))
-            fig_pie.update_layout(**LAYOUT,
-                                  height=290,
-                                  showlegend=True,
+            fig_pie.update_layout(**LAYOUT, height=290, showlegend=True,
                                   legend=dict(font=dict(size=10, color="#4a5470"), bgcolor="rgba(0,0,0,0)"))
             st.plotly_chart(fig_pie, use_container_width=True)
 
@@ -662,11 +705,9 @@ with tab3:
             st.markdown('<p class="section-title">Confidence Score Distribution</p>', unsafe_allow_html=True)
             confs = [r.get("confidenceScore", r.get("classification", {}).get("confidenceScore", 0)) for r in results]
             fig_hist = px.histogram(x=confs, nbins=15, color_discrete_sequence=["#2563eb"])
-            fig_hist.update_layout(**LAYOUT,
-                                   height=240,
+            fig_hist.update_layout(**LAYOUT, height=240,
                                    xaxis=dict(tickformat=".0%", gridcolor="#1a1e2e", color="#4a5470"),
-                                   yaxis=dict(gridcolor="#1a1e2e", color="#4a5470"),
-                                   bargap=0.1)
+                                   yaxis=dict(gridcolor="#1a1e2e", color="#4a5470"), bargap=0.1)
             fig_hist.update_traces(marker_line_width=0)
             st.plotly_chart(fig_hist, use_container_width=True)
 
@@ -678,11 +719,9 @@ with tab3:
                 x=["Single Industry","Multi-Industry"], y=[single_n, multi_n],
                 marker_color=["#2563eb","#7c3aed"], width=[0.45, 0.45],
             ))
-            fig_sm.update_layout(**LAYOUT,
-                                 height=240,
+            fig_sm.update_layout(**LAYOUT, height=240,
                                  yaxis=dict(gridcolor="#1a1e2e", color="#4a5470"),
-                                 xaxis=dict(color="#4a5470"),
-                                 showlegend=False)
+                                 xaxis=dict(color="#4a5470"), showlegend=False)
             fig_sm.update_traces(marker_line_width=0)
             st.plotly_chart(fig_sm, use_container_width=True)
 
